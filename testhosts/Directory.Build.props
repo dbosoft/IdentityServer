@@ -1,0 +1,7 @@
+
+<Project>
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+    <AssemblyName>dbosoft.$(MSBuildProjectName)</AssemblyName>
+  </PropertyGroup>
+</Project>
