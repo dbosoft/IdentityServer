@@ -9,6 +9,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using FluentAssertions;
 using IdentityModel;
@@ -16,8 +17,7 @@ using IdentityModel.Client;
 using IdentityServer.IntegrationTests.Clients.Setup;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+
 using Xunit;
 
 namespace IdentityServer.IntegrationTests.Clients
@@ -62,25 +62,26 @@ namespace IdentityServer.IntegrationTests.Clients
             response.IdentityToken.Should().BeNull();
             response.RefreshToken.Should().BeNull();
 
-            var payload = GetPayload(response);
+            var payload = GetPayload<JsonElement>(response);
 
             var unixNow = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
-            var exp = Int64.Parse(payload["exp"].ToString());
-            exp.Should().BeLessThan(unixNow + 3605);
-            exp.Should().BeGreaterThan(unixNow + 3595);
+            var exp = payload["exp"].GetInt64();
+            exp.Should().BeLessThan(unixNow + 3620);
+            exp.Should().BeGreaterThan(unixNow + 3580);
 
             payload.Count().Should().Be(12);
-            payload.Should().Contain("iss", "https://idsvr4");
-            payload.Should().Contain("client_id", "client.custom");
-            payload.Should().Contain("sub", "818727");
-            payload.Should().Contain("idp", "local");
+            payload["iss"].GetString().Should().Be("https://idsvr4");
+            payload["aud"].GetString().Should().Be("api");
+            payload["client_id"].GetString().Should().Be("client.custom");
+            payload["sub"].GetString().Should().Be("818727");
+            payload["idp"].GetString().Should().Be("local");
+            payload.Keys.Should().Contain("jti");
+            payload.Keys.Should().Contain("iat");
 
-            payload["aud"].Should().Be("api");
-
-            var scopes = payload["scope"] as JArray;
+            var scopes = payload["scope"].EnumerateArray();
             scopes.First().ToString().Should().Be("api1");
 
-            var amr = payload["amr"] as JArray;
+            var amr = payload["amr"].EnumerateArray();
             amr.Count().Should().Be(1);
             amr.First().ToString().Should().Be("custom");
         }
@@ -111,26 +112,27 @@ namespace IdentityServer.IntegrationTests.Clients
             response.IdentityToken.Should().BeNull();
             response.RefreshToken.Should().BeNull();
 
-            var payload = GetPayload(response);
+            var payload = GetPayload<JsonElement>(response);
 
             var unixNow = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
-            var exp = Int64.Parse(payload["exp"].ToString());
-            exp.Should().BeLessThan(unixNow + 3605);
-            exp.Should().BeGreaterThan(unixNow + 3595);
+            var exp = payload["exp"].GetInt64();
+            exp.Should().BeLessThan(unixNow + 3620);
+            exp.Should().BeGreaterThan(unixNow + 3580);
 
             payload.Count().Should().Be(13);
-            payload.Should().Contain("iss", "https://idsvr4");
-            payload.Should().Contain("client_id", "client.custom");
-            payload.Should().Contain("sub", "818727");
-            payload.Should().Contain("idp", "local");
-            payload.Should().Contain("extra_claim", "extra_value");
+            payload["iss"].GetString().Should().Be("https://idsvr4");
+            payload["aud"].GetString().Should().Be("api");
+            payload["client_id"].GetString().Should().Be("client.custom");
+            payload["sub"].GetString().Should().Be("818727");
+            payload["idp"].GetString().Should().Be("local");
+            payload["extra_claim"].GetString().Should().Be("extra_value");
+            payload.Keys.Should().Contain("jti");
+            payload.Keys.Should().Contain("iat");
 
-            payload["aud"].Should().Be("api");
-
-            var scopes = payload["scope"] as JArray;
+            var scopes = payload["scope"].EnumerateArray();
             scopes.First().ToString().Should().Be("api1");
 
-            var amr = payload["amr"] as JArray;
+            var amr = payload["amr"].EnumerateArray();
             amr.Count().Should().Be(1);
             amr.First().ToString().Should().Be("custom");
         }
@@ -178,26 +180,27 @@ namespace IdentityServer.IntegrationTests.Clients
             refreshResponse.IdentityToken.Should().BeNull();
             refreshResponse.RefreshToken.Should().NotBeNull();
 
-            var payload = GetPayload(refreshResponse);
+            var payload = GetPayload<JsonElement>(response);
 
             var unixNow = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
-            var exp = Int64.Parse(payload["exp"].ToString());
-            exp.Should().BeLessThan(unixNow + 3605);
-            exp.Should().BeGreaterThan(unixNow + 3595);
+            var exp = payload["exp"].GetInt64();
+            exp.Should().BeLessThan(unixNow + 3620);
+            exp.Should().BeGreaterThan(unixNow + 3580);
 
             payload.Count().Should().Be(13);
-            payload.Should().Contain("iss", "https://idsvr4");
-            payload.Should().Contain("client_id", "client.custom");
-            payload.Should().Contain("sub", "818727");
-            payload.Should().Contain("idp", "local");
-            payload.Should().Contain("extra_claim", "extra_value");
+            payload["iss"].GetString().Should().Be("https://idsvr4");
+            payload["aud"].GetString().Should().Be("api");
+            payload["client_id"].GetString().Should().Be("client.custom");
+            payload["sub"].GetString().Should().Be("818727");
+            payload["idp"].GetString().Should().Be("local");
+            payload["extra_claim"].GetString().Should().Be("extra_value");
+            payload.Keys.Should().Contain("jti");
+            payload.Keys.Should().Contain("iat");
 
-            payload["aud"].Should().Be("api");
-
-            var scopes = payload["scope"] as JArray;
+            var scopes = payload["scope"].EnumerateArray();
             scopes.First().ToString().Should().Be("api1");
 
-            var amr = payload["amr"] as JArray;
+            var amr = payload["amr"].EnumerateArray();
             amr.Count().Should().Be(1);
             amr.First().ToString().Should().Be("custom");
         }
@@ -227,15 +230,14 @@ namespace IdentityServer.IntegrationTests.Clients
             response.IdentityToken.Should().BeNull();
             response.RefreshToken.Should().BeNull();
 
-            var payload = GetPayload(response);
+            var payload = GetPayload<JsonElement>(response);
 
             payload.Count().Should().Be(8);
-            payload.Should().Contain("iss", "https://idsvr4");
-            payload.Should().Contain("client_id", "client.custom");
+            payload["iss"].GetString().Should().Be("https://idsvr4");
+            payload["aud"].GetString().Should().Be("api");
+            payload["client_id"].GetString().Should().Be("client.custom");
 
-            payload["aud"].Should().Be("api");
-
-            var scopes = payload["scope"] as JArray;
+            var scopes = payload["scope"].EnumerateArray();
             scopes.First().ToString().Should().Be("api1");
         }
 
@@ -263,25 +265,28 @@ namespace IdentityServer.IntegrationTests.Clients
             response.IdentityToken.Should().BeNull();
             response.RefreshToken.Should().NotBeNull();
 
-            var payload = GetPayload(response);
+            var payload = GetPayload<JsonElement>(response);
+
+            var unixNow = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+            var exp = payload["exp"].GetInt64();
+            exp.Should().BeLessThan(unixNow + 3620);
+            exp.Should().BeGreaterThan(unixNow + 3580);
 
             payload.Count().Should().Be(12);
-            payload.Should().Contain("iss", "https://idsvr4");
-            payload.Should().Contain("client_id", "client.custom");
-            payload.Should().Contain("sub", "818727");
-            payload.Should().Contain("idp", "local");
+            payload["iss"].GetString().Should().Be("https://idsvr4");
+            payload["aud"].GetString().Should().Be("api");
+            payload["client_id"].GetString().Should().Be("client.custom");
+            payload["sub"].GetString().Should().Be("818727");
+            payload["idp"].GetString().Should().Be("local");
+            payload.Keys.Should().Contain("jti");
+            payload.Keys.Should().Contain("iat");
 
-            payload["aud"].Should().Be("api");
+            var scopes = payload["scope"].EnumerateArray();
+            scopes.First().ToString().Should().Be("api1");
 
-            var amr = payload["amr"] as JArray;
+            var amr = payload["amr"].EnumerateArray();
             amr.Count().Should().Be(1);
             amr.First().ToString().Should().Be("custom");
-
-            var scopes = payload["scope"] as JArray;
-            scopes.Count().Should().Be(3);
-            scopes.First().ToString().Should().Be("api1");
-            scopes.Skip(1).First().ToString().Should().Be("api2");
-            scopes.Skip(2).First().ToString().Should().Be("offline_access");
         }
 
         [Fact]
@@ -382,27 +387,29 @@ namespace IdentityServer.IntegrationTests.Clients
             response.IdentityToken.Should().BeNull();
             response.RefreshToken.Should().BeNull();
 
-            var payload = GetPayload(response);
+            var payload = GetPayload<JsonElement>(response);
 
             var unixNow = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
-            var exp = Int64.Parse(payload["exp"].ToString());
-            exp.Should().BeLessThan(unixNow + 5005);
-            exp.Should().BeGreaterThan(unixNow + 4995);
+            var exp = payload["exp"].GetInt64();
+            exp.Should().BeLessThan(unixNow + 3620);
+            exp.Should().BeGreaterThan(unixNow + 3580);
 
-            payload.Count().Should().Be(10);
-            payload.Should().Contain("iss", "https://idsvr4");
-            payload.Should().Contain("client_id", "client.dynamic");
-            payload.Should().Contain("sub", "818727");
-            payload.Should().Contain("idp", "local");
+            payload.Count().Should().Be(13);
+            payload["iss"].GetString().Should().Be("https://idsvr4");
+            payload["aud"].GetString().Should().Be("api");
+            payload["client_id"].GetString().Should().Be("client.custom");
+            payload["sub"].GetString().Should().Be("818727");
+            payload["idp"].GetString().Should().Be("local");
+            payload["extra_claim"].GetString().Should().Be("extra_value");
+            payload.Keys.Should().Contain("jti");
+            payload.Keys.Should().Contain("iat");
 
-            payload["aud"].Should().Be("api");
-
-            var scopes = payload["scope"] as JArray;
+            var scopes = payload["scope"].EnumerateArray();
             scopes.First().ToString().Should().Be("api1");
 
-            var amr = payload["amr"] as JArray;
+            var amr = payload["amr"].EnumerateArray();
             amr.Count().Should().Be(1);
-            amr.First().ToString().Should().Be("delegation");
+            amr.First().ToString().Should().Be("custom");
         }
 
         [Fact]
@@ -526,22 +533,27 @@ namespace IdentityServer.IntegrationTests.Clients
             response.IdentityToken.Should().BeNull();
             response.RefreshToken.Should().BeNull();
 
-            var payload = GetPayload(response);
+            var payload = GetPayload<JsonElement>(response);
+
+            var unixNow = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+            var exp = payload["exp"].GetInt64();
+            exp.Should().BeLessThan(unixNow + 3620);
+            exp.Should().BeGreaterThan(unixNow + 3580);
 
             payload.Count().Should().Be(13);
-            payload.Should().Contain("iss", "https://idsvr4");
-            payload.Should().Contain("client_id", "client.dynamic");
-            payload.Should().Contain("sub", "818727");
-            payload.Should().Contain("idp", "local");
+            payload["iss"].GetString().Should().Be("https://idsvr4");
+            payload["aud"].GetString().Should().Be("api");
+            payload["client_id"].GetString().Should().Be("client.dynamic");
+            payload["sub"].GetString().Should().Be("818727");
+            payload["idp"].GetString().Should().Be("local");
+            payload["client_extra"].GetString().Should().Be("extra_claim");
+            payload.Keys.Should().Contain("jti");
+            payload.Keys.Should().Contain("iat");
 
-            payload.Should().Contain("client_extra", "extra_claim");
-
-            payload["aud"].Should().Be("api");
-
-            var scopes = payload["scope"] as JArray;
+            var scopes = payload["scope"].EnumerateArray();
             scopes.First().ToString().Should().Be("api1");
 
-            var amr = payload["amr"] as JArray;
+            var amr = payload["amr"].EnumerateArray();
             amr.Count().Should().Be(1);
             amr.First().ToString().Should().Be("delegation");
         }
@@ -572,23 +584,21 @@ namespace IdentityServer.IntegrationTests.Clients
             response.IdentityToken.Should().BeNull();
             response.RefreshToken.Should().BeNull();
 
-            var payload = GetPayload(response);
+            var payload = GetPayload<JsonElement>(response);
 
             payload.Count().Should().Be(9);
-            payload.Should().Contain("iss", "https://idsvr4");
-            payload.Should().Contain("client_id", "client.dynamic");
-            payload.Should().Contain("client_extra", "extra_claim");
+            payload["iss"].GetString().Should().Be("https://idsvr4");
+            payload["aud"].GetString().Should().Be("api");
+            payload["client_id"].GetString().Should().Be("client.dynamic");
 
-            payload["aud"].Should().Be("api");
-
-            var scopes = payload["scope"] as JArray;
+            var scopes = payload["scope"].EnumerateArray();
             scopes.First().ToString().Should().Be("api1");
         }
 
-        private Dictionary<string, object> GetPayload(TokenResponse response)
+        private static Dictionary<string, T> GetPayload<T>(TokenResponse response)
         {
             var token = response.AccessToken.Split('.').Skip(1).Take(1).First();
-            var dictionary = JsonConvert.DeserializeObject<Dictionary<string, object>>(
+            var dictionary = JsonSerializer.Deserialize<Dictionary<string, T>>(
                 Encoding.UTF8.GetString(Base64Url.Decode(token)));
 
             return dictionary;

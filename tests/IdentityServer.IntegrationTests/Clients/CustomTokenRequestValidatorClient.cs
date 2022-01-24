@@ -4,6 +4,7 @@
 
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Text.Json;
 using System.Threading.Tasks;
 using FluentAssertions;
 using IdentityModel.Client;
@@ -38,14 +39,12 @@ namespace IdentityServer.IntegrationTests.Clients
             var response = await _client.RequestClientCredentialsTokenAsync(new ClientCredentialsTokenRequest
             {
                 Address = TokenEndpoint,
-
                 ClientId = "client",
                 ClientSecret = "secret",
                 Scope = "api1"
             });
 
-            var fields = GetFields(response);
-            fields.Should().Contain("custom", "custom");
+            GetField<string>(response, "custom").Should().Be("custom");
         }
 
         [Fact]
@@ -63,8 +62,7 @@ namespace IdentityServer.IntegrationTests.Clients
                 Password = "bob"
             });
 
-            var fields = GetFields(response);
-            fields.Should().Contain("custom", "custom");
+            GetField<string>(response, "custom").Should().Be("custom");
         }
 
         [Fact]
@@ -91,8 +89,7 @@ namespace IdentityServer.IntegrationTests.Clients
                 RefreshToken = response.RefreshToken
             });
 
-            var fields = GetFields(response);
-            fields.Should().Contain("custom", "custom");
+            GetField<string>(response, "custom").Should().Be("custom");
         }
 
         [Fact]
@@ -102,7 +99,6 @@ namespace IdentityServer.IntegrationTests.Clients
             {
                 Address = TokenEndpoint,
                 GrantType = "custom",
-
                 ClientId = "client.custom",
                 ClientSecret = "secret",
 
@@ -113,13 +109,12 @@ namespace IdentityServer.IntegrationTests.Clients
                 }
             });
 
-            var fields = GetFields(response);
-            fields.Should().Contain("custom", "custom");
+            GetField<string>(response, "custom").Should().Be("custom");
         }
 
-        private Dictionary<string, object> GetFields(TokenResponse response)
+        private static T GetField<T>(ProtocolResponse response, string field)
         {
-            return response.Json.ToObject<Dictionary<string, object>>();
+            return response.Json.GetProperty(field).Deserialize<T>();
         }
     }
 }

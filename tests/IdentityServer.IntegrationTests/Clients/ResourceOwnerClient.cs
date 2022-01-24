@@ -7,6 +7,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using FluentAssertions;
 using IdentityModel;
@@ -14,8 +15,6 @@ using IdentityModel.Client;
 using IdentityServer.IntegrationTests.Clients.Setup;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using Xunit;
 
 namespace IdentityServer.IntegrationTests.Clients
@@ -55,25 +54,25 @@ namespace IdentityServer.IntegrationTests.Clients
             response.IdentityToken.Should().BeNull();
             response.RefreshToken.Should().BeNull();
 
-            var payload = GetPayload(response);
+            var payload = GetPayload<JsonElement>(response);
 
             payload.Count().Should().Be(12);
-            payload.Should().Contain("iss", "https://idsvr4");
-            payload.Should().Contain("client_id", "roclient");
-            payload.Should().Contain("sub", "88421113");
-            payload.Should().Contain("idp", "local");
+            payload["iss"].GetString().Should().Be("https://idsvr4");
+            payload["aud"].GetString().Should().Be("api");
+            payload["client_id"].GetString().Should().Be("roclient");
+            payload["sub"].GetString().Should().Be("88421113");
+            payload["idp"].GetString().Should().Be("local");
             payload.Keys.Should().Contain("jti");
             payload.Keys.Should().Contain("iat");
-            
-            payload["aud"].Should().Be("api");
 
-            var scopes = ((JArray)payload["scope"]).Select(x => x.ToString());
-            scopes.Count().Should().Be(1);
+            var scopes = payload["scope"].EnumerateArray().Select(x => x.ToString()).ToList();
+            scopes.Count.Should().Be(1);
             scopes.Should().Contain("api1");
 
-            var amr = payload["amr"] as JArray;
-            amr.Count().Should().Be(1);
-            amr.First().ToString().Should().Be("pwd");
+            var amr = payload["amr"].EnumerateArray().ToList();
+            amr.Count.Should().Be(1);
+            amr.First().GetString().Should().Be("pwd");
+
         }
 
         [Fact]
@@ -95,24 +94,19 @@ namespace IdentityServer.IntegrationTests.Clients
             response.IdentityToken.Should().BeNull();
             response.RefreshToken.Should().NotBeNull();
 
-            var payload = GetPayload(response);
-            
-            payload.Should().Contain("iss", "https://idsvr4");
-            payload.Should().Contain("client_id", "roclient");
-            payload.Should().Contain("sub", "88421113");
-            payload.Should().Contain("idp", "local");
+            var payload = GetPayload<JsonElement>(response);
 
-            payload["aud"].Should().Be("api");
+            payload.Count().Should().Be(13);
+            payload["iss"].GetString().Should().Be("https://idsvr4");
+            payload["aud"].GetString().Should().Be("api");
+            payload["client_id"].GetString().Should().Be("roclient");
+            payload["sub"].GetString().Should().Be("88421113");
+            payload["idp"].GetString().Should().Be("local");
+            payload.Keys.Should().Contain("jti");
+            payload.Keys.Should().Contain("iat");
 
-            var amr = payload["amr"] as JArray;
-            amr.Count().Should().Be(1);
-            amr.First().ToString().Should().Be("pwd");
-
-            var scopes = ((JArray)payload["scope"]).Select(x => x.ToString());
-            scopes.Count().Should().Be(8);
-
+            var scopes = payload["scope"].EnumerateArray().Select(x => x.ToString()).ToList();
             // {[  "address",  "api1",  "api2", "api4.with.roles", "email",  "offline_access",  "openid", "role"]}
-
             scopes.Should().Contain("address");
             scopes.Should().Contain("api1");
             scopes.Should().Contain("api2");
@@ -121,6 +115,11 @@ namespace IdentityServer.IntegrationTests.Clients
             scopes.Should().Contain("offline_access");
             scopes.Should().Contain("openid");
             scopes.Should().Contain("roles");
+
+            var amr = payload["amr"].EnumerateArray().ToList();
+            amr.Count.Should().Be(1);
+            amr.First().GetString().Should().Be("pwd");
+
         }
 
         [Fact]
@@ -143,27 +142,23 @@ namespace IdentityServer.IntegrationTests.Clients
             response.IdentityToken.Should().BeNull();
             response.RefreshToken.Should().BeNull();
 
-            var payload = GetPayload(response);
+
+            var payload = GetPayload<JsonElement>(response);
 
             payload.Count().Should().Be(12);
-            payload.Should().Contain("iss", "https://idsvr4");
-            payload.Should().Contain("client_id", "roclient");
-            payload.Should().Contain("sub", "88421113");
-            payload.Should().Contain("idp", "local");
+            payload["iss"].GetString().Should().Be("https://idsvr4");
+            payload["aud"].GetString().Should().Be("api");
+            payload["client_id"].GetString().Should().Be("roclient");
+            payload["sub"].GetString().Should().Be("88421113");
+            payload["idp"].GetString().Should().Be("local");
             payload.Keys.Should().Contain("jti");
             payload.Keys.Should().Contain("iat");
 
-            payload["aud"].Should().Be("api");
-
-            var amr = payload["amr"] as JArray;
-            amr.Count().Should().Be(1);
-            amr.First().ToString().Should().Be("pwd");
-
-            var scopes = ((JArray)payload["scope"]).Select(x=>x.ToString());
-            scopes.Count().Should().Be(3);
+            var scopes = payload["scope"].EnumerateArray().Select(x => x.ToString()).ToList();
             scopes.Should().Contain("api1");
             scopes.Should().Contain("email");
             scopes.Should().Contain("openid");
+
         }
 
         [Fact]
@@ -185,25 +180,20 @@ namespace IdentityServer.IntegrationTests.Clients
             response.TokenType.Should().Be("Bearer");
             response.IdentityToken.Should().BeNull();
             response.RefreshToken.Should().NotBeNullOrWhiteSpace();
-
-            var payload = GetPayload(response);
+            
+            var payload = GetPayload<JsonElement>(response);
 
             payload.Count().Should().Be(12);
-            payload.Should().Contain("iss", "https://idsvr4");
-            payload.Should().Contain("client_id", "roclient");
-            payload.Should().Contain("sub", "88421113");
-            payload.Should().Contain("idp", "local");
+            payload["iss"].GetString().Should().Be("https://idsvr4");
+            payload["aud"].GetString().Should().Be("api");
+            payload["client_id"].GetString().Should().Be("roclient");
+            payload["sub"].GetString().Should().Be("88421113");
+            payload["idp"].GetString().Should().Be("local");
             payload.Keys.Should().Contain("jti");
             payload.Keys.Should().Contain("iat");
 
-            payload["aud"].Should().Be("api");
-
-            var amr = payload["amr"] as JArray;
-            amr.Count().Should().Be(1);
-            amr.First().ToString().Should().Be("pwd");
-
-            var scopes = ((JArray)payload["scope"]).Select(x => x.ToString());
-            scopes.Count().Should().Be(4);
+            var scopes = payload["scope"].EnumerateArray().Select(x => x.ToString()).ToList();
+            scopes.Count.Should().Be(4);
             scopes.Should().Contain("api1");
             scopes.Should().Contain("email");
             scopes.Should().Contain("offline_access");
@@ -269,10 +259,10 @@ namespace IdentityServer.IntegrationTests.Clients
         }
 
 
-        private static Dictionary<string, object> GetPayload(IdentityModel.Client.TokenResponse response)
+        private static Dictionary<string, T> GetPayload<T>(TokenResponse response)
         {
             var token = response.AccessToken.Split('.').Skip(1).Take(1).First();
-            var dictionary = JsonConvert.DeserializeObject<Dictionary<string, object>>(
+            var dictionary = JsonSerializer.Deserialize<Dictionary<string,T>>(
                 Encoding.UTF8.GetString(Base64Url.Decode(token)));
 
             return dictionary;

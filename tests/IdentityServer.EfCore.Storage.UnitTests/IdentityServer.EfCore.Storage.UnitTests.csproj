@@ -15,4 +15,9 @@
   </ItemGroup>
 
 
+  <ItemGroup>
+    <PackageReference Update="FluentAssertions" Version="5.10.3" />
+  </ItemGroup>
+
+
 </Project>

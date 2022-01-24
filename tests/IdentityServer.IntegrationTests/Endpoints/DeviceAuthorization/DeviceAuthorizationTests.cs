@@ -4,12 +4,12 @@ using System.IO;
 using System.Net;
 using System.Net.Http;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using FluentAssertions;
 using IdentityModel;
 using IdentityServer.IntegrationTests.Common;
 using IdentityServer4.Models;
-using Newtonsoft.Json;
 using Xunit;
 
 namespace IdentityServer.IntegrationTests.Endpoints.DeviceAuthorization
@@ -132,11 +132,10 @@ namespace IdentityServer.IntegrationTests.Endpoints.DeviceAuthorization
         private T ParseJsonBody<T>(Stream streamBody)
         {
             streamBody.Position = 0;
-            using (var reader = new StreamReader(streamBody))
-            {
-                var jsonString = reader.ReadToEnd();
-                return JsonConvert.DeserializeObject<T>(jsonString);
-            }
+            using var reader = new StreamReader(streamBody);
+
+            var jsonString = reader.ReadToEnd();
+            return JsonSerializer.Deserialize<T>(jsonString);
         }
 
         internal class ResultDto
