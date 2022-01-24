@@ -4,7 +4,7 @@
 
 using System.Collections.Generic;
 
-namespace IdentityServer4.Validation
+namespace dbosoft.IdentityServer.Validation.Models
 {
     /// <summary>
     /// Models a validated request to the device authorization endpoint.

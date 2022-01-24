@@ -5,10 +5,11 @@
 using System;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
+using dbosoft.IdentityServer;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Storage.Models;
 using IdentityServer.UnitTests.Common;
-using IdentityServer4;
-using IdentityServer4.Models;
-using static IdentityServer4.IdentityServerConstants;
+using static dbosoft.IdentityServer.IdentityServerConstants;
 
 namespace IdentityServer.UnitTests.Validation.Setup
 {

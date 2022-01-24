@@ -3,8 +3,9 @@
 
 
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Validation.Models;
 
-namespace IdentityServer4.Validation
+namespace dbosoft.IdentityServer.Validation
 {
     /// <summary>
     /// The device code validator

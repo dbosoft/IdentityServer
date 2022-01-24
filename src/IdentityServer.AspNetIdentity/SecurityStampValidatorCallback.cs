@@ -2,11 +2,11 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using Microsoft.AspNetCore.Identity;
-using System.Threading.Tasks;
 using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 
-namespace IdentityServer4.AspNetIdentity
+namespace dbosoft.IdentityServer.AspNetIdentity
 {
     /// <summary>
     /// Implements callback for SecurityStampValidator's OnRefreshingPrincipal event.

@@ -7,12 +7,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Models.Contexts;
 using IdentityModel;
-using IdentityServer4.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Logging;
 
-namespace IdentityServer4.Services
+namespace dbosoft.IdentityServer.Services.Default
 {
     /// <summary>
     /// Default back-channel logout notification implementation.

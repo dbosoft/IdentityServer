@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Storage.Models;
+using dbosoft.IdentityServer.Stores.InMemory;
 using FluentAssertions;
-using IdentityServer4.Models;
-using IdentityServer4.Stores;
 using Xunit;
 
 namespace IdentityServer.UnitTests.Stores

@@ -2,8 +2,11 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.Configuration;
-using IdentityServer4.Validation;
+using dbosoft.IdentityServer.Configuration;
+using dbosoft.IdentityServer.Configuration.DependencyInjection;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using dbosoft.IdentityServer.Validation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 

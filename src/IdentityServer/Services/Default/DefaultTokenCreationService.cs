@@ -2,20 +2,20 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityModel;
-using IdentityServer4.Configuration;
-using IdentityServer4.Extensions;
-using IdentityServer4.Models;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.Extensions.Logging;
-using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Globalization;
 using System.IdentityModel.Tokens.Jwt;
 using System.Threading.Tasks;
-using static IdentityServer4.IdentityServerConstants;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Storage.Models;
+using IdentityModel;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
+using static dbosoft.IdentityServer.IdentityServerConstants;
 
-namespace IdentityServer4.Services
+namespace dbosoft.IdentityServer.Services.Default
 {
     /// <summary>
     /// Default token creation service

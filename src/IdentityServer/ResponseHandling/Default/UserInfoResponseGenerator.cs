@@ -2,25 +2,26 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityModel;
-using IdentityServer4.Extensions;
-using IdentityServer4.Models;
-using IdentityServer4.Services;
-using IdentityServer4.Stores;
-using IdentityServer4.Validation;
-using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Models.Contexts;
+using dbosoft.IdentityServer.Services;
+using dbosoft.IdentityServer.Storage.Models;
+using dbosoft.IdentityServer.Storage.Stores;
+using dbosoft.IdentityServer.Validation.Models;
+using IdentityModel;
+using Microsoft.Extensions.Logging;
 
-namespace IdentityServer4.ResponseHandling
+namespace dbosoft.IdentityServer.ResponseHandling.Default
 {
     /// <summary>
     /// The userinfo response generator
     /// </summary>
-    /// <seealso cref="IdentityServer4.ResponseHandling.IUserInfoResponseGenerator" />
+    /// <seealso cref="IUserInfoResponseGenerator" />
     public class UserInfoResponseGenerator : IUserInfoResponseGenerator
     {
         /// <summary>

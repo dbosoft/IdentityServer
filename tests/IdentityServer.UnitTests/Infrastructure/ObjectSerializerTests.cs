@@ -2,8 +2,9 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 using System;
+using dbosoft.IdentityServer.Infrastructure;
+using dbosoft.IdentityServer.Models.Messages;
 using FluentAssertions;
-using IdentityServer4.Models;
 using Xunit;
 
 namespace IdentityServer.UnitTests.Infrastructure
@@ -17,7 +18,7 @@ namespace IdentityServer.UnitTests.Infrastructure
         [Fact]
         public void Can_be_deserialize_message()
         {
-            Action a = () => IdentityServer4.ObjectSerializer.FromString<Message<ErrorMessage>>("{\"created\":0, \"data\": {\"error\": \"error\"}}");
+            Action a = () => ObjectSerializer.FromString<Message<ErrorMessage>>("{\"created\":0, \"data\": {\"error\": \"error\"}}");
             a.Should().NotThrow();
         }
     }

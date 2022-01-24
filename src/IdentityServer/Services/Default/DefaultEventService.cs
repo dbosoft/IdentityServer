@@ -4,18 +4,18 @@
 
 using System;
 using System.Diagnostics;
-using Microsoft.AspNetCore.Http;
-using IdentityServer4.Configuration;
 using System.Threading.Tasks;
-using IdentityServer4.Services;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using dbosoft.IdentityServer.Events.Infrastructure;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Http;
 
-namespace IdentityServer4.Events
+namespace dbosoft.IdentityServer.Services.Default
 {
     /// <summary>
     /// The default event service
     /// </summary>
-    /// <seealso cref="IdentityServer4.Services.IEventService" />
+    /// <seealso cref="IEventService" />
     public class DefaultEventService : IEventService
     {
         /// <summary>

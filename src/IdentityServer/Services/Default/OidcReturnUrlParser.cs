@@ -3,15 +3,15 @@
 
 
 using System;
-using System.Threading.Tasks;
-using IdentityServer4.Models;
-using IdentityServer4.Extensions;
-using IdentityServer4.Validation;
-using Microsoft.Extensions.Logging;
-using IdentityServer4.Stores;
 using System.Collections.Specialized;
+using System.Threading.Tasks;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Models.Messages;
+using dbosoft.IdentityServer.Stores;
+using dbosoft.IdentityServer.Validation;
+using Microsoft.Extensions.Logging;
 
-namespace IdentityServer4.Services
+namespace dbosoft.IdentityServer.Services.Default
 {
     internal class OidcReturnUrlParser : IReturnUrlParser
     {

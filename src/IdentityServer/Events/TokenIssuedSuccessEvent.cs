@@ -2,19 +2,20 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityModel;
-using IdentityServer4.Extensions;
-using IdentityServer4.ResponseHandling;
-using IdentityServer4.Validation;
 using System.Collections.Generic;
-using static IdentityServer4.Constants;
+using dbosoft.IdentityServer.Events.Infrastructure;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.ResponseHandling.Models;
+using dbosoft.IdentityServer.Validation.Models;
+using IdentityModel;
+using static dbosoft.IdentityServer.Constants;
 
-namespace IdentityServer4.Events
+namespace dbosoft.IdentityServer.Events
 {
     /// <summary>
     /// Event for successful token issuance
     /// </summary>
-    /// <seealso cref="IdentityServer4.Events.Event" />
+    /// <seealso cref="Event" />
     public class TokenIssuedSuccessEvent : Event
     {
         /// <summary>

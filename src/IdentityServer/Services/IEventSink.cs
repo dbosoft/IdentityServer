@@ -2,10 +2,10 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.Events;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Events.Infrastructure;
 
-namespace IdentityServer4.Services
+namespace dbosoft.IdentityServer.Services
 {
     /// <summary>
     /// Models persistence of events

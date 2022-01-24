@@ -3,26 +3,31 @@
 
 
 using System;
-using IdentityServerHost.Configuration;
-using IdentityModel;
-using IdentityServer4;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.IdentityModel.Logging;
-using Microsoft.IdentityModel.Tokens;
-using Serilog;
 using System.Linq;
 using System.Security.Claims;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
-using IdentityServerHost.Extensions;
+using dbosoft.IdentityServer;
+using dbosoft.IdentityServer.Configuration;
+using dbosoft.IdentityServer.Configuration.DependencyInjection;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
+using dbosoft.IdentityServer.Hosting.LocalApiAuthentication;
+using dbosoft.IdentityServer.Test;
+using IdentityModel;
+using IdentityServer.TestHost.Configuration;
+using IdentityServer.TestHost.Extensions;
+using IdentityServer.TestHost.Quickstart;
 using Microsoft.AspNetCore.Authentication.Certificate;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.HttpOverrides;
-using IdentityServerHost.Quickstart.UI;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Logging;
+using Microsoft.IdentityModel.Tokens;
+using Serilog;
 
-namespace IdentityServerHost
+namespace IdentityServer.TestHost
 {
     public class Startup
     {
@@ -93,9 +98,9 @@ namespace IdentityServerHost
             
             services.AddLocalApiAuthentication(principal =>
             {
-                principal.Identities.First().AddClaim(new Claim("additional_claim", "additional_value"));
+                Enumerable.First<ClaimsIdentity>(principal.Identities).AddClaim(new Claim("additional_claim", "additional_value"));
 
-                return Task.FromResult(principal);
+                return Task.FromResult<ClaimsPrincipal>(principal);
             });
         }
 

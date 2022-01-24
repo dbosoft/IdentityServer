@@ -4,14 +4,15 @@
 
 using System.Linq;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Models.Contexts;
+using dbosoft.IdentityServer.Services;
+using dbosoft.IdentityServer.Validation.Models;
 using IdentityModel;
-using IdentityServer4.Extensions;
-using IdentityServer4.Models;
-using IdentityServer4.Services;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Logging;
 
-namespace IdentityServer4.Validation
+namespace dbosoft.IdentityServer.Validation.Default
 {
     /// <summary>
     /// Validates an incoming token request using the device flow

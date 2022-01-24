@@ -2,14 +2,16 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.Models;
-using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Models;
+using dbosoft.IdentityServer.Validation.Contexts;
+using dbosoft.IdentityServer.Validation.Models;
+using Microsoft.Extensions.Logging;
 
-namespace IdentityServer4.Validation
+namespace dbosoft.IdentityServer.Validation.Default
 {
     /// <summary>
     /// Validates an extension grant request using the registered validators

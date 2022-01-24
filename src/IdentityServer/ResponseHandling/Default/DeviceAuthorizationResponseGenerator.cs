@@ -4,20 +4,21 @@
 
 using System;
 using System.Threading.Tasks;
-using IdentityServer4.Configuration;
-using IdentityServer4.Extensions;
-using IdentityServer4.Models;
-using IdentityServer4.Services;
-using IdentityServer4.Validation;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.ResponseHandling.Models;
+using dbosoft.IdentityServer.Services;
+using dbosoft.IdentityServer.Storage.Models;
+using dbosoft.IdentityServer.Validation.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Logging;
 
-namespace IdentityServer4.ResponseHandling
+namespace dbosoft.IdentityServer.ResponseHandling.Default
 {
     /// <summary>
     /// The device authorizaiton response generator
     /// </summary>
-    /// <seealso cref="IdentityServer4.ResponseHandling.IDeviceAuthorizationResponseGenerator" />
+    /// <seealso cref="IDeviceAuthorizationResponseGenerator" />
     public class DeviceAuthorizationResponseGenerator : IDeviceAuthorizationResponseGenerator
     {
         /// <summary>

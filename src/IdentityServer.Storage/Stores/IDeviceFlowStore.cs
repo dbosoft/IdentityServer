@@ -3,9 +3,9 @@
 
 
 using System.Threading.Tasks;
-using IdentityServer4.Models;
+using dbosoft.IdentityServer.Storage.Models;
 
-namespace IdentityServer4.Stores
+namespace dbosoft.IdentityServer.Storage.Stores
 {
     /// <summary>
     /// Interface for the device flow store

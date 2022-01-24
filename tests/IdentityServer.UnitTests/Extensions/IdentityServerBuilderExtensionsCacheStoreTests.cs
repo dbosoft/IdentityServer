@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Configuration.DependencyInjection;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
+using dbosoft.IdentityServer.Storage.Models;
+using dbosoft.IdentityServer.Storage.Stores;
 using FluentAssertions;
-using IdentityServer4.Configuration;
-using IdentityServer4.Models;
-using IdentityServer4.Stores;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 

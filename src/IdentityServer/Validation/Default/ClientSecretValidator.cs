@@ -2,15 +2,16 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.Services;
 using System.Threading.Tasks;
-using IdentityServer4.Events;
-using Microsoft.Extensions.Logging;
+using dbosoft.IdentityServer.Events;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Services;
+using dbosoft.IdentityServer.Storage.Stores;
+using dbosoft.IdentityServer.Validation.Models;
 using Microsoft.AspNetCore.Http;
-using IdentityServer4.Stores;
-using IdentityServer4.Models;
+using Microsoft.Extensions.Logging;
 
-namespace IdentityServer4.Validation
+namespace dbosoft.IdentityServer.Validation.Default
 {
     /// <summary>
     /// Validates a client secret using the registered secret validators and parsers

@@ -3,12 +3,14 @@
 
 
 using System.Linq;
+using dbosoft.IdentityServer.EfCore.Storage.Entities;
+using dbosoft.IdentityServer.EfCore.Storage.Mappers;
 using FluentAssertions;
-using IdentityServer4.EntityFramework.Mappers;
 using Xunit;
-using ApiResource = IdentityServer4.Models.ApiResource;
+using ApiResource = dbosoft.IdentityServer.Storage.Models.ApiResource;
+using Secret = dbosoft.IdentityServer.Storage.Models.Secret;
 
-namespace IdentityServer4.EntityFramework.UnitTests.Mappers
+namespace IdentityServer.EfCore.Storage.UnitTests.Mappers
 {
     public class ApiResourceMappersTests
     {
@@ -62,11 +64,11 @@ namespace IdentityServer4.EntityFramework.UnitTests.Mappers
         [Fact]
         public void missing_values_should_use_defaults()
         {
-            var entity = new IdentityServer4.EntityFramework.Entities.ApiResource
+            var entity = new dbosoft.IdentityServer.EfCore.Storage.Entities.ApiResource
             {
-                Secrets = new System.Collections.Generic.List<Entities.ApiResourceSecret>
+                Secrets = new System.Collections.Generic.List<ApiResourceSecret>
                 {
-                    new Entities.ApiResourceSecret
+                    new ApiResourceSecret
                     {
                     }
                 }
@@ -74,7 +76,7 @@ namespace IdentityServer4.EntityFramework.UnitTests.Mappers
 
             var def = new ApiResource
             {
-                ApiSecrets = { new Models.Secret("foo") }
+                ApiSecrets = { new Secret("foo") }
             };
 
             var model = entity.ToModel();

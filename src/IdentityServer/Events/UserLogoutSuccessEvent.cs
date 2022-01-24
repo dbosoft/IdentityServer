@@ -2,12 +2,14 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-namespace IdentityServer4.Events
+using dbosoft.IdentityServer.Events.Infrastructure;
+
+namespace dbosoft.IdentityServer.Events
 {
     /// <summary>
     /// Event for successful user logout
     /// </summary>
-    /// <seealso cref="IdentityServer4.Events.Event" />
+    /// <seealso cref="Event" />
     public class UserLogoutSuccessEvent : Event
     {
         /// <summary>

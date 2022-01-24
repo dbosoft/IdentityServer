@@ -6,12 +6,12 @@ using System;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
 
-namespace IdentityServer4.Services
+namespace dbosoft.IdentityServer.Services.Default
 {
     /// <summary>
     /// User code generator using 9 digit number
     /// </summary>
-    /// <seealso cref="IdentityServer4.Services.IUserCodeGenerator" />
+    /// <seealso cref="IUserCodeGenerator" />
     public class NumericUserCodeGenerator : IUserCodeGenerator
     {
         /// <summary>

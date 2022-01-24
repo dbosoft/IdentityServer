@@ -1,13 +1,14 @@
 using System.Threading.Tasks;
-using IdentityServer4.Models;
-using IdentityServer4.Stores;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Storage.Models;
+using dbosoft.IdentityServer.Storage.Stores;
 
-namespace IdentityServer4.Services.Default
+namespace dbosoft.IdentityServer.Services.Default
 {
     /// <summary>
     /// Default wrapper service for IDeviceFlowStore, handling key hashing
     /// </summary>
-    /// <seealso cref="IdentityServer4.Services.IDeviceFlowCodeService" />
+    /// <seealso cref="IDeviceFlowCodeService" />
     public class DefaultDeviceFlowCodeService : IDeviceFlowCodeService
     {
         private readonly IDeviceFlowStore _store;

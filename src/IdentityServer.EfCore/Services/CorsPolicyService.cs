@@ -1,23 +1,23 @@
-﻿// Copyright (c) Brock Allen & Dominick Baier. All rights reserved.
+// Copyright (c) Brock Allen & Dominick Baier. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
 using System;
-using System.Threading.Tasks;
-using IdentityServer4.Services;
 using System.Linq;
-using IdentityServer4.EntityFramework.Interfaces;
-using Microsoft.Extensions.Logging;
+using System.Threading.Tasks;
+using dbosoft.IdentityServer.EfCore.Storage.Interfaces;
+using dbosoft.IdentityServer.Storage.Services;
 using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 
-namespace IdentityServer4.EntityFramework.Services
+namespace dbosoft.IdentityServer.EfCore.Services
 {
     /// <summary>
     /// Implementation of ICorsPolicyService that consults the client configuration in the database for allowed CORS origins.
     /// </summary>
-    /// <seealso cref="IdentityServer4.Services.ICorsPolicyService" />
+    /// <seealso cref="ICorsPolicyService" />
     public class CorsPolicyService : ICorsPolicyService
     {
         private readonly IHttpContextAccessor _context;

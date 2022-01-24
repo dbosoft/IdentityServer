@@ -4,8 +4,9 @@
 
 using System.Collections.Generic;
 using AutoMapper;
+using dbosoft.IdentityServer.Storage.Models;
 
-namespace IdentityServer4.EntityFramework.Mappers
+namespace dbosoft.IdentityServer.EfCore.Storage.Mappers
 {
     /// <summary>
     /// Defines entity/model mapping for API resources.
@@ -21,8 +22,8 @@ namespace IdentityServer4.EntityFramework.Mappers
             CreateMap<Entities.ApiResourceProperty, KeyValuePair<string, string>>()
                 .ReverseMap();
 
-            CreateMap<Entities.ApiResource, Models.ApiResource>(MemberList.Destination)
-                .ConstructUsing(src => new Models.ApiResource())
+            CreateMap<Entities.ApiResource, ApiResource>(MemberList.Destination)
+                .ConstructUsing(src => new ApiResource())
                 .ForMember(x => x.ApiSecrets, opts => opts.MapFrom(x => x.Secrets))
                 .ForMember(x=>x.AllowedAccessTokenSigningAlgorithms, opts => opts.ConvertUsing(AllowedSigningAlgorithmsConverter.Converter, x=>x.AllowedAccessTokenSigningAlgorithms))
                 .ReverseMap()
@@ -33,7 +34,7 @@ namespace IdentityServer4.EntityFramework.Mappers
                 .ReverseMap()
                 .ForMember(dest => dest.Type, opt => opt.MapFrom(src => src));
 
-            CreateMap<Entities.ApiResourceSecret, Models.Secret>(MemberList.Destination)
+            CreateMap<Entities.ApiResourceSecret, Secret>(MemberList.Destination)
                 .ForMember(dest => dest.Type, opt => opt.Condition(srs => srs != null))
                 .ReverseMap();
 

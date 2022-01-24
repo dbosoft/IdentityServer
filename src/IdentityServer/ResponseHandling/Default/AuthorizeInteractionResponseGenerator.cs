@@ -2,23 +2,25 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityModel;
-using IdentityServer4.Extensions;
-using IdentityServer4.Models;
-using IdentityServer4.Services;
-using IdentityServer4.Validation;
-using Microsoft.Extensions.Logging;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Models.Contexts;
+using dbosoft.IdentityServer.Models.Messages;
+using dbosoft.IdentityServer.ResponseHandling.Models;
+using dbosoft.IdentityServer.Services;
+using dbosoft.IdentityServer.Validation.Models;
+using IdentityModel;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.Extensions.Logging;
 
-namespace IdentityServer4.ResponseHandling
+namespace dbosoft.IdentityServer.ResponseHandling.Default
 {
     /// <summary>
     /// Default logic for determining if user must login or consent when making requests to the authorization endpoint.
     /// </summary>
-    /// <seealso cref="IdentityServer4.ResponseHandling.IAuthorizeInteractionResponseGenerator" />
+    /// <seealso cref="IAuthorizeInteractionResponseGenerator" />
     public class AuthorizeInteractionResponseGenerator : IAuthorizeInteractionResponseGenerator
     {
         /// <summary>

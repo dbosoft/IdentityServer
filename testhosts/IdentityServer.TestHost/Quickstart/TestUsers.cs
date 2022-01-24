@@ -2,14 +2,14 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityModel;
-using IdentityServer4.Test;
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Text.Json;
-using IdentityServer4;
+using dbosoft.IdentityServer;
+using dbosoft.IdentityServer.Test;
+using IdentityModel;
 
-namespace IdentityServerHost.Quickstart.UI
+namespace IdentityServer.TestHost.Quickstart
 {
     public class TestUsers
     {

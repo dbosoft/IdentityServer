@@ -4,16 +4,16 @@
 
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Logging;
-using Microsoft.AspNetCore.Http;
+using dbosoft.IdentityServer.Configuration.DependencyInjection;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Storage.Services;
 using Microsoft.AspNetCore.Cors.Infrastructure;
-using IdentityServer4.Configuration;
-using IdentityServer4.Configuration.DependencyInjection;
-using IdentityServer4.Services;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using IdentityServer4.Extensions;
+using Microsoft.Extensions.Logging;
 
-namespace IdentityServer4.Hosting
+namespace dbosoft.IdentityServer.Hosting
 {
     internal class CorsPolicyProvider : ICorsPolicyProvider
     {

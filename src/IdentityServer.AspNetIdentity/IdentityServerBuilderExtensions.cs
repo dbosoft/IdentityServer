@@ -4,14 +4,14 @@
 
 using System;
 using System.Linq;
+using dbosoft.IdentityServer.Configuration.DependencyInjection;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
 using IdentityModel;
-using IdentityServer4;
-using IdentityServer4.AspNetIdentity;
-using IdentityServer4.Configuration;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace Microsoft.Extensions.DependencyInjection
+namespace dbosoft.IdentityServer.AspNetIdentity
 {
     /// <summary>
     /// Extension methods to add ASP.NET Identity support to IdentityServer.
@@ -48,14 +48,14 @@ namespace Microsoft.Extensions.DependencyInjection
             {
                 options.Cookie.IsEssential = true;
                 // we need to disable to allow iframe for authorize requests
-                options.Cookie.SameSite = AspNetCore.Http.SameSiteMode.None;
+                options.Cookie.SameSite = Microsoft.AspNetCore.Http.SameSiteMode.None;
             });
 
             builder.Services.ConfigureExternalCookie(options =>
             {
                 options.Cookie.IsEssential = true;
-                // https://github.com/IdentityServer/IdentityServer4/issues/2595
-                options.Cookie.SameSite = AspNetCore.Http.SameSiteMode.None;
+                // https://github.com/dbosoft/IdentityServer/issues/2595
+                options.Cookie.SameSite = Microsoft.AspNetCore.Http.SameSiteMode.None;
             });
 
             builder.Services.Configure<CookieAuthenticationOptions>(IdentityConstants.TwoFactorRememberMeScheme, options =>

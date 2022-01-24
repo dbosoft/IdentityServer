@@ -2,14 +2,14 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.Extensions;
-using IdentityServer4.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Storage.Models;
 
-namespace IdentityServer4.Validation
+namespace dbosoft.IdentityServer.Validation.Default
 {
     /// <summary>
     /// Default implementation of redirect URI validator. Validates the URIs against

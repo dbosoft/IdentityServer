@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace IdentityServer4.Validation
+namespace dbosoft.IdentityServer.Validation.Models
 {
     /// <summary>
     /// Represents the result of scope parsing.

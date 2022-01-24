@@ -4,11 +4,11 @@
 
 #pragma warning disable 1591
 
-using IdentityServer4.Models;
 using System;
 using System.Collections.Generic;
+using dbosoft.IdentityServer.Storage.Models;
 
-namespace IdentityServer4.EntityFramework.Entities
+namespace dbosoft.IdentityServer.EfCore.Storage.Entities
 {
     public class Client
     {

@@ -1,9 +1,9 @@
-﻿using IdentityServer4.Models;
-using IdentityServer4.Services;
-using Microsoft.IdentityModel.Tokens;
+﻿using Microsoft.IdentityModel.Tokens;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Models;
+using dbosoft.IdentityServer.Services;
 
 namespace IdentityServer.UnitTests.Common
 {

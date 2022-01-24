@@ -6,15 +6,16 @@ using System;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using dbosoft.IdentityServer.Endpoints.Results;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Models.Messages;
+using dbosoft.IdentityServer.ResponseHandling.Models;
+using dbosoft.IdentityServer.Storage.Models;
+using dbosoft.IdentityServer.Validation.Models;
 using FluentAssertions;
 using IdentityModel;
 using IdentityServer.UnitTests.Common;
-using IdentityServer4.Configuration;
-using IdentityServer4.Endpoints.Results;
-using IdentityServer4.Extensions;
-using IdentityServer4.Models;
-using IdentityServer4.ResponseHandling;
-using IdentityServer4.Validation;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.WebUtilities;
 using Xunit;
@@ -28,7 +29,7 @@ namespace IdentityServer.UnitTests.Endpoints.Results
         private AuthorizeResponse _response = new AuthorizeResponse();
         private IdentityServerOptions _options = new IdentityServerOptions();
         private MockUserSession _mockUserSession = new MockUserSession();
-        private MockMessageStore<IdentityServer4.Models.ErrorMessage> _mockErrorMessageStore = new MockMessageStore<IdentityServer4.Models.ErrorMessage>();
+        private MockMessageStore<ErrorMessage> _mockErrorMessageStore = new MockMessageStore<ErrorMessage>();
 
         private DefaultHttpContext _context = new DefaultHttpContext();
 

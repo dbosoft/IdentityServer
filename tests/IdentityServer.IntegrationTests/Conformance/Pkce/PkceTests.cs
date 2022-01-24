@@ -7,13 +7,15 @@ using System.Collections.Generic;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Models;
+using dbosoft.IdentityServer.Storage.Models;
+using dbosoft.IdentityServer.Test;
 using FluentAssertions;
 using IdentityModel;
 using IdentityModel.Client;
 using IdentityServer.IntegrationTests.Common;
-using IdentityServer4;
-using IdentityServer4.Models;
-using IdentityServer4.Test;
 using Xunit;
 
 namespace IdentityServer.IntegrationTests.Conformance.Pkce

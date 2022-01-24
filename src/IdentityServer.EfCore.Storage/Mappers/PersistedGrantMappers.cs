@@ -3,9 +3,9 @@
 
 
 using AutoMapper;
-using IdentityServer4.Models;
+using dbosoft.IdentityServer.Storage.Models;
 
-namespace IdentityServer4.EntityFramework.Mappers
+namespace dbosoft.IdentityServer.EfCore.Storage.Mappers
 {
     /// <summary>
     /// Extension methods to map to/from entity/model for persisted grants.

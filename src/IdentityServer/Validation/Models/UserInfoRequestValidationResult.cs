@@ -4,7 +4,7 @@
 
 using System.Security.Claims;
 
-namespace IdentityServer4.Validation
+namespace dbosoft.IdentityServer.Validation.Models
 {
     /// <summary>
     /// Validation result for userinfo requests

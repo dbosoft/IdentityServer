@@ -4,8 +4,9 @@
 
 using System.Collections.Generic;
 using AutoMapper;
+using dbosoft.IdentityServer.Storage.Models;
 
-namespace IdentityServer4.EntityFramework.Mappers
+namespace dbosoft.IdentityServer.EfCore.Storage.Mappers
 {
     /// <summary>
     /// Defines entity/model mapping for identity resources.
@@ -21,8 +22,8 @@ namespace IdentityServer4.EntityFramework.Mappers
             CreateMap<Entities.IdentityResourceProperty, KeyValuePair<string, string>>()
                 .ReverseMap();
 
-            CreateMap<Entities.IdentityResource, Models.IdentityResource>(MemberList.Destination)
-                .ConstructUsing(src => new Models.IdentityResource())
+            CreateMap<Entities.IdentityResource, IdentityResource>(MemberList.Destination)
+                .ConstructUsing(src => new IdentityResource())
                 .ReverseMap();
 
             CreateMap<Entities.IdentityResourceClaim, string>()

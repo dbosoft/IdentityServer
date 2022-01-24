@@ -3,7 +3,10 @@
 
 
 using System.Threading.Tasks;
-using IdentityServer4.Validation;
+using dbosoft.IdentityServer.Models;
+using dbosoft.IdentityServer.Validation;
+using dbosoft.IdentityServer.Validation.Contexts;
+using dbosoft.IdentityServer.Validation.Models;
 
 namespace IdentityServer.IntegrationTests.Clients.Setup
 {
@@ -21,7 +24,7 @@ namespace IdentityServer.IntegrationTests.Clients.Setup
             else
             {
                 // custom error message
-                context.Result = new GrantValidationResult(IdentityServer4.Models.TokenRequestErrors.InvalidGrant, "invalid custom credential");
+                context.Result = new GrantValidationResult(TokenRequestErrors.InvalidGrant, "invalid custom credential");
             }
 
             return Task.CompletedTask;

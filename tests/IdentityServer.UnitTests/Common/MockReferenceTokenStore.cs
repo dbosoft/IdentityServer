@@ -1,7 +1,7 @@
-﻿using IdentityServer4.Models;
-using IdentityServer4.Stores;
-using System;
+﻿using System;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Storage.Models;
+using dbosoft.IdentityServer.Storage.Stores;
 
 namespace IdentityServer.UnitTests.Common
 {

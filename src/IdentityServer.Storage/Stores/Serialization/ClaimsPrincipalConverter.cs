@@ -2,15 +2,15 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityModel;
-using Newtonsoft.Json;
 using System;
 using System.Linq;
 using System.Security.Claims;
+using IdentityModel;
+using Newtonsoft.Json;
 
 #pragma warning disable 1591
 
-namespace IdentityServer4.Stores.Serialization
+namespace dbosoft.IdentityServer.Storage.Stores.Serialization
 {
     public class ClaimsPrincipalConverter : JsonConverter
     {

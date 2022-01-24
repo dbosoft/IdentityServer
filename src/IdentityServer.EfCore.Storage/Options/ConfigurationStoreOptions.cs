@@ -5,7 +5,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 
-namespace IdentityServer4.EntityFramework.Options
+namespace dbosoft.IdentityServer.EfCore.Storage.Options
 {
     /// <summary>
     /// Options for configuring the configuration context.

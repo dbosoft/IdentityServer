@@ -1,9 +1,10 @@
-﻿using IdentityServer4.Models;
-using IdentityServer4.Stores;
-using Xunit;
+﻿using Xunit;
 using FluentAssertions;
 using System.Threading.Tasks;
 using System.Linq;
+using dbosoft.IdentityServer.Storage.Models;
+using dbosoft.IdentityServer.Storage.Stores;
+using dbosoft.IdentityServer.Stores.InMemory;
 
 namespace IdentityServer.UnitTests.Stores
 {

@@ -5,7 +5,7 @@
 
 #pragma warning disable 1591
 
-namespace IdentityServer4.Validation
+namespace dbosoft.IdentityServer.Validation.Models
 {
     public enum BearerTokenUsageType
     {

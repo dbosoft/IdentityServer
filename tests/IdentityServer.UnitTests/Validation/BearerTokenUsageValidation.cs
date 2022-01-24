@@ -5,9 +5,10 @@
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Validation.Default;
+using dbosoft.IdentityServer.Validation.Models;
 using FluentAssertions;
 using IdentityServer.UnitTests.Common;
-using IdentityServer4.Validation;
 using Microsoft.AspNetCore.Http;
 using Xunit;
 

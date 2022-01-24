@@ -6,9 +6,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
+using dbosoft.IdentityServer.Storage.Models;
 using IdentityModel;
 using IdentityServer.UnitTests.Common;
-using IdentityServer4.Models;
 
 namespace IdentityServer.UnitTests.Validation.Setup
 {

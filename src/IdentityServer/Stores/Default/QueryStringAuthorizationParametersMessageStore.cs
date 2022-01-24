@@ -3,11 +3,11 @@
 
 
 using System.Collections.Generic;
-using IdentityServer4.Models;
 using System.Threading.Tasks;
-using IdentityServer4.Extensions;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Models.Messages;
 
-namespace IdentityServer4.Stores
+namespace dbosoft.IdentityServer.Stores.Default
 {
     // internal just for testing
     internal class QueryStringAuthorizationParametersMessageStore : IAuthorizationParametersMessageStore

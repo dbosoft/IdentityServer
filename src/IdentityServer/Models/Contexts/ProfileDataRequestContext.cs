@@ -2,12 +2,13 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
+using System;
 using System.Collections.Generic;
 using System.Security.Claims;
-using System;
-using IdentityServer4.Validation;
+using dbosoft.IdentityServer.Storage.Models;
+using dbosoft.IdentityServer.Validation.Models;
 
-namespace IdentityServer4.Models
+namespace dbosoft.IdentityServer.Models.Contexts
 {
     /// <summary>
     /// Class describing the profile data request

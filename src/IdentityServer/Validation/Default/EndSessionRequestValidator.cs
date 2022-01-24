@@ -2,22 +2,23 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityModel;
-using IdentityServer4.Extensions;
-using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Specialized;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using IdentityServer4.Configuration;
-using IdentityServer4.Services;
-using IdentityServer4.Stores;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Logging.Models;
+using dbosoft.IdentityServer.Models.Contexts;
+using dbosoft.IdentityServer.Services;
+using dbosoft.IdentityServer.Stores;
+using dbosoft.IdentityServer.Validation.Models;
+using IdentityModel;
 using Microsoft.AspNetCore.Http;
-using System;
-using IdentityServer4.Logging.Models;
-using IdentityServer4.Models;
+using Microsoft.Extensions.Logging;
 
-namespace IdentityServer4.Validation
+namespace dbosoft.IdentityServer.Validation.Default
 {
     /// <summary>
     /// Validates requests to the end session endpoint.

@@ -4,8 +4,9 @@
 
 using System.Linq;
 using System.Threading.Tasks;
-using IdentityServer4.Models;
-using IdentityServer4.Services;
+using dbosoft.IdentityServer.Models.Messages;
+using dbosoft.IdentityServer.Services;
+using dbosoft.IdentityServer.Services.Default;
 
 namespace IdentityServer.UnitTests.Common
 {

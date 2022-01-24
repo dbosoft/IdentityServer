@@ -2,15 +2,16 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.Models;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.DataProtection;
-using IdentityModel;
-using System.Text;
 using System;
+using System.Text;
+using System.Threading.Tasks;
+using dbosoft.IdentityServer.Infrastructure;
+using dbosoft.IdentityServer.Models.Messages;
+using IdentityModel;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.Extensions.Logging;
 
-namespace IdentityServer4.Stores
+namespace dbosoft.IdentityServer.Stores.Default
 {
     /// <summary>
     /// IMessageStore implementation that uses data protection to protect message.

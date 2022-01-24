@@ -3,10 +3,10 @@
 
 
 using System;
-using IdentityServer4.EntityFramework.Entities;
+using dbosoft.IdentityServer.EfCore.Storage.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace IdentityServer4.EntityFramework.Interfaces
+namespace dbosoft.IdentityServer.EfCore.Storage.Interfaces
 {
     /// <summary>
     /// Abstraction for the configuration context.

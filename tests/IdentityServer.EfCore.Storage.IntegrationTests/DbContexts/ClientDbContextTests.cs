@@ -2,14 +2,14 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.EntityFramework.DbContexts;
-using Microsoft.EntityFrameworkCore;
 using System.Linq;
-using IdentityServer4.EntityFramework.Entities;
-using IdentityServer4.EntityFramework.Options;
+using dbosoft.IdentityServer.EfCore.Storage.DbContexts;
+using dbosoft.IdentityServer.EfCore.Storage.Entities;
+using dbosoft.IdentityServer.EfCore.Storage.Options;
+using Microsoft.EntityFrameworkCore;
 using Xunit;
 
-namespace IdentityServer4.EntityFramework.IntegrationTests.DbContexts
+namespace IdentityServer.EfCore.Storage.IntegrationTests.DbContexts
 {
     public class ClientDbContextTests : IntegrationTest<ClientDbContextTests, ConfigurationDbContext, ConfigurationStoreOptions>
     {

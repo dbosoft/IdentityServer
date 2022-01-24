@@ -2,9 +2,9 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.Models;
+using dbosoft.IdentityServer.Models.Messages;
 
-namespace IdentityServerHost.Quickstart.UI
+namespace IdentityServer.EfCore.TestHost.Quickstart.Home
 {
     public class ErrorViewModel
     {

@@ -2,22 +2,23 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
+using System.Net;
 using System.Threading.Tasks;
-using IdentityServer4.Validation;
-using IdentityServer4.ResponseHandling;
-using Microsoft.Extensions.Logging;
-using IdentityServer4.Hosting;
-using IdentityServer4.Endpoints.Results;
+using dbosoft.IdentityServer.Endpoints.Results;
+using dbosoft.IdentityServer.Hosting;
+using dbosoft.IdentityServer.ResponseHandling;
+using dbosoft.IdentityServer.Validation;
+using dbosoft.IdentityServer.Validation.Default;
 using IdentityModel;
 using Microsoft.AspNetCore.Http;
-using System.Net;
+using Microsoft.Extensions.Logging;
 
-namespace IdentityServer4.Endpoints
+namespace dbosoft.IdentityServer.Endpoints
 {
     /// <summary>
     /// The userinfo endpoint
     /// </summary>
-    /// <seealso cref="IdentityServer4.Hosting.IEndpointHandler" />
+    /// <seealso cref="IEndpointHandler" />
     internal class UserInfoEndpoint : IEndpointHandler
     {
         private readonly BearerTokenUsageValidator _tokenUsageValidator;

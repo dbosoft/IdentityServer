@@ -3,8 +3,9 @@
 
 
 using AutoMapper;
+using dbosoft.IdentityServer.Storage.Models;
 
-namespace IdentityServer4.EntityFramework.Mappers
+namespace dbosoft.IdentityServer.EfCore.Storage.Mappers
 {
     /// <summary>
     /// Extension methods to map to/from entity/model for clients.
@@ -24,9 +25,9 @@ namespace IdentityServer4.EntityFramework.Mappers
         /// </summary>
         /// <param name="entity">The entity.</param>
         /// <returns></returns>
-        public static Models.Client ToModel(this Entities.Client entity)
+        public static Client ToModel(this Entities.Client entity)
         {
-            return Mapper.Map<Models.Client>(entity);
+            return Mapper.Map<Client>(entity);
         }
 
         /// <summary>
@@ -34,7 +35,7 @@ namespace IdentityServer4.EntityFramework.Mappers
         /// </summary>
         /// <param name="model">The model.</param>
         /// <returns></returns>
-        public static Entities.Client ToEntity(this Models.Client model)
+        public static Entities.Client ToEntity(this Client model)
         {
             return Mapper.Map<Entities.Client>(model);
         }

@@ -7,13 +7,13 @@ using System.Collections.Generic;
 using System.Security.Claims;
 using System.Text.Json;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer;
+using dbosoft.IdentityServer.ResponseHandling.Default;
+using dbosoft.IdentityServer.Storage.Models;
+using dbosoft.IdentityServer.Stores.InMemory;
+using dbosoft.IdentityServer.Validation.Models;
 using FluentAssertions;
 using IdentityServer.UnitTests.Common;
-using IdentityServer4;
-using IdentityServer4.Models;
-using IdentityServer4.ResponseHandling;
-using IdentityServer4.Stores;
-using IdentityServer4.Validation;
 using Xunit;
 
 namespace IdentityServer.UnitTests.ResponseHandling

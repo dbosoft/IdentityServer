@@ -5,13 +5,16 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using dbosoft.IdentityServer.Models;
+using dbosoft.IdentityServer.Models.Contexts;
+using dbosoft.IdentityServer.Models.Messages;
+using dbosoft.IdentityServer.Services.Default;
+using dbosoft.IdentityServer.Storage.Models;
+using dbosoft.IdentityServer.Validation.Models;
 using FluentAssertions;
 using IdentityServer.UnitTests.Common;
-using IdentityServer4;
-using IdentityServer4.Configuration;
-using IdentityServer4.Models;
-using IdentityServer4.Services;
-using IdentityServer4.Validation;
 using Xunit;
 
 namespace IdentityServer.UnitTests.Services.Default

@@ -2,15 +2,15 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityModel;
-using IdentityServer4.Extensions;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
+using dbosoft.IdentityServer.Extensions;
+using IdentityModel;
 
-namespace IdentityServer4.Models
+namespace dbosoft.IdentityServer.Models.Messages
 {
     /// <summary>
     /// Models the parameters to identify a request for consent.

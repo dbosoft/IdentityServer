@@ -2,10 +2,10 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using Microsoft.Extensions.DependencyInjection;
 using System;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace IdentityServer4.Configuration
+namespace dbosoft.IdentityServer.Configuration.DependencyInjection
 {
     /// <summary>
     /// IdentityServer helper class for DI configuration

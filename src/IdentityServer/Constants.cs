@@ -2,12 +2,12 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityModel;
-using IdentityServer4.Models;
 using System;
 using System.Collections.Generic;
+using dbosoft.IdentityServer.Storage.Models;
+using IdentityModel;
 
-namespace IdentityServer4
+namespace dbosoft.IdentityServer
 {
     internal static class Constants
     {

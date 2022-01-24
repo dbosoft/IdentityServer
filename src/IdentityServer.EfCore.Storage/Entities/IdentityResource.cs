@@ -7,7 +7,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace IdentityServer4.EntityFramework.Entities
+namespace dbosoft.IdentityServer.EfCore.Storage.Entities
 {
     public class IdentityResource
     {

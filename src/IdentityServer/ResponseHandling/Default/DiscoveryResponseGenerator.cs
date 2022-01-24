@@ -2,26 +2,29 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityModel;
-using IdentityServer4.Configuration;
-using IdentityServer4.Extensions;
-using IdentityServer4.Services;
-using IdentityServer4.Stores;
-using IdentityServer4.Validation;
-using Microsoft.Extensions.Logging;
-using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Configuration;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Services;
+using dbosoft.IdentityServer.Storage.Stores;
+using dbosoft.IdentityServer.Validation;
+using dbosoft.IdentityServer.Validation.Default;
+using IdentityModel;
+using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
+using JsonWebKey = dbosoft.IdentityServer.Models.JsonWebKey;
 
-namespace IdentityServer4.ResponseHandling
+namespace dbosoft.IdentityServer.ResponseHandling.Default
 {
     /// <summary>
     /// Default implementation of the discovery endpoint response generator
     /// </summary>
-    /// <seealso cref="IdentityServer4.ResponseHandling.IDiscoveryResponseGenerator" />
+    /// <seealso cref="IDiscoveryResponseGenerator" />
     public class DiscoveryResponseGenerator : IDiscoveryResponseGenerator
     {
         /// <summary>
@@ -364,9 +367,9 @@ namespace IdentityServer4.ResponseHandling
         /// <summary>
         /// Creates the JWK document.
         /// </summary>
-        public virtual async Task<IEnumerable<Models.JsonWebKey>> CreateJwkDocumentAsync()
+        public virtual async Task<IEnumerable<JsonWebKey>> CreateJwkDocumentAsync()
         {
-            var webKeys = new List<Models.JsonWebKey>();
+            var webKeys = new List<JsonWebKey>();
 
             foreach (var key in await Keys.GetValidationKeysAsync())
             {
@@ -381,7 +384,7 @@ namespace IdentityServer4.ResponseHandling
                         var exponent = Base64Url.Encode(parameters.Exponent);
                         var modulus = Base64Url.Encode(parameters.Modulus);
 
-                        var rsaJsonWebKey = new Models.JsonWebKey
+                        var rsaJsonWebKey = new JsonWebKey
                         {
                             kty = "RSA",
                             use = "sig",
@@ -400,7 +403,7 @@ namespace IdentityServer4.ResponseHandling
                         var x = Base64Url.Encode(parameters.Q.X);
                         var y = Base64Url.Encode(parameters.Q.Y);
 
-                        var ecdsaJsonWebKey = new Models.JsonWebKey
+                        var ecdsaJsonWebKey = new JsonWebKey
                         {
                             kty = "EC",
                             use = "sig",
@@ -425,7 +428,7 @@ namespace IdentityServer4.ResponseHandling
                     var exponent = Base64Url.Encode(parameters.Exponent);
                     var modulus = Base64Url.Encode(parameters.Modulus);
 
-                    var webKey = new Models.JsonWebKey
+                    var webKey = new JsonWebKey
                     {
                         kty = "RSA",
                         use = "sig",
@@ -443,7 +446,7 @@ namespace IdentityServer4.ResponseHandling
                     var x = Base64Url.Encode(parameters.Q.X);
                     var y = Base64Url.Encode(parameters.Q.Y);
 
-                    var ecdsaJsonWebKey = new Models.JsonWebKey
+                    var ecdsaJsonWebKey = new JsonWebKey
                     {
                         kty = "EC",
                         use = "sig",
@@ -455,9 +458,9 @@ namespace IdentityServer4.ResponseHandling
                     };
                     webKeys.Add(ecdsaJsonWebKey);
                 }
-                else if (key.Key is JsonWebKey jsonWebKey)
+                else if (key.Key is Microsoft.IdentityModel.Tokens.JsonWebKey jsonWebKey)
                 {
-                    var webKey = new Models.JsonWebKey
+                    var webKey = new JsonWebKey
                     {
                         kty = jsonWebKey.Kty,
                         use = jsonWebKey.Use ?? "sig",

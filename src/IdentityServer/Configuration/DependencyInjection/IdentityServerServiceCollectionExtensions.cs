@@ -2,14 +2,16 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.Configuration;
-using Microsoft.Extensions.Configuration;
 using System;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Options;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 
-namespace Microsoft.Extensions.DependencyInjection
+namespace dbosoft.IdentityServer.Configuration.DependencyInjection
 {
     /// <summary>
     /// DI extension methods for adding IdentityServer

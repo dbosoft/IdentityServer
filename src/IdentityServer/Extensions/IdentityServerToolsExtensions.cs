@@ -2,15 +2,14 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityModel;
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using IdentityServer4.Extensions;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using IdentityModel;
 using Microsoft.Extensions.DependencyInjection;
-using IdentityServer4.Configuration;
 
-namespace IdentityServer4
+namespace dbosoft.IdentityServer.Extensions
 {
     /// <summary>
     /// Extensions for IdentityServerTools

@@ -4,9 +4,9 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using IdentityServer4.Validation;
+using dbosoft.IdentityServer.Validation.Models;
 
-namespace IdentityServer4.ResponseHandling
+namespace dbosoft.IdentityServer.ResponseHandling
 {
     /// <summary>
     /// Interface for the userinfo response generator

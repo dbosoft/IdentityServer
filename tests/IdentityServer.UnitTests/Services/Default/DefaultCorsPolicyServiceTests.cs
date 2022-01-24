@@ -3,9 +3,9 @@
 
 
 using System;
+using dbosoft.IdentityServer.Services.Default;
 using FluentAssertions;
 using IdentityServer.UnitTests.Common;
-using IdentityServer4.Services;
 using Xunit;
 
 namespace IdentityServer.UnitTests.Services.Default

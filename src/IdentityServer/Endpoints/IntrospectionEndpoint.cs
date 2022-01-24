@@ -2,24 +2,24 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using System.Threading.Tasks;
-using IdentityServer4.Validation;
-using IdentityServer4.ResponseHandling;
-using Microsoft.Extensions.Logging;
-using IdentityServer4.Hosting;
-using IdentityServer4.Endpoints.Results;
-using Microsoft.AspNetCore.Http;
 using System.Net;
-using IdentityServer4.Services;
-using IdentityServer4.Events;
-using IdentityServer4.Extensions;
+using System.Threading.Tasks;
+using dbosoft.IdentityServer.Endpoints.Results;
+using dbosoft.IdentityServer.Events;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Hosting;
+using dbosoft.IdentityServer.ResponseHandling;
+using dbosoft.IdentityServer.Services;
+using dbosoft.IdentityServer.Validation;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
 
-namespace IdentityServer4.Endpoints
+namespace dbosoft.IdentityServer.Endpoints
 {
     /// <summary>
     /// Introspection endpoint
     /// </summary>
-    /// <seealso cref="IdentityServer4.Hosting.IEndpointHandler" />
+    /// <seealso cref="IEndpointHandler" />
     internal class IntrospectionEndpoint : IEndpointHandler
     {
         private readonly IIntrospectionResponseGenerator _responseGenerator;

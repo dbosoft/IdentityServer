@@ -3,13 +3,14 @@
 
 
 using System.Collections.Generic;
+using dbosoft.IdentityServer.Events.Infrastructure;
 
-namespace IdentityServer4.Events
+namespace dbosoft.IdentityServer.Events
 {
     /// <summary>
     /// Event for granted consent.
     /// </summary>
-    /// <seealso cref="IdentityServer4.Events.Event" />
+    /// <seealso cref="Event" />
     public class ConsentGrantedEvent : Event
     {
         /// <summary>

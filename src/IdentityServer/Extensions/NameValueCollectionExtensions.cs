@@ -3,13 +3,13 @@
 
 
 using System;
-using System.Linq;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.Linq;
 using System.Text;
 using System.Text.Encodings.Web;
 
-namespace IdentityServer4.Extensions
+namespace dbosoft.IdentityServer.Extensions
 {
     internal static class NameValueCollectionExtensions
     {

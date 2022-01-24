@@ -4,7 +4,7 @@
 
 #pragma warning disable 1591
 
-namespace IdentityServer4.EntityFramework.Entities
+namespace dbosoft.IdentityServer.EfCore.Storage.Entities
 {
     public abstract class UserClaim
     {

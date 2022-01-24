@@ -2,16 +2,17 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using System.Collections.Generic;
-using IdentityServer4.Configuration;
-using IdentityServer4.Models;
-using System.Collections.Specialized;
-using System.Security.Claims;
-using IdentityModel;
-using System.Linq;
 using System;
+using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.Linq;
+using System.Security.Claims;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using dbosoft.IdentityServer.Models;
+using dbosoft.IdentityServer.Storage.Models;
+using IdentityModel;
 
-namespace IdentityServer4.Validation
+namespace dbosoft.IdentityServer.Validation.Models
 {
     /// <summary>
     /// Base class for a validate authorize or token request

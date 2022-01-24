@@ -3,8 +3,9 @@
 
 
 using System;
+using Microsoft.AspNetCore.Builder;
 
-namespace Microsoft.AspNetCore.Builder
+namespace dbosoft.IdentityServer.Configuration
 {
     /// <summary>
     /// Options for the IdentityServer middleware

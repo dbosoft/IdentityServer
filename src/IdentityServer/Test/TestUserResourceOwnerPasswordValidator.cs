@@ -2,18 +2,20 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityModel;
-using IdentityServer4.Validation;
-using System.Threading.Tasks;
 using System;
+using System.Threading.Tasks;
+using dbosoft.IdentityServer.Validation;
+using dbosoft.IdentityServer.Validation.Contexts;
+using dbosoft.IdentityServer.Validation.Models;
+using IdentityModel;
 using Microsoft.AspNetCore.Authentication;
 
-namespace IdentityServer4.Test
+namespace dbosoft.IdentityServer.Test
 {
     /// <summary>
     /// Resource owner password validator for test users
     /// </summary>
-    /// <seealso cref="IdentityServer4.Validation.IResourceOwnerPasswordValidator" />
+    /// <seealso cref="IResourceOwnerPasswordValidator" />
     public class TestUserResourceOwnerPasswordValidator : IResourceOwnerPasswordValidator
     {
         private readonly TestUserStore _users;

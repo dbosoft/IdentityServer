@@ -2,16 +2,21 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.Models;
-using IdentityServer4.Services;
-using IdentityServer4.Stores;
-using Microsoft.Extensions.Caching.Memory;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 using System.Collections.Generic;
 using System.Linq;
+using dbosoft.IdentityServer.Services;
+using dbosoft.IdentityServer.Services.Default;
+using dbosoft.IdentityServer.Services.InMemory;
+using dbosoft.IdentityServer.Storage.Models;
+using dbosoft.IdentityServer.Storage.Services;
+using dbosoft.IdentityServer.Storage.Stores;
+using dbosoft.IdentityServer.Stores.InMemory;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
-namespace Microsoft.Extensions.DependencyInjection
+namespace dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions
 {
     /// <summary>
     /// Builder extension methods for registering in-memory services

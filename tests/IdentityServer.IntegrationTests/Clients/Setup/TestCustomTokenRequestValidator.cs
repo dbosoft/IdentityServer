@@ -4,7 +4,8 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using IdentityServer4.Validation;
+using dbosoft.IdentityServer.Validation;
+using dbosoft.IdentityServer.Validation.Contexts;
 
 namespace IdentityServer.IntegrationTests.Clients.Setup
 {

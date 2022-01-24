@@ -3,13 +3,14 @@
 
 
 using System.Threading.Tasks;
-using IdentityServer4.Models;
-using IdentityServer4.Stores.Serialization;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Services;
+using dbosoft.IdentityServer.Storage.Models;
+using dbosoft.IdentityServer.Storage.Stores;
+using dbosoft.IdentityServer.Storage.Stores.Serialization;
 using Microsoft.Extensions.Logging;
-using IdentityServer4.Extensions;
-using IdentityServer4.Services;
 
-namespace IdentityServer4.Stores
+namespace dbosoft.IdentityServer.Stores.Default
 {
     /// <summary>
     /// Default authorization code store.

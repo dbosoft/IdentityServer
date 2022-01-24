@@ -2,17 +2,17 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using System.Threading.Tasks;
 using System.Net;
-using IdentityServer4.Hosting;
+using System.Threading.Tasks;
+using dbosoft.IdentityServer.Hosting;
 using Microsoft.AspNetCore.Http;
 
-namespace IdentityServer4.Endpoints.Results
+namespace dbosoft.IdentityServer.Endpoints.Results
 {
     /// <summary>
     /// Result for a raw HTTP status code
     /// </summary>
-    /// <seealso cref="IdentityServer4.Hosting.IEndpointResult" />
+    /// <seealso cref="IEndpointResult" />
     public class StatusCodeResult : IEndpointResult
     {
         /// <summary>

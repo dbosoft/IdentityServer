@@ -4,19 +4,19 @@
 using System.Collections.Specialized;
 using System.Net;
 using System.Threading.Tasks;
-using IdentityServer4.Configuration;
-using IdentityServer4.Endpoints.Results;
-using IdentityServer4.Extensions;
-using IdentityServer4.Hosting;
-using IdentityServer4.Models;
-using IdentityServer4.ResponseHandling;
-using IdentityServer4.Services;
-using IdentityServer4.Stores;
-using IdentityServer4.Validation;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using dbosoft.IdentityServer.Endpoints.Results;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Hosting;
+using dbosoft.IdentityServer.Models.Messages;
+using dbosoft.IdentityServer.ResponseHandling;
+using dbosoft.IdentityServer.Services;
+using dbosoft.IdentityServer.Stores;
+using dbosoft.IdentityServer.Validation;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 
-namespace IdentityServer4.Endpoints
+namespace dbosoft.IdentityServer.Endpoints
 {
     internal class AuthorizeCallbackEndpoint : AuthorizeEndpointBase
     {

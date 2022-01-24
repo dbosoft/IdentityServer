@@ -1,8 +1,9 @@
 using System;
-using IdentityServer4.Models;
+using dbosoft.IdentityServer.Models.Messages;
+using IdentityServer.AspNetIdentity.TestHost.Quickstart.Account;
 using Microsoft.AspNetCore.Mvc;
 
-namespace IdentityServerHost.Quickstart.UI
+namespace IdentityServer.AspNetIdentity.TestHost.Quickstart
 {
     public static class Extensions
     {

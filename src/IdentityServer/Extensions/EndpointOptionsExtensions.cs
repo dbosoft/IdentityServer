@@ -2,11 +2,11 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.Configuration;
-using IdentityServer4.Hosting;
-using static IdentityServer4.Constants;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using dbosoft.IdentityServer.Hosting;
+using static dbosoft.IdentityServer.Constants;
 
-namespace IdentityServer4.Extensions
+namespace dbosoft.IdentityServer.Extensions
 {
     internal static class EndpointOptionsExtensions
     {

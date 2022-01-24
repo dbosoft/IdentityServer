@@ -3,14 +3,14 @@
 
 
 using System.Threading.Tasks;
-using IdentityServer4.Extensions;
-using Microsoft.Extensions.Primitives;
-using IdentityServer4.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Net.Http.Headers;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Hosting;
 using IdentityModel;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Primitives;
+using Microsoft.Net.Http.Headers;
 
-namespace IdentityServer4.Endpoints.Results
+namespace dbosoft.IdentityServer.Endpoints.Results
 {
     internal class ProtectedResourceErrorResult : IEndpointResult
     {

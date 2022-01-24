@@ -11,7 +11,9 @@
     <Company>dbosoft GmbH</Company>
     <Product>dbosoft IdentityServer</Product>
     <RepositoryUrl>https://github.com/dbosoft/IdentityServer</RepositoryUrl>
-     <AssemblyName>dbosoft.$(MSBuildProjectName)</AssemblyName>
+    <AssemblyName>dbosoft.$(MSBuildProjectName)</AssemblyName>
+    <RootNamespace>dbosoft.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+
     <!-- Declare that the Repository URL can be published to NuSpec -->
   <PublishRepositoryUrl>true</PublishRepositoryUrl>
   <!-- Embed source files that are not tracked by the source control manager to the PDB -->

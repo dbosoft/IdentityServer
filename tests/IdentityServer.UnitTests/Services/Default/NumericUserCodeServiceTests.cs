@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Services.Default;
 using FluentAssertions;
-using IdentityServer4.Services;
 using Xunit;
 
 namespace IdentityServer.UnitTests.Services.Default

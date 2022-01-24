@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace IdentityServer4.Services
+namespace dbosoft.IdentityServer.Services
 {
     /// <summary>
     /// Interface for replay cache implementations

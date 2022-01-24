@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
-using IdentityServer4.Models;
-using IdentityServer4.Services;
+using dbosoft.IdentityServer.Services;
+using dbosoft.IdentityServer.Storage.Models;
 
 namespace IdentityServer.UnitTests.Validation.Setup
 {

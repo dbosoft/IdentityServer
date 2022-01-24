@@ -5,11 +5,14 @@
 using FluentAssertions;
 using IdentityModel;
 using IdentityServer.UnitTests.Validation.Setup;
-using IdentityServer4.Stores;
-using IdentityServer4.Validation;
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Storage.Stores;
+using dbosoft.IdentityServer.Stores.InMemory;
+using dbosoft.IdentityServer.Validation.Default;
+using dbosoft.IdentityServer.Validation.Models;
 using IdentityServer.UnitTests.Common;
 using Xunit;
 

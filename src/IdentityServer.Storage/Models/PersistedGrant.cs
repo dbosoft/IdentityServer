@@ -4,7 +4,7 @@
 
 using System;
 
-namespace IdentityServer4.Models
+namespace dbosoft.IdentityServer.Storage.Models
 {
     /// <summary>
     /// A model for a persisted grant

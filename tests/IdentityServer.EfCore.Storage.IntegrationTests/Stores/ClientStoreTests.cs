@@ -5,17 +5,19 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.EfCore.Storage.DbContexts;
+using dbosoft.IdentityServer.EfCore.Storage.Mappers;
+using dbosoft.IdentityServer.EfCore.Storage.Options;
+using dbosoft.IdentityServer.EfCore.Storage.Stores;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Models;
+using dbosoft.IdentityServer.Storage.Models;
 using FluentAssertions;
-using IdentityServer4.EntityFramework.DbContexts;
-using IdentityServer4.EntityFramework.Mappers;
-using IdentityServer4.EntityFramework.Options;
-using IdentityServer4.EntityFramework.Stores;
-using IdentityServer4.Models;
 using Microsoft.EntityFrameworkCore;
 using Xunit;
 using Xunit.Sdk;
 
-namespace IdentityServer4.EntityFramework.IntegrationTests.Stores
+namespace IdentityServer.EfCore.Storage.IntegrationTests.Stores
 {
     public class ClientStoreTests : IntegrationTest<ClientStoreTests, ConfigurationDbContext, ConfigurationStoreOptions>
     {

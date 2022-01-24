@@ -3,8 +3,9 @@
 
 
 using AutoMapper;
+using dbosoft.IdentityServer.Storage.Models;
 
-namespace IdentityServer4.EntityFramework.Mappers
+namespace dbosoft.IdentityServer.EfCore.Storage.Mappers
 {
     /// <summary>
     /// Defines entity/model mapping for persisted grants.
@@ -18,7 +19,7 @@ namespace IdentityServer4.EntityFramework.Mappers
         /// </summary>
         public PersistedGrantMapperProfile()
         {
-            CreateMap<Entities.PersistedGrant, Models.PersistedGrant>(MemberList.Destination)
+            CreateMap<Entities.PersistedGrant, PersistedGrant>(MemberList.Destination)
                 .ReverseMap();
         }
     }

@@ -2,14 +2,15 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using static IdentityServer4.Constants;
+using dbosoft.IdentityServer.Events.Infrastructure;
+using static dbosoft.IdentityServer.Constants;
 
-namespace IdentityServer4.Events
+namespace dbosoft.IdentityServer.Events
 {
     /// <summary>
     /// Event for successful user authentication
     /// </summary>
-    /// <seealso cref="IdentityServer4.Events.Event" />
+    /// <seealso cref="Event" />
     public class UserLoginSuccessEvent : Event
     {
         // todo: consolidate ctors in 3.0

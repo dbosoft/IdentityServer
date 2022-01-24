@@ -3,10 +3,12 @@
 
 
 using System.Threading.Tasks;
-using IdentityServer4.Models;
-using IdentityServer4.Services;
-using IdentityServer4.Stores;
-using IdentityServer4.Stores.Serialization;
+using dbosoft.IdentityServer.Services.Default;
+using dbosoft.IdentityServer.Storage.Models;
+using dbosoft.IdentityServer.Storage.Stores;
+using dbosoft.IdentityServer.Storage.Stores.Serialization;
+using dbosoft.IdentityServer.Stores.Default;
+using dbosoft.IdentityServer.Stores.InMemory;
 
 namespace IdentityServer.UnitTests.Common
 {

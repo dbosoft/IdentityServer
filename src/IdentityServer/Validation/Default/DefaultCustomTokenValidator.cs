@@ -2,12 +2,13 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.Services;
-using IdentityServer4.Stores;
-using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Services;
+using dbosoft.IdentityServer.Storage.Stores;
+using dbosoft.IdentityServer.Validation.Models;
+using Microsoft.Extensions.Logging;
 
-namespace IdentityServer4.Validation
+namespace dbosoft.IdentityServer.Validation.Default
 {
     /// <summary>
     /// Default custom token validator

@@ -4,13 +4,16 @@
 
 using System;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Models;
+using dbosoft.IdentityServer.Storage.Stores;
+using dbosoft.IdentityServer.Stores.InMemory;
+using dbosoft.IdentityServer.Validation;
+using dbosoft.IdentityServer.Validation.Default;
 using FluentAssertions;
 using IdentityServer.UnitTests.Common;
 using IdentityServer.UnitTests.Validation.Setup;
-using IdentityServer4;
-using IdentityServer4.Models;
-using IdentityServer4.Stores;
-using IdentityServer4.Validation;
 using Microsoft.Extensions.Logging;
 using Xunit;
 

@@ -3,8 +3,9 @@
 
 
 using System.Collections.Generic;
+using dbosoft.IdentityServer.Validation.Models;
 
-namespace IdentityServer4.Validation
+namespace dbosoft.IdentityServer.Validation
 {
     /// <summary>
     /// Allows parsing raw scopes values into structured scope values.

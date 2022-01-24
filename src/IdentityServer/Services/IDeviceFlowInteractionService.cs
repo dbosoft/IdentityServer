@@ -3,9 +3,10 @@
 
 
 using System.Threading.Tasks;
-using IdentityServer4.Models;
+using dbosoft.IdentityServer.Models;
+using dbosoft.IdentityServer.Models.Messages;
 
-namespace IdentityServer4.Services
+namespace dbosoft.IdentityServer.Services
 {
     /// <summary>
     ///  Provide services be used by the user interface to communicate with IdentityServer.

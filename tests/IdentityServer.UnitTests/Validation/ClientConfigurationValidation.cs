@@ -3,11 +3,14 @@
 
 
 using FluentAssertions;
-using IdentityServer4.Configuration;
-using IdentityServer4.Models;
-using IdentityServer4.Validation;
 using System;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using dbosoft.IdentityServer.Models;
+using dbosoft.IdentityServer.Storage.Models;
+using dbosoft.IdentityServer.Validation;
+using dbosoft.IdentityServer.Validation.Contexts;
+using dbosoft.IdentityServer.Validation.Default;
 using IdentityServer.UnitTests.Validation.Setup;
 using Xunit;
 

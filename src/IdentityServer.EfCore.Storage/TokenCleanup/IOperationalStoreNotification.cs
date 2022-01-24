@@ -4,9 +4,9 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using IdentityServer4.EntityFramework.Entities;
+using dbosoft.IdentityServer.EfCore.Storage.Entities;
 
-namespace IdentityServer4.EntityFramework
+namespace dbosoft.IdentityServer.EfCore.Storage.TokenCleanup
 {
     /// <summary>
     /// Interface to model notifications from the TokenCleanup feature.

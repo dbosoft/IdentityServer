@@ -2,14 +2,13 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4;
-using IdentityServer4.Hosting.LocalApiAuthentication;
-using Microsoft.AspNetCore.Authentication;
 using System;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace Microsoft.Extensions.DependencyInjection
+namespace dbosoft.IdentityServer.Hosting.LocalApiAuthentication
 {
     /// <summary>
     /// Extensions for registering the local access token authentication handler

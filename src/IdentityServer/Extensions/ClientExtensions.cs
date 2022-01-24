@@ -2,14 +2,15 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Storage.Models;
+using Microsoft.IdentityModel.Tokens;
 
-namespace IdentityServer4.Models
+namespace dbosoft.IdentityServer.Extensions
 {
     /// <summary>
     /// Extension methods for client.

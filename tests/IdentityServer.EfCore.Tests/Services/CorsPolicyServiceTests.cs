@@ -4,19 +4,19 @@
 
 using System;
 using System.Collections.Generic;
-using IdentityServer4.EntityFramework.DbContexts;
-using IdentityServer4.EntityFramework.Mappers;
-using IdentityServer4.Models;
-using Microsoft.EntityFrameworkCore;
-using Xunit;
 using System.Linq;
-using IdentityServer4.EntityFramework.Options;
+using dbosoft.IdentityServer.EfCore.Services;
+using dbosoft.IdentityServer.EfCore.Storage.DbContexts;
+using dbosoft.IdentityServer.EfCore.Storage.Interfaces;
+using dbosoft.IdentityServer.EfCore.Storage.Mappers;
+using dbosoft.IdentityServer.EfCore.Storage.Options;
+using dbosoft.IdentityServer.Storage.Models;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using IdentityServer4.EntityFramework.Interfaces;
-using IdentityServer4.EntityFramework.Services;
+using Xunit;
 
-namespace IdentityServer4.EntityFramework.IntegrationTests.Services
+namespace IdentityServer.EfCore.Tests.Services
 {
     public class CorsPolicyServiceTests : IntegrationTest<CorsPolicyServiceTests, ConfigurationDbContext, ConfigurationStoreOptions>
     {

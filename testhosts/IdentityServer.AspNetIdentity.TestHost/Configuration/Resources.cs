@@ -2,12 +2,14 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityModel;
-using IdentityServer4.Models;
 using System.Collections.Generic;
-using static IdentityServer4.IdentityServerConstants;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Models;
+using dbosoft.IdentityServer.Storage.Models;
+using IdentityModel;
+using static dbosoft.IdentityServer.IdentityServerConstants;
 
-namespace IdentityServerHost.Configuration
+namespace IdentityServer.AspNetIdentity.TestHost.Configuration
 {
     public class Resources
     {

@@ -2,32 +2,38 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4;
-using IdentityServer4.Configuration;
-using IdentityServer4.Configuration.DependencyInjection;
-using IdentityServer4.Endpoints;
-using IdentityServer4.Events;
-using IdentityServer4.Hosting;
-using IdentityServer4.ResponseHandling;
-using IdentityServer4.Services;
-using IdentityServer4.Stores;
-using IdentityServer4.Stores.Serialization;
-using IdentityServer4.Validation;
-using Microsoft.AspNetCore.Cors.Infrastructure;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.DependencyInjection.Extensions;
-using Microsoft.Extensions.Options;
 using System;
 using System.Linq;
-using IdentityServer4.Models;
-using Microsoft.AspNetCore.Authentication.Cookies;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using dbosoft.IdentityServer.Endpoints;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Hosting;
+using dbosoft.IdentityServer.Hosting.FederatedSignOut;
+using dbosoft.IdentityServer.Infrastructure;
+using dbosoft.IdentityServer.Models.Contexts;
+using dbosoft.IdentityServer.Models.Messages;
+using dbosoft.IdentityServer.ResponseHandling;
+using dbosoft.IdentityServer.ResponseHandling.Default;
+using dbosoft.IdentityServer.Services;
+using dbosoft.IdentityServer.Services.Default;
+using dbosoft.IdentityServer.Storage.Services;
+using dbosoft.IdentityServer.Storage.Stores;
+using dbosoft.IdentityServer.Storage.Stores.Serialization;
+using dbosoft.IdentityServer.Stores;
+using dbosoft.IdentityServer.Stores.Default;
+using dbosoft.IdentityServer.Validation;
+using dbosoft.IdentityServer.Validation.Default;
 using Microsoft.AspNetCore.Authentication;
-using static IdentityServer4.Constants;
-using IdentityServer4.Extensions;
-using IdentityServer4.Hosting.FederatedSignOut;
-using IdentityServer4.Services.Default;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Cors.Infrastructure;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+using Microsoft.Extensions.Options;
+using static dbosoft.IdentityServer.Constants;
+using Endpoint = dbosoft.IdentityServer.Hosting.Endpoint;
 
-namespace Microsoft.Extensions.DependencyInjection
+namespace dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions
 {
     /// <summary>
     /// Builder extension methods for registering core services
@@ -106,7 +112,7 @@ namespace Microsoft.Extensions.DependencyInjection
             where T : class, IEndpointHandler
         {
             builder.Services.AddTransient<T>();
-            builder.Services.AddSingleton(new IdentityServer4.Hosting.Endpoint(name, path, typeof(T)));
+            builder.Services.AddSingleton(new Endpoint(name, path, typeof(T)));
 
             return builder;
         }

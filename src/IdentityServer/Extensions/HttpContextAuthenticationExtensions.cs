@@ -2,14 +2,14 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4;
-using IdentityServer4.Configuration;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace Microsoft.AspNetCore.Http
+namespace dbosoft.IdentityServer.Extensions
 {
     /// <summary>
     /// Extension methods for signin/out using the IdentityServer authentication scheme.

@@ -2,17 +2,17 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.Models;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Models;
 
-namespace IdentityServer4.Stores
+namespace dbosoft.IdentityServer.Stores.InMemory
 {
     /// <summary>
     /// The default validation key store
     /// </summary>
-    /// <seealso cref="IdentityServer4.Stores.IValidationKeysStore" />
+    /// <seealso cref="IValidationKeysStore" />
     public class InMemoryValidationKeysStore : IValidationKeysStore
     {
         private readonly IEnumerable<SecurityKeyInfo> _keys;

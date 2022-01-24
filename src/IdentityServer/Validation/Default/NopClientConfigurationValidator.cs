@@ -1,11 +1,12 @@
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Validation.Contexts;
 
-namespace IdentityServer4.Validation
+namespace dbosoft.IdentityServer.Validation.Default
 {
     /// <summary>
     /// No-op client configuration validator (for backwards-compatibility).
     /// </summary>
-    /// <seealso cref="IdentityServer4.Validation.IClientConfigurationValidator" />
+    /// <seealso cref="IClientConfigurationValidator" />
     public class NopClientConfigurationValidator : IClientConfigurationValidator
     {
         /// <summary>

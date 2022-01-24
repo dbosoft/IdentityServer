@@ -2,10 +2,10 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.Models;
 using System.Collections.Generic;
+using dbosoft.IdentityServer.Storage.Models;
 
-namespace IdentityServerHost.Configuration
+namespace IdentityServer.AspNetIdentity.TestHost.Configuration
 {
     public static class Clients
     {

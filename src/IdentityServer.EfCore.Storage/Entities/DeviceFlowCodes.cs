@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace IdentityServer4.EntityFramework.Entities
+namespace dbosoft.IdentityServer.EfCore.Storage.Entities
 {
     /// <summary>
     /// Entity for device flow codes

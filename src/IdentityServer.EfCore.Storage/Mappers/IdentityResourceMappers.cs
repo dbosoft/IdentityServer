@@ -3,9 +3,9 @@
 
 
 using AutoMapper;
-using IdentityServer4.EntityFramework.Entities;
+using dbosoft.IdentityServer.Storage.Models;
 
-namespace IdentityServer4.EntityFramework.Mappers
+namespace dbosoft.IdentityServer.EfCore.Storage.Mappers
 {
     /// <summary>
     /// Extension methods to map to/from entity/model for identity resources.
@@ -25,9 +25,9 @@ namespace IdentityServer4.EntityFramework.Mappers
         /// </summary>
         /// <param name="entity">The entity.</param>
         /// <returns></returns>
-        public static Models.IdentityResource ToModel(this IdentityResource entity)
+        public static IdentityResource ToModel(this Entities.IdentityResource entity)
         {
-            return entity == null ? null : Mapper.Map<Models.IdentityResource>(entity);
+            return entity == null ? null : Mapper.Map<IdentityResource>(entity);
         }
 
         /// <summary>
@@ -35,9 +35,9 @@ namespace IdentityServer4.EntityFramework.Mappers
         /// </summary>
         /// <param name="model">The model.</param>
         /// <returns></returns>
-        public static IdentityResource ToEntity(this Models.IdentityResource model)
+        public static Entities.IdentityResource ToEntity(this IdentityResource model)
         {
-            return model == null ? null : Mapper.Map<IdentityResource>(model);
+            return model == null ? null : Mapper.Map<Entities.IdentityResource>(model);
         }
     }
 }

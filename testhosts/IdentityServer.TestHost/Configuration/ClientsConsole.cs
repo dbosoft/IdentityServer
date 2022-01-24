@@ -3,10 +3,12 @@
 
 
 using System.Collections.Generic;
-using IdentityServer4;
-using IdentityServer4.Models;
+using dbosoft.IdentityServer;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Models;
+using dbosoft.IdentityServer.Storage.Models;
 
-namespace IdentityServerHost.Configuration
+namespace IdentityServer.TestHost.Configuration
 {
     public static class ClientsConsole
     {

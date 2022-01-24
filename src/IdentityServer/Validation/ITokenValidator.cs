@@ -3,9 +3,9 @@
 
 
 using System.Threading.Tasks;
-using IdentityServer4.Models;
+using dbosoft.IdentityServer.Validation.Models;
 
-namespace IdentityServer4.Validation
+namespace dbosoft.IdentityServer.Validation
 {
     /// <summary>
     /// Interface for the token validator

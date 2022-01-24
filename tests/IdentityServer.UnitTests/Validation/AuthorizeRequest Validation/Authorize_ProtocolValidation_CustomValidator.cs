@@ -5,10 +5,13 @@
 using System;
 using System.Collections.Specialized;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Validation;
+using dbosoft.IdentityServer.Validation.Contexts;
+using dbosoft.IdentityServer.Validation.Default;
+using dbosoft.IdentityServer.Validation.Models;
 using FluentAssertions;
 using IdentityModel;
 using IdentityServer.UnitTests.Validation.Setup;
-using IdentityServer4.Validation;
 using Xunit;
 
 namespace IdentityServer.UnitTests.Validation.AuthorizeRequest_Validation

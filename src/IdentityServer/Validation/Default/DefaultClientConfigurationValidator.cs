@@ -1,15 +1,16 @@
-using IdentityServer4.Configuration;
-using IdentityServer4.Models;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using dbosoft.IdentityServer.Storage.Models;
+using dbosoft.IdentityServer.Validation.Contexts;
 
-namespace IdentityServer4.Validation
+namespace dbosoft.IdentityServer.Validation.Default
 {
     /// <summary>
     /// Default client configuration validator
     /// </summary>
-    /// <seealso cref="IdentityServer4.Validation.IClientConfigurationValidator" />
+    /// <seealso cref="IClientConfigurationValidator" />
     public class DefaultClientConfigurationValidator : IClientConfigurationValidator
     {
         private readonly IdentityServerOptions _options;

@@ -1,16 +1,17 @@
-﻿// Copyright (c) Brock Allen & Dominick Baier. All rights reserved.
+// Copyright (c) Brock Allen & Dominick Baier. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.EntityFramework.Options;
-using IdentityServer4.EntityFramework;
-using Microsoft.Extensions.Hosting;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
-using System;
+using dbosoft.IdentityServer.EfCore.Storage.Options;
+using dbosoft.IdentityServer.EfCore.Storage.TokenCleanup;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Microsoft.Extensions.DependencyInjection
+namespace dbosoft.IdentityServer.EfCore
 {
     /// <summary>
     /// Helper to cleanup expired persisted grants.

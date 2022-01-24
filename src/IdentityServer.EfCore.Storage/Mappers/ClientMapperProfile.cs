@@ -5,9 +5,9 @@
 using System.Collections.Generic;
 using System.Security.Claims;
 using AutoMapper;
-using IdentityServer4.Models;
+using dbosoft.IdentityServer.Storage.Models;
 
-namespace IdentityServer4.EntityFramework.Mappers
+namespace dbosoft.IdentityServer.EfCore.Storage.Mappers
 {
     /// <summary>
     /// Defines entity/model mapping for clients.
@@ -25,7 +25,7 @@ namespace IdentityServer4.EntityFramework.Mappers
             CreateMap<Entities.ClientProperty, KeyValuePair<string, string>>()
                 .ReverseMap();
 
-            CreateMap<Entities.Client, Models.Client>()
+            CreateMap<Entities.Client, Client>()
                 .ForMember(dest => dest.ProtocolType, opt => opt.Condition(srs => srs != null))
                 .ForMember(x => x.AllowedIdentityTokenSigningAlgorithms, opts => opts.ConvertUsing(AllowedSigningAlgorithmsConverter.Converter, x => x.AllowedIdentityTokenSigningAlgorithms))
                 .ReverseMap()
@@ -65,7 +65,7 @@ namespace IdentityServer4.EntityFramework.Mappers
                 .ReverseMap()
                 .ForMember(dest => dest.GrantType, opt => opt.MapFrom(src => src));
 
-            CreateMap<Entities.ClientSecret, Models.Secret>(MemberList.Destination)
+            CreateMap<Entities.ClientSecret, Secret>(MemberList.Destination)
                 .ForMember(dest => dest.Type, opt => opt.Condition(srs => srs != null))
                 .ReverseMap();
         }

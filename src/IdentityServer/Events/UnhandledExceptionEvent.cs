@@ -3,13 +3,14 @@
 
 
 using System;
+using dbosoft.IdentityServer.Events.Infrastructure;
 
-namespace IdentityServer4.Events
+namespace dbosoft.IdentityServer.Events
 {
     /// <summary>
     /// Event for unhandled exceptions
     /// </summary>
-    /// <seealso cref="IdentityServer4.Events.Event" />
+    /// <seealso cref="Event" />
     public class UnhandledExceptionEvent : Event
     {
         /// <summary>

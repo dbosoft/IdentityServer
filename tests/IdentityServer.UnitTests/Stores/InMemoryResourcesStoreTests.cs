@@ -1,7 +1,7 @@
-﻿using IdentityServer4.Models;
-using IdentityServer4.Stores;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using dbosoft.IdentityServer.Storage.Models;
+using dbosoft.IdentityServer.Stores.InMemory;
 using Xunit;
 using FluentAssertions;
 

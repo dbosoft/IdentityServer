@@ -3,7 +3,7 @@
 
 
 using System.Threading.Tasks;
-using IdentityServer4.Services;
+using dbosoft.IdentityServer.Storage.Services;
 
 namespace IdentityServer.UnitTests.Cors
 {

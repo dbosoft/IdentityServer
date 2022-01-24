@@ -2,15 +2,16 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.Extensions;
-using IdentityServer4.Models;
+using System;
 using System.Collections.Concurrent;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Collections.Generic;
-using System;
+using dbosoft.IdentityServer.Storage.Extensions;
+using dbosoft.IdentityServer.Storage.Models;
+using dbosoft.IdentityServer.Storage.Stores;
 
-namespace IdentityServer4.Stores
+namespace dbosoft.IdentityServer.Stores.InMemory
 {
     /// <summary>
     /// In-memory persisted grant store

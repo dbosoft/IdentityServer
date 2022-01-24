@@ -1,4 +1,5 @@
-using IdentityServer4.Validation;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Validation.Models;
 using Xunit;
 
 namespace IdentityServer.UnitTests.Extensions

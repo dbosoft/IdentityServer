@@ -3,14 +3,14 @@
 
 
 using System;
-using IdentityServer4.Models;
-using Microsoft.Extensions.Logging;
 using System.Net.Http;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using dbosoft.IdentityServer.Storage.Models;
 using IdentityModel;
-using IdentityServer4.Configuration;
+using Microsoft.Extensions.Logging;
 
-namespace IdentityServer4.Services
+namespace dbosoft.IdentityServer.Services.Default
 {
     /// <summary>
     /// Default JwtRequest client

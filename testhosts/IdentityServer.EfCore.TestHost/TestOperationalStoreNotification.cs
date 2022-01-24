@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using IdentityServer4.EntityFramework;
-using IdentityServer4.EntityFramework.Entities;
+using dbosoft.IdentityServer.EfCore.Storage.Entities;
+using dbosoft.IdentityServer.EfCore.Storage.TokenCleanup;
 
-namespace IdentityServerHost
+namespace IdentityServer.EfCore.TestHost
 {
     public class TestOperationalStoreNotification : IOperationalStoreNotification
     {

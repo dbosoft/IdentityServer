@@ -4,12 +4,12 @@
 
 using System;
 using System.Threading.Tasks;
-using IdentityServer4.Extensions;
-using IdentityServer4.Hosting;
-using IdentityServer4.ResponseHandling;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Hosting;
+using dbosoft.IdentityServer.ResponseHandling.Models;
 using Microsoft.AspNetCore.Http;
 
-namespace IdentityServer4.Endpoints.Results
+namespace dbosoft.IdentityServer.Endpoints.Results
 {
     internal class DeviceAuthorizationResult : IEndpointResult
     {

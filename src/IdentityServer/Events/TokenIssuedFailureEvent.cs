@@ -2,16 +2,17 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.Extensions;
-using IdentityServer4.Validation;
-using static IdentityServer4.Constants;
+using dbosoft.IdentityServer.Events.Infrastructure;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Validation.Models;
+using static dbosoft.IdentityServer.Constants;
 
-namespace IdentityServer4.Events
+namespace dbosoft.IdentityServer.Events
 {
     /// <summary>
     /// Event for failed token issuance
     /// </summary>
-    /// <seealso cref="IdentityServer4.Events.Event" />
+    /// <seealso cref="Event" />
     public class TokenIssuedFailureEvent : Event
     {
         /// <summary>

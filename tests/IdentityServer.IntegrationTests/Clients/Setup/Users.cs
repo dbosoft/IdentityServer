@@ -4,9 +4,9 @@
 
 using System.Collections.Generic;
 using System.Security.Claims;
+using dbosoft.IdentityServer;
+using dbosoft.IdentityServer.Test;
 using IdentityModel;
-using IdentityServer4;
-using IdentityServer4.Test;
 
 namespace IdentityServer.IntegrationTests.Clients.Setup
 {

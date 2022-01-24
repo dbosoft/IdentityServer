@@ -2,17 +2,17 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
+using System;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Caching.Memory;
-using System;
 
-namespace IdentityServer4.Services
+namespace dbosoft.IdentityServer.Services.Default
 {
     /// <summary>
     /// IMemoryCache-based implementation of the cache
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    /// <seealso cref="IdentityServer4.Services.ICache{T}" />
+    /// <seealso cref="ICache{T}" />
     public class DefaultCache<T> : ICache<T>
         where T : class
     {

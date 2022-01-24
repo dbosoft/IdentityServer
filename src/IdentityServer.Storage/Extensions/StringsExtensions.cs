@@ -4,7 +4,7 @@
 
 using System.Diagnostics;
 
-namespace IdentityServer4.Extensions
+namespace dbosoft.IdentityServer.Storage.Extensions
 {
     internal static class StringExtensions
     {

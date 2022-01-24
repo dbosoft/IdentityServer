@@ -3,7 +3,8 @@
 
 
 using System.Collections.Generic;
-using IdentityServer4.Models;
+using dbosoft.IdentityServer.Models;
+using dbosoft.IdentityServer.Storage.Models;
 
 namespace IdentityServer.UnitTests.Validation.Setup
 {

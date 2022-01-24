@@ -1,4 +1,6 @@
-﻿namespace IdentityServer4.Validation
+﻿using dbosoft.IdentityServer.Validation.Models;
+
+namespace dbosoft.IdentityServer.Validation.Contexts
 {
     /// <summary>
     /// Context for custom authorize request validation.

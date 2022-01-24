@@ -4,12 +4,12 @@
 
 using System;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
+using System.Threading.Tasks;
 using IdentityModel;
+using Microsoft.AspNetCore.Identity;
 
-namespace IdentityServer4.AspNetIdentity
+namespace dbosoft.IdentityServer.AspNetIdentity
 {
     internal class UserClaimsFactory<TUser> : IUserClaimsPrincipalFactory<TUser>
         where TUser : class

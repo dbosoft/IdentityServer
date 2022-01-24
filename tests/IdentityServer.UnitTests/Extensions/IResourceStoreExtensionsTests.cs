@@ -5,9 +5,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Storage.Models;
+using dbosoft.IdentityServer.Storage.Stores;
 using FluentAssertions;
-using IdentityServer4.Models;
-using IdentityServer4.Stores;
 using Xunit;
 
 namespace IdentityServer.UnitTests.Extensions

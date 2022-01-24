@@ -2,13 +2,13 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.Configuration;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
 #pragma warning disable 1591
 
-namespace IdentityServer4.Hosting
+namespace dbosoft.IdentityServer.Hosting
 {
     public static class CorsMiddlewareExtensions
     {

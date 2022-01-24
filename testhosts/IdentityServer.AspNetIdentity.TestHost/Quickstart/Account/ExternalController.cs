@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer;
+using dbosoft.IdentityServer.Events;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Services;
+using dbosoft.IdentityServer.Storage.Stores;
 using IdentityModel;
-using IdentityServer4;
-using IdentityServer4.Events;
-using IdentityServer4.Models;
-using IdentityServer4.Services;
-using IdentityServer4.Stores;
+using IdentityServer.AspNetIdentity.TestHost.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace IdentityServerHost.Quickstart.UI
+namespace IdentityServer.AspNetIdentity.TestHost.Quickstart.Account
 {
     [SecurityHeaders]
     [AllowAnonymous]

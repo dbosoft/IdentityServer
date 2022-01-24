@@ -5,8 +5,9 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using dbosoft.IdentityServer.Storage.Models;
 
-namespace IdentityServer4.Models
+namespace dbosoft.IdentityServer.Extensions
 {
     internal static class ScopeExtensions
     {

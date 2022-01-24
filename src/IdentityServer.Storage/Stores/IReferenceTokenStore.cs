@@ -2,10 +2,10 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.Models;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Storage.Models;
 
-namespace IdentityServer4.Stores
+namespace dbosoft.IdentityServer.Storage.Stores
 {
     /// <summary>
     /// Interface for reference token storage

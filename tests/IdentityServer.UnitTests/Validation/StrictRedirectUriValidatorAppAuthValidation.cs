@@ -1,9 +1,9 @@
 ﻿using FluentAssertions;
 using IdentityServer.UnitTests.Common;
-using IdentityServer4.Models;
-using IdentityServer4.Validation;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Storage.Models;
+using dbosoft.IdentityServer.Validation.Default;
 using Xunit;
 
 namespace IdentityServer.UnitTests.Validation

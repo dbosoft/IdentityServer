@@ -2,17 +2,18 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityModel;
-using IdentityServer4.Validation;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using System;
 using System.Security.Claims;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Validation;
+using dbosoft.IdentityServer.Validation.Models;
+using IdentityModel;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 
-namespace IdentityServer4.Hosting.LocalApiAuthentication
+namespace dbosoft.IdentityServer.Hosting.LocalApiAuthentication
 {
     /// <summary>
     /// Authentication handler for validating access token from the local IdentityServer

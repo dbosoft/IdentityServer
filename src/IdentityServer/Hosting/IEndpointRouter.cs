@@ -4,7 +4,7 @@
 
 using Microsoft.AspNetCore.Http;
 
-namespace IdentityServer4.Hosting
+namespace dbosoft.IdentityServer.Hosting
 {
     /// <summary>
     /// The endpoint router

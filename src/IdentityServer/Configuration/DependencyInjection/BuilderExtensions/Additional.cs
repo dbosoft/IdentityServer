@@ -2,18 +2,23 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.ResponseHandling;
-using IdentityServer4.Services;
-using IdentityServer4.Stores;
-using IdentityServer4.Validation;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 using System;
 using System.Net.Http;
-using IdentityServer4;
-using IdentityServer4.Configuration;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using dbosoft.IdentityServer.ResponseHandling;
+using dbosoft.IdentityServer.Services;
+using dbosoft.IdentityServer.Services.Default;
+using dbosoft.IdentityServer.Storage.Services;
+using dbosoft.IdentityServer.Storage.Stores;
+using dbosoft.IdentityServer.Stores;
+using dbosoft.IdentityServer.Stores.Caching;
+using dbosoft.IdentityServer.Validation;
+using dbosoft.IdentityServer.Validation.Default;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Logging;
 
-namespace Microsoft.Extensions.DependencyInjection
+namespace dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions
 {
     /// <summary>
     /// Builder extension methods for registering additional services 

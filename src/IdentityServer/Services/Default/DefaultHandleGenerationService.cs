@@ -2,15 +2,15 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityModel;
 using System.Threading.Tasks;
+using IdentityModel;
 
-namespace IdentityServer4.Services
+namespace dbosoft.IdentityServer.Services.Default
 {
     /// <summary>
     /// Default handle generation service
     /// </summary>
-    /// <seealso cref="IdentityServer4.Services.IHandleGenerationService" />
+    /// <seealso cref="IHandleGenerationService" />
     public class DefaultHandleGenerationService : IHandleGenerationService
     {
         /// <summary>

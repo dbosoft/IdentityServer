@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using dbosoft.IdentityServer.Extensions;
 using IdentityModel;
-using IdentityServer4.Configuration;
-using IdentityServer4.Extensions;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
-using Microsoft.AspNetCore.Authentication;
 
-namespace IdentityServer4.Services
+namespace dbosoft.IdentityServer.Services.Default
 {
     /// <summary>
     /// Cookie-based session implementation
     /// </summary>
-    /// <seealso cref="IdentityServer4.Services.IUserSession" />
+    /// <seealso cref="IUserSession" />
     public class DefaultUserSession : IUserSession
     {
         /// <summary>

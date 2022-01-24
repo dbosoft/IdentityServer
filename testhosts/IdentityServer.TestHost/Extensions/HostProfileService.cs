@@ -1,11 +1,11 @@
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using IdentityServer4.Models;
-using IdentityServer4.Test;
+using dbosoft.IdentityServer.Models.Contexts;
+using dbosoft.IdentityServer.Test;
 using Microsoft.Extensions.Logging;
 
-namespace IdentityServerHost.Extensions
+namespace IdentityServer.TestHost.Extensions
 {
     public class HostProfileService : TestUserProfileService
     {

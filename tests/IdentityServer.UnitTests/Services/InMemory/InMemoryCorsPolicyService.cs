@@ -3,10 +3,10 @@
 
 
 using System.Collections.Generic;
+using dbosoft.IdentityServer.Services.InMemory;
+using dbosoft.IdentityServer.Storage.Models;
 using FluentAssertions;
 using IdentityServer.UnitTests.Common;
-using IdentityServer4.Models;
-using IdentityServer4.Services;
 using Xunit;
 
 namespace IdentityServer.UnitTests.Services.InMemory

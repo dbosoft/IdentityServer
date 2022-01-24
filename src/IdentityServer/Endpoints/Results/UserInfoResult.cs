@@ -4,11 +4,11 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using IdentityServer4.Extensions;
-using IdentityServer4.Hosting;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Hosting;
 using Microsoft.AspNetCore.Http;
 
-namespace IdentityServer4.Endpoints.Results
+namespace dbosoft.IdentityServer.Endpoints.Results
 {
     internal class UserInfoResult : IEndpointResult
     {

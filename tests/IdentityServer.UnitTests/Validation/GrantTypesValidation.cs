@@ -4,8 +4,9 @@
 
 using System;
 using System.Collections.Generic;
+using dbosoft.IdentityServer.Models;
+using dbosoft.IdentityServer.Storage.Models;
 using FluentAssertions;
-using IdentityServer4.Models;
 using Xunit;
 
 namespace IdentityServer.UnitTests.Validation

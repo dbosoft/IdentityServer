@@ -3,8 +3,9 @@
 
 
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Validation.Contexts;
 
-namespace IdentityServer4.Validation
+namespace dbosoft.IdentityServer.Validation.Default
 {
     /// <summary>
     /// Default custom request validator

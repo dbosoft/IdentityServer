@@ -3,7 +3,8 @@
 
 
 using System.Threading.Tasks;
-using IdentityServer4.Services;
+using dbosoft.IdentityServer.Services;
+using dbosoft.IdentityServer.Services.Default;
 
 namespace IdentityServer.UnitTests.Common
 {

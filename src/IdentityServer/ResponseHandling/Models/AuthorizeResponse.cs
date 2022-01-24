@@ -2,12 +2,12 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.Extensions;
-using IdentityServer4.Validation;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Validation.Models;
 
 #pragma warning disable 1591
 
-namespace IdentityServer4.ResponseHandling
+namespace dbosoft.IdentityServer.ResponseHandling.Models
 {
     public class AuthorizeResponse
     {

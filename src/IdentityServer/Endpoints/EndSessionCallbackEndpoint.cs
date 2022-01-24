@@ -3,14 +3,14 @@
 
 using System.Net;
 using System.Threading.Tasks;
-using IdentityServer4.Endpoints.Results;
-using IdentityServer4.Extensions;
-using IdentityServer4.Hosting;
-using IdentityServer4.Validation;
+using dbosoft.IdentityServer.Endpoints.Results;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Hosting;
+using dbosoft.IdentityServer.Validation;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 
-namespace IdentityServer4.Endpoints
+namespace dbosoft.IdentityServer.Endpoints
 {
     internal class EndSessionCallbackEndpoint : IEndpointHandler
     {

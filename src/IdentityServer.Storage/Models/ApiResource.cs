@@ -2,12 +2,12 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using dbosoft.IdentityServer.Storage.Extensions;
 
-namespace IdentityServer4.Models
+namespace dbosoft.IdentityServer.Storage.Models
 {
     /// <summary>
     /// Models a web API resource.

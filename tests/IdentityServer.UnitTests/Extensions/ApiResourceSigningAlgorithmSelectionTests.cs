@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Storage.Models;
 using FluentAssertions;
-using IdentityServer4.Models;
 using Xunit;
 
 namespace IdentityServer.UnitTests.Extensions

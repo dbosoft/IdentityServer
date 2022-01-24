@@ -3,8 +3,9 @@
 
 
 using System.Threading.Tasks;
-using IdentityServer4.ResponseHandling;
-using IdentityServer4.Validation;
+using dbosoft.IdentityServer.ResponseHandling;
+using dbosoft.IdentityServer.ResponseHandling.Models;
+using dbosoft.IdentityServer.Validation.Models;
 
 namespace IdentityServer.UnitTests.Common
 {

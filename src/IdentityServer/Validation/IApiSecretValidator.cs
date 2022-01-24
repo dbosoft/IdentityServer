@@ -3,9 +3,10 @@
 
 
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Validation.Models;
 using Microsoft.AspNetCore.Http;
 
-namespace IdentityServer4.Validation
+namespace dbosoft.IdentityServer.Validation
 {
     /// <summary>
     /// Validator for handling API client authentication.

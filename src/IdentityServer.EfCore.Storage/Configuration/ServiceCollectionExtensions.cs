@@ -2,14 +2,15 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.EntityFramework.DbContexts;
-using IdentityServer4.EntityFramework.Interfaces;
 using System;
-using IdentityServer4.EntityFramework.Options;
+using dbosoft.IdentityServer.EfCore.Storage.DbContexts;
+using dbosoft.IdentityServer.EfCore.Storage.Interfaces;
+using dbosoft.IdentityServer.EfCore.Storage.Options;
+using dbosoft.IdentityServer.EfCore.Storage.TokenCleanup;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace IdentityServer4.EntityFramework.Storage
+namespace dbosoft.IdentityServer.EfCore.Storage.Configuration
 {
     /// <summary>
     /// Extension methods to add EF database support to IdentityServer.

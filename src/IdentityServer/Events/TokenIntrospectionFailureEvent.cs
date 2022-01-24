@@ -2,15 +2,16 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.Extensions;
 using System.Collections.Generic;
+using dbosoft.IdentityServer.Events.Infrastructure;
+using dbosoft.IdentityServer.Extensions;
 
-namespace IdentityServer4.Events
+namespace dbosoft.IdentityServer.Events
 {
     /// <summary>
     /// Event for failed token introspection
     /// </summary>
-    /// <seealso cref="IdentityServer4.Events.Event" />
+    /// <seealso cref="Event" />
     public class TokenIntrospectionFailureEvent : Event
     {
         /// <summary>

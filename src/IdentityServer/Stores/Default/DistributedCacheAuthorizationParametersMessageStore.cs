@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Infrastructure;
+using dbosoft.IdentityServer.Models.Messages;
+using dbosoft.IdentityServer.Services;
 using IdentityModel;
-using IdentityServer4.Models;
-using IdentityServer4.Services;
 using Microsoft.Extensions.Caching.Distributed;
 
-namespace IdentityServer4.Stores.Default
+namespace dbosoft.IdentityServer.Stores.Default
 {
     /// <summary>
     /// Implementation of IAuthorizationParametersMessageStore that uses the IDistributedCache.

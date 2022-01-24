@@ -3,12 +3,12 @@
 
 
 using System.Linq;
+using dbosoft.IdentityServer.EfCore.Storage.Mappers;
+using dbosoft.IdentityServer.Storage.Models;
 using FluentAssertions;
-using IdentityServer4.EntityFramework.Mappers;
-using IdentityServer4.Models;
 using Xunit;
 
-namespace IdentityServer4.EntityFramework.UnitTests.Mappers
+namespace IdentityServer.EfCore.Storage.UnitTests.Mappers
 {
     public class ScopesMappersTests
     {

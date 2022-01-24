@@ -2,10 +2,11 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.Models;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Storage.Models;
+using dbosoft.IdentityServer.Storage.Stores;
 
-namespace IdentityServer4.Stores
+namespace dbosoft.IdentityServer.Extensions
 {
     /// <summary>
     /// Extension for IClientStore

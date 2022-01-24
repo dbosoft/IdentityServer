@@ -5,10 +5,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using IdentityServer4.Extensions;
-using IdentityServer4.Validation;
+using dbosoft.IdentityServer.Storage.Models;
+using dbosoft.IdentityServer.Validation.Models;
 
-namespace IdentityServer4.Models
+namespace dbosoft.IdentityServer.Extensions
 {
     /// <summary>
     /// Extensions for Resource

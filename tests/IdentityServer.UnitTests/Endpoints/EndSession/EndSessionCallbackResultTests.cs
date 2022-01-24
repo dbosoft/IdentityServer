@@ -4,10 +4,10 @@
 
 using System.Linq;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using dbosoft.IdentityServer.Endpoints.Results;
+using dbosoft.IdentityServer.Validation.Models;
 using FluentAssertions;
-using IdentityServer4.Configuration;
-using IdentityServer4.Endpoints.Results;
-using IdentityServer4.Validation;
 using Microsoft.AspNetCore.Http;
 using Xunit;
 

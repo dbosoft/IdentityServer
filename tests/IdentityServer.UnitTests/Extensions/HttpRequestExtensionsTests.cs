@@ -2,8 +2,8 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
+using dbosoft.IdentityServer.Extensions;
 using FluentAssertions;
-using IdentityServer4.Extensions;
 using Microsoft.AspNetCore.Http;
 using Xunit;
 

@@ -5,7 +5,7 @@
 using System;
 using System.Security.Claims;
 
-namespace IdentityServer4.Models
+namespace dbosoft.IdentityServer.Storage.Models
 {
     /// <summary>
     /// A client claim

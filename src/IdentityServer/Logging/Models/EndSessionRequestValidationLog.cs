@@ -3,11 +3,11 @@
 
 
 using System.Collections.Generic;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Validation.Models;
 using IdentityModel;
-using IdentityServer4.Extensions;
-using IdentityServer4.Validation;
 
-namespace IdentityServer4.Logging.Models
+namespace dbosoft.IdentityServer.Logging.Models
 {
     internal class EndSessionRequestValidationLog
     {

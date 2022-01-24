@@ -12,14 +12,15 @@ using System.Text;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Models;
+using dbosoft.IdentityServer.Storage.Models;
+using dbosoft.IdentityServer.Test;
 using FluentAssertions;
 using IdentityModel;
 using IdentityServer.IntegrationTests.Common;
-using IdentityServer4.Models;
-using IdentityServer4.Test;
 using Microsoft.AspNetCore.WebUtilities;
 using Xunit;
-using static IdentityServer4.IdentityServerConstants;
+using static dbosoft.IdentityServer.IdentityServerConstants;
 
 namespace IdentityServer.IntegrationTests.Endpoints.EndSession
 {

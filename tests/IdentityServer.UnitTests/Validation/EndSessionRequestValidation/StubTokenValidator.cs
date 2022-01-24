@@ -3,8 +3,9 @@
 
 
 using System.Threading.Tasks;
-using IdentityServer4.Models;
-using IdentityServer4.Validation;
+using dbosoft.IdentityServer.Storage.Models;
+using dbosoft.IdentityServer.Validation;
+using dbosoft.IdentityServer.Validation.Models;
 
 namespace IdentityServer.UnitTests.Validation.EndSessionRequestValidation
 {

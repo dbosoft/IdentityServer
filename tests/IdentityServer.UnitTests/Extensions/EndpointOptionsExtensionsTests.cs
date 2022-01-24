@@ -1,8 +1,8 @@
-﻿using IdentityServer4.Configuration;
-using IdentityServer4.Extensions;
-using IdentityServer4.Hosting;
+﻿using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Hosting;
 using Xunit;
-using static IdentityServer4.Constants;
+using static dbosoft.IdentityServer.Constants;
 
 namespace IdentityServer.UnitTests.Extensions
 {

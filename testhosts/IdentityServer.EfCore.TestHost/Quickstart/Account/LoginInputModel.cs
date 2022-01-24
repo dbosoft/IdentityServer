@@ -4,7 +4,7 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace IdentityServerHost.Quickstart.UI
+namespace IdentityServer.EfCore.TestHost.Quickstart.Account
 {
     public class LoginInputModel
     {

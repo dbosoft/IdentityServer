@@ -3,9 +3,9 @@
 
 
 using AutoMapper;
-using IdentityServer4.EntityFramework.Entities;
+using dbosoft.IdentityServer.Storage.Models;
 
-namespace IdentityServer4.EntityFramework.Mappers
+namespace dbosoft.IdentityServer.EfCore.Storage.Mappers
 {
     /// <summary>
     /// Extension methods to map to/from entity/model for scopes.
@@ -25,9 +25,9 @@ namespace IdentityServer4.EntityFramework.Mappers
         /// </summary>
         /// <param name="entity">The entity.</param>
         /// <returns></returns>
-        public static Models.ApiScope ToModel(this ApiScope entity)
+        public static ApiScope ToModel(this Entities.ApiScope entity)
         {
-            return entity == null ? null : Mapper.Map<Models.ApiScope>(entity);
+            return entity == null ? null : Mapper.Map<ApiScope>(entity);
         }
 
         /// <summary>
@@ -35,9 +35,9 @@ namespace IdentityServer4.EntityFramework.Mappers
         /// </summary>
         /// <param name="model">The model.</param>
         /// <returns></returns>
-        public static ApiScope ToEntity(this Models.ApiScope model)
+        public static Entities.ApiScope ToEntity(this ApiScope model)
         {
-            return model == null ? null : Mapper.Map<ApiScope>(model);
+            return model == null ? null : Mapper.Map<Entities.ApiScope>(model);
         }
     }
 }

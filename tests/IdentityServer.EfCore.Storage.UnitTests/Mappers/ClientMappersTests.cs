@@ -4,12 +4,14 @@
 
 using System;
 using System.Linq;
+using dbosoft.IdentityServer.EfCore.Storage.Entities;
+using dbosoft.IdentityServer.EfCore.Storage.Mappers;
 using FluentAssertions;
-using IdentityServer4.EntityFramework.Mappers;
 using Xunit;
-using Client = IdentityServer4.Models.Client;
+using Client = dbosoft.IdentityServer.Storage.Models.Client;
+using Secret = dbosoft.IdentityServer.Storage.Models.Secret;
 
-namespace IdentityServer4.EntityFramework.UnitTests.Mappers
+namespace IdentityServer.EfCore.Storage.UnitTests.Mappers
 {
     public class ClientMappersTests
     {
@@ -67,12 +69,12 @@ namespace IdentityServer4.EntityFramework.UnitTests.Mappers
         [Fact]
         public void duplicates_properties_in_db_map()
         {
-            var entity = new IdentityServer4.EntityFramework.Entities.Client
+            var entity = new dbosoft.IdentityServer.EfCore.Storage.Entities.Client
             {
-                Properties = new System.Collections.Generic.List<Entities.ClientProperty>()
+                Properties = new System.Collections.Generic.List<ClientProperty>()
                 {
-                    new Entities.ClientProperty{Key = "foo1", Value = "bar1"},
-                    new Entities.ClientProperty{Key = "foo1", Value = "bar2"},
+                    new ClientProperty{Key = "foo1", Value = "bar1"},
+                    new ClientProperty{Key = "foo1", Value = "bar2"},
                 }
             };
 
@@ -83,11 +85,11 @@ namespace IdentityServer4.EntityFramework.UnitTests.Mappers
         [Fact]
         public void missing_values_should_use_defaults()
         {
-            var entity = new IdentityServer4.EntityFramework.Entities.Client
+            var entity = new dbosoft.IdentityServer.EfCore.Storage.Entities.Client
             {
-                ClientSecrets = new System.Collections.Generic.List<Entities.ClientSecret>
+                ClientSecrets = new System.Collections.Generic.List<ClientSecret>
                 {
-                    new Entities.ClientSecret
+                    new ClientSecret
                     {
                     }
                 }
@@ -95,7 +97,7 @@ namespace IdentityServer4.EntityFramework.UnitTests.Mappers
 
             var def = new Client
             {
-                ClientSecrets = { new Models.Secret("foo") }
+                ClientSecrets = { new Secret("foo") }
             };
 
             var model = entity.ToModel();

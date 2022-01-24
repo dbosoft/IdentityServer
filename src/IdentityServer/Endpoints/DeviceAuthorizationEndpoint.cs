@@ -4,23 +4,25 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Endpoints.Results;
+using dbosoft.IdentityServer.Events;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Hosting;
+using dbosoft.IdentityServer.ResponseHandling;
+using dbosoft.IdentityServer.ResponseHandling.Models;
+using dbosoft.IdentityServer.Services;
+using dbosoft.IdentityServer.Validation;
+using dbosoft.IdentityServer.Validation.Models;
 using IdentityModel;
-using IdentityServer4.Endpoints.Results;
-using IdentityServer4.Events;
-using IdentityServer4.Extensions;
-using IdentityServer4.Hosting;
-using IdentityServer4.ResponseHandling;
-using IdentityServer4.Services;
-using IdentityServer4.Validation;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 
-namespace IdentityServer4.Endpoints
+namespace dbosoft.IdentityServer.Endpoints
 {
     /// <summary>
     /// The device authorization endpoint
     /// </summary>
-    /// <seealso cref="IdentityServer4.Hosting.IEndpointHandler" />
+    /// <seealso cref="IEndpointHandler" />
     internal class DeviceAuthorizationEndpoint : IEndpointHandler
     {
         private readonly IClientSecretValidator _clientValidator;

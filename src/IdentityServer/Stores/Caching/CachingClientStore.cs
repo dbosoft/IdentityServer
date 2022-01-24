@@ -2,20 +2,21 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.Extensions;
-using IdentityServer4.Models;
-using IdentityServer4.Services;
 using System.Threading.Tasks;
-using IdentityServer4.Configuration;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Services;
+using dbosoft.IdentityServer.Storage.Models;
+using dbosoft.IdentityServer.Storage.Stores;
 using Microsoft.Extensions.Logging;
 
-namespace IdentityServer4.Stores
+namespace dbosoft.IdentityServer.Stores.Caching
 {
     /// <summary>
     /// Cache decorator for IClientStore
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    /// <seealso cref="IdentityServer4.Stores.IClientStore" />
+    /// <seealso cref="IClientStore" />
     public class CachingClientStore<T> : IClientStore
         where T : IClientStore
     {

@@ -3,7 +3,8 @@
 
 
 using System.Collections.Generic;
-using IdentityServer4.Models;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Storage.Models;
 
 namespace IdentityServer.IntegrationTests.Endpoints.Introspection.Setup
 {

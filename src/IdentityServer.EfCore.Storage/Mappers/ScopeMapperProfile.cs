@@ -4,8 +4,9 @@
 
 using System.Collections.Generic;
 using AutoMapper;
+using dbosoft.IdentityServer.Storage.Models;
 
-namespace IdentityServer4.EntityFramework.Mappers
+namespace dbosoft.IdentityServer.EfCore.Storage.Mappers
 {
     /// <summary>
     /// Defines entity/model mapping for scopes.
@@ -26,8 +27,8 @@ namespace IdentityServer4.EntityFramework.Mappers
                .ReverseMap()
                .ForMember(dest => dest.Type, opt => opt.MapFrom(src => src));
 
-            CreateMap<Entities.ApiScope, Models.ApiScope>(MemberList.Destination)
-                .ConstructUsing(src => new Models.ApiScope())
+            CreateMap<Entities.ApiScope, ApiScope>(MemberList.Destination)
+                .ConstructUsing(src => new ApiScope())
                 .ForMember(x => x.Properties, opts => opts.MapFrom(x => x.Properties))
                 .ForMember(x => x.UserClaims, opts => opts.MapFrom(x => x.UserClaims))
                 .ReverseMap();

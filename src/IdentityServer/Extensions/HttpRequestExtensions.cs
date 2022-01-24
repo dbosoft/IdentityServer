@@ -3,13 +3,13 @@
 
 
 using System;
-using Microsoft.AspNetCore.Http;
 using System.Linq;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Net.Http.Headers;
 
 #pragma warning disable 1591
 
-namespace IdentityServer4.Extensions
+namespace dbosoft.IdentityServer.Extensions
 {
     public static class HttpRequestExtensions
     {

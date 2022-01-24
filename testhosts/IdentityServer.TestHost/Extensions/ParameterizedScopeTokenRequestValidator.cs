@@ -1,9 +1,10 @@
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using IdentityServer4.Validation;
+using dbosoft.IdentityServer.Validation;
+using dbosoft.IdentityServer.Validation.Contexts;
 
-namespace IdentityServerHost.Extensions
+namespace IdentityServer.TestHost.Extensions
 {
     public class ParameterizedScopeTokenRequestValidator : ICustomTokenRequestValidator
     {

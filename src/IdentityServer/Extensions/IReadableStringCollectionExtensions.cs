@@ -2,15 +2,15 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using Microsoft.Extensions.Primitives;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Diagnostics;
 using System.Linq;
+using Microsoft.Extensions.Primitives;
 
 #pragma warning disable 1591
 
-namespace IdentityServer4.Extensions
+namespace dbosoft.IdentityServer.Extensions
 {
     public static class IReadableStringCollectionExtensions
     {

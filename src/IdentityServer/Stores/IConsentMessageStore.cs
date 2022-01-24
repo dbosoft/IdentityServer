@@ -2,10 +2,10 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.Models;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Models.Messages;
 
-namespace IdentityServer4.Stores
+namespace dbosoft.IdentityServer.Stores
 {
     /// <summary>
     /// Interface for consent messages that are sent from the consent UI to the authorization endpoint.

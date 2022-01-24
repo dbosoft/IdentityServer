@@ -3,13 +3,13 @@
 
 
 using System.Threading.Tasks;
-using IdentityServer4.Hosting;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using dbosoft.IdentityServer.Extensions;
+using dbosoft.IdentityServer.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using IdentityServer4.Configuration;
-using IdentityServer4.Extensions;
 
-namespace IdentityServer4.Endpoints.Results
+namespace dbosoft.IdentityServer.Endpoints.Results
 {
     internal class CheckSessionResult : IEndpointResult
     {

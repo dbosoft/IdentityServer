@@ -2,10 +2,9 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-
 using System;
 
-namespace IdentityServer4.Models
+namespace dbosoft.IdentityServer.Models.Messages
 {
     /// <summary>
     /// Base class for data that needs to be written out as cookies.

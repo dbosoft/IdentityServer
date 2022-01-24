@@ -2,12 +2,12 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
+using System.Linq;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Linq;
-using static IdentityServer4.IdentityServerConstants;
+using static dbosoft.IdentityServer.IdentityServerConstants;
 
-namespace IdentityServerHost
+namespace IdentityServer.TestHost
 {
     [Route("localApi")]
     [Authorize(LocalApi.PolicyName)]

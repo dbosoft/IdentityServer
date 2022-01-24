@@ -1,16 +1,20 @@
-﻿using Microsoft.AspNetCore.Builder;
+using dbosoft.IdentityServer;
+using dbosoft.IdentityServer.AspNetIdentity;
+using dbosoft.IdentityServer.Configuration;
+using dbosoft.IdentityServer.Configuration.DependencyInjection;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
+using IdentityServer.AspNetIdentity.TestHost.Configuration;
+using IdentityServer.AspNetIdentity.TestHost.Data;
+using IdentityServer.AspNetIdentity.TestHost.Models;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using IdentityServerHost.Data;
-using IdentityServerHost.Configuration;
-using IdentityServer4.Models;
 using Microsoft.Extensions.Hosting;
-using IdentityServer4;
 
-namespace IdentityServerHost
+namespace IdentityServer.AspNetIdentity.TestHost
 {
     public class Startup
     {
@@ -34,9 +38,9 @@ namespace IdentityServerHost
 
             services.AddIdentityServer()
                 .AddDeveloperSigningCredential()
-                .AddInMemoryIdentityResources(IdentityServerHost.Configuration.Resources.IdentityResources)
-                .AddInMemoryApiResources(IdentityServerHost.Configuration.Resources.ApiResources)
-                .AddInMemoryApiScopes(IdentityServerHost.Configuration.Resources.ApiScopes)
+                .AddInMemoryIdentityResources(Resources.IdentityResources)
+                .AddInMemoryApiResources(Resources.ApiResources)
+                .AddInMemoryApiScopes(Resources.ApiScopes)
                 .AddInMemoryClients(Clients.Get())
                 .AddAspNetIdentity<ApplicationUser>();
 

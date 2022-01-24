@@ -2,19 +2,25 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using dbosoft.IdentityServer.Configuration.DependencyInjection;
+using dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
+using dbosoft.IdentityServer.EfCore.Storage.DbContexts;
+using dbosoft.IdentityServer.EfCore.Storage.Entities;
+using dbosoft.IdentityServer.EfCore.Storage.Interfaces;
+using dbosoft.IdentityServer.EfCore.Storage.Options;
+using dbosoft.IdentityServer.EfCore.Storage.Stores;
+using dbosoft.IdentityServer.EfCore.Storage.TokenCleanup;
+using dbosoft.IdentityServer.Storage.Stores;
+using dbosoft.IdentityServer.Test;
 using FluentAssertions;
-using IdentityServer4.EntityFramework.DbContexts;
-using IdentityServer4.EntityFramework.Entities;
-using IdentityServer4.EntityFramework.Interfaces;
-using IdentityServer4.EntityFramework.Options;
-using IdentityServer4.EntityFramework.Stores;
-using IdentityServer4.Stores;
-using IdentityServer4.Test;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
+using ApiResource = dbosoft.IdentityServer.Storage.Models.ApiResource;
+using Client = dbosoft.IdentityServer.Storage.Models.Client;
+using IdentityResource = dbosoft.IdentityServer.Storage.Models.IdentityResource;
 
-namespace IdentityServer4.EntityFramework.IntegrationTests.TokenCleanup
+namespace IdentityServer.EfCore.Storage.IntegrationTests.TokenCleanup
 {
     public class TokenCleanupTests : IntegrationTest<TokenCleanupTests, PersistedGrantDbContext, OperationalStoreOptions>
     {
@@ -141,24 +147,24 @@ namespace IdentityServer4.EntityFramework.IntegrationTests.TokenCleanup
             }
         }
 
-        private EntityFramework.TokenCleanupService CreateSut(DbContextOptions<PersistedGrantDbContext> options)
+        private TokenCleanupService CreateSut(DbContextOptions<PersistedGrantDbContext> options)
         {
             IServiceCollection services = new ServiceCollection();
             services.AddIdentityServer()
                 .AddTestUsers(new List<TestUser>())
-                .AddInMemoryClients(new List<Models.Client>())
-                .AddInMemoryIdentityResources(new List<Models.IdentityResource>())
-                .AddInMemoryApiResources(new List<Models.ApiResource>());
+                .AddInMemoryClients(new List<Client>())
+                .AddInMemoryIdentityResources(new List<IdentityResource>())
+                .AddInMemoryApiResources(new List<ApiResource>());
 
             services.AddScoped<IPersistedGrantDbContext, PersistedGrantDbContext>(_ =>
                 new PersistedGrantDbContext(options, StoreOptions));
             services.AddTransient<IPersistedGrantStore, PersistedGrantStore>();
             services.AddTransient<IDeviceFlowStore, DeviceFlowStore>();
             
-            services.AddTransient<EntityFramework.TokenCleanupService>();
+            services.AddTransient<TokenCleanupService>();
             services.AddSingleton(StoreOptions);
 
-            return services.BuildServiceProvider().GetRequiredService<EntityFramework.TokenCleanupService>();
+            return services.BuildServiceProvider().GetRequiredService<TokenCleanupService>();
             //return new EntityFramework.TokenCleanupService(
             //    services.BuildServiceProvider(),
             //    new NullLogger<EntityFramework.TokenCleanup>(),
