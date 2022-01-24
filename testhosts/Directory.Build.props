@@ -2,7 +2,7 @@
 <Project>
   <PropertyGroup>
     <IsPackable>false</IsPackable>
-    <AssemblyName>dbosoft.$(MSBuildProjectName)</AssemblyName>
+    <AssemblyName>Dbosoft.$(MSBuildProjectName)</AssemblyName>
     <RootNamespace>Dbosoft.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
   </PropertyGroup>
 </Project>
