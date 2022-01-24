@@ -2,7 +2,7 @@
 
 This project is a fork of the deprecated [identityserver4](https://github.com/dbosoft/IdentityServer). 
 
-Currently it works synchronously with identityserver4, but it is planned to strip it down to the following core functions:
+Currently the implementation is the same as in identityserver4, but it is planned to strip it down to the following core functions:
 
 - client authentication flow
 - federation of other identity providers
