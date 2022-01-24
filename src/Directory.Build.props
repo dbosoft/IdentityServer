@@ -11,7 +11,7 @@
     <Company>dbosoft GmbH</Company>
     <Product>dbosoft IdentityServer</Product>
     <RepositoryUrl>https://github.com/dbosoft/IdentityServer</RepositoryUrl>
-    <AssemblyName>dbosoft.$(MSBuildProjectName)</AssemblyName>
+    <AssemblyName>Dbosoft.$(MSBuildProjectName)</AssemblyName>
     <RootNamespace>Dbosoft.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
 
     <!-- Declare that the Repository URL can be published to NuSpec -->
