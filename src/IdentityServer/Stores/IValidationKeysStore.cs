@@ -4,9 +4,9 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Models;
 
-namespace dbosoft.IdentityServer.Stores
+namespace Dbosoft.IdentityServer.Stores
 {
     /// <summary>
     /// Interface for the validation key store

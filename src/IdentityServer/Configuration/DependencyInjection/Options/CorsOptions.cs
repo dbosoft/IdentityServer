@@ -5,10 +5,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Extensions;
 using Microsoft.AspNetCore.Http;
 
-namespace dbosoft.IdentityServer.Configuration.DependencyInjection.Options
+namespace Dbosoft.IdentityServer.Configuration.DependencyInjection.Options
 {
     /// <summary>
     /// Options for CORS

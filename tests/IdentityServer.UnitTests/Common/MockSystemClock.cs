@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Authentication;
-using System;
+﻿using System;
+using Microsoft.AspNetCore.Authentication;
 
-namespace IdentityServer.UnitTests.Common
+namespace Dbosoft.IdentityServer.UnitTests.Common
 {
     class MockSystemClock : ISystemClock
     {

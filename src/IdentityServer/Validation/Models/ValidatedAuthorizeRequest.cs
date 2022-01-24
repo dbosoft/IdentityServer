@@ -7,7 +7,7 @@ using System.Linq;
 using System.Security.Claims;
 using IdentityModel;
 
-namespace dbosoft.IdentityServer.Validation.Models
+namespace Dbosoft.IdentityServer.Validation.Models
 {
     /// <summary>
     /// Models a validated request to the authorize endpoint.

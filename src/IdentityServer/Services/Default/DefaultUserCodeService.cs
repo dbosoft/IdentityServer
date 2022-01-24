@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace dbosoft.IdentityServer.Services.Default
+namespace Dbosoft.IdentityServer.Services.Default
 {
     /// <summary>
     /// Default user code service implementation.

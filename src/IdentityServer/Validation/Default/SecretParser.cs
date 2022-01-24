@@ -6,11 +6,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.Validation.Default
+namespace Dbosoft.IdentityServer.Validation.Default
 {
     /// <summary>
     /// Uses the registered secret parsers to parse a secret on the current request

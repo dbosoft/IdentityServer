@@ -4,14 +4,14 @@
 
 using System;
 using System.Linq;
-using dbosoft.IdentityServer.Configuration.DependencyInjection;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
 using IdentityModel;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace dbosoft.IdentityServer.AspNetIdentity
+namespace Dbosoft.IdentityServer.AspNetIdentity
 {
     /// <summary>
     /// Extension methods to add ASP.NET Identity support to IdentityServer.

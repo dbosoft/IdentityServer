@@ -3,13 +3,13 @@
 
 
 using System.Linq;
-using dbosoft.IdentityServer.EfCore.Storage.DbContexts;
-using dbosoft.IdentityServer.EfCore.Storage.Entities;
-using dbosoft.IdentityServer.EfCore.Storage.Options;
+using Dbosoft.IdentityServer.EfCore.Storage.DbContexts;
+using Dbosoft.IdentityServer.EfCore.Storage.Entities;
+using Dbosoft.IdentityServer.EfCore.Storage.Options;
 using Microsoft.EntityFrameworkCore;
 using Xunit;
 
-namespace IdentityServer.EfCore.Storage.IntegrationTests.DbContexts
+namespace Dbosoft.IdentityServer.EfCore.Storage.IntegrationTests.DbContexts
 {
     public class ClientDbContextTests : IntegrationTest<ClientDbContextTests, ConfigurationDbContext, ConfigurationStoreOptions>
     {

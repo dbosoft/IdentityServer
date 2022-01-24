@@ -6,16 +6,16 @@ using System;
 using System.Globalization;
 using System.IdentityModel.Tokens.Jwt;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Storage.Models;
 using IdentityModel;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
-using static dbosoft.IdentityServer.IdentityServerConstants;
+using static Dbosoft.IdentityServer.IdentityServerConstants;
 
-namespace dbosoft.IdentityServer.Services.Default
+namespace Dbosoft.IdentityServer.Services.Default
 {
     /// <summary>
     /// Default token creation service

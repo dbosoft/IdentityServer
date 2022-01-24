@@ -3,15 +3,15 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models;
-using dbosoft.IdentityServer.Validation;
-using dbosoft.IdentityServer.Validation.Contexts;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Validation;
+using Dbosoft.IdentityServer.Validation.Contexts;
+using Dbosoft.IdentityServer.Validation.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using static IdentityModel.OidcConstants;
 
-namespace dbosoft.IdentityServer.AspNetIdentity
+namespace Dbosoft.IdentityServer.AspNetIdentity
 {
     /// <summary>
     /// IResourceOwnerPasswordValidator that integrates with ASP.NET Identity.

@@ -9,7 +9,7 @@ using System.Security.Claims;
 using System.Text.Json;
 using IdentityModel;
 
-namespace dbosoft.IdentityServer.Extensions
+namespace Dbosoft.IdentityServer.Extensions
 {
     internal static class ClaimsExtensions
     {

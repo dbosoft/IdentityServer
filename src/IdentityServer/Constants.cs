@@ -4,10 +4,10 @@
 
 using System;
 using System.Collections.Generic;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Models;
 using IdentityModel;
 
-namespace dbosoft.IdentityServer
+namespace Dbosoft.IdentityServer
 {
     internal static class Constants
     {

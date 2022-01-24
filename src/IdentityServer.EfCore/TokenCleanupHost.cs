@@ -5,13 +5,13 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.EfCore.Storage.Options;
-using dbosoft.IdentityServer.EfCore.Storage.TokenCleanup;
+using Dbosoft.IdentityServer.EfCore.Storage.Options;
+using Dbosoft.IdentityServer.EfCore.Storage.TokenCleanup;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.EfCore
+namespace Dbosoft.IdentityServer.EfCore
 {
     /// <summary>
     /// Helper to cleanup expired persisted grants.

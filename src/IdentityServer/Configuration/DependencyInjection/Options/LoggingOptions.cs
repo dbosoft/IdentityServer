@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using IdentityModel;
 
-namespace dbosoft.IdentityServer.Configuration.DependencyInjection.Options
+namespace Dbosoft.IdentityServer.Configuration.DependencyInjection.Options
 {
     /// <summary>
     /// Options for configuring logging behavior

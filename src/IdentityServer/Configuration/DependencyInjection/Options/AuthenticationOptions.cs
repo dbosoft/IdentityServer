@@ -5,7 +5,7 @@
 using System;
 using Microsoft.AspNetCore.Http;
 
-namespace dbosoft.IdentityServer.Configuration.DependencyInjection.Options
+namespace Dbosoft.IdentityServer.Configuration.DependencyInjection.Options
 {
     /// <summary>
     /// Configures the login and logout views and behavior.

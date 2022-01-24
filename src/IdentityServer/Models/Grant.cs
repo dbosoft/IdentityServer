@@ -4,7 +4,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace dbosoft.IdentityServer.Models
+namespace Dbosoft.IdentityServer.Models
 {
     /// <summary>
     /// Models a grant the user has given.

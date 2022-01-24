@@ -4,7 +4,7 @@
 
 using System.Text.Json;
 
-namespace dbosoft.IdentityServer.Infrastructure
+namespace Dbosoft.IdentityServer.Infrastructure
 {
     internal static class ObjectSerializer
     {

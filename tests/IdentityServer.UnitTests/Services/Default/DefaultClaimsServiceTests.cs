@@ -5,17 +5,16 @@
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
-using dbosoft.IdentityServer.Services.Default;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.Services.Default;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.UnitTests.Common;
+using Dbosoft.IdentityServer.Validation.Models;
 using FluentAssertions;
 using IdentityModel;
-using IdentityServer.UnitTests.Common;
 using Xunit;
 
-namespace IdentityServer.UnitTests.Services.Default
+namespace Dbosoft.IdentityServer.UnitTests.Services.Default
 {
     public class DefaultClaimsServiceTests
     {

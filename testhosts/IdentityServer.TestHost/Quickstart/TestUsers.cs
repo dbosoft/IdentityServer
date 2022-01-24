@@ -5,11 +5,10 @@
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Text.Json;
-using dbosoft.IdentityServer;
-using dbosoft.IdentityServer.Test;
+using Dbosoft.IdentityServer.Test;
 using IdentityModel;
 
-namespace IdentityServer.TestHost.Quickstart
+namespace Dbosoft.IdentityServer.TestHost.Quickstart
 {
     public class TestUsers
     {

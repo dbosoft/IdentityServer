@@ -7,14 +7,14 @@ using System.Linq;
 using System.Net;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Hosting;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Hosting;
+using Dbosoft.IdentityServer.Validation.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace dbosoft.IdentityServer.Endpoints.Results
+namespace Dbosoft.IdentityServer.Endpoints.Results
 {
     internal class EndSessionCallbackResult : IEndpointResult
     {

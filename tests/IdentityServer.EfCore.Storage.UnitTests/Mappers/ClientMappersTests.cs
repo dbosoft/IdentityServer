@@ -4,14 +4,14 @@
 
 using System;
 using System.Linq;
-using dbosoft.IdentityServer.EfCore.Storage.Entities;
-using dbosoft.IdentityServer.EfCore.Storage.Mappers;
+using Dbosoft.IdentityServer.EfCore.Storage.Entities;
+using Dbosoft.IdentityServer.EfCore.Storage.Mappers;
 using FluentAssertions;
 using Xunit;
-using Client = dbosoft.IdentityServer.Storage.Models.Client;
-using Secret = dbosoft.IdentityServer.Storage.Models.Secret;
+using Client = Dbosoft.IdentityServer.Storage.Models.Client;
+using Secret = Dbosoft.IdentityServer.Storage.Models.Secret;
 
-namespace IdentityServer.EfCore.Storage.UnitTests.Mappers
+namespace Dbosoft.IdentityServer.EfCore.Storage.UnitTests.Mappers
 {
     public class ClientMappersTests
     {
@@ -69,7 +69,7 @@ namespace IdentityServer.EfCore.Storage.UnitTests.Mappers
         [Fact]
         public void duplicates_properties_in_db_map()
         {
-            var entity = new dbosoft.IdentityServer.EfCore.Storage.Entities.Client
+            var entity = new Entities.Client
             {
                 Properties = new System.Collections.Generic.List<ClientProperty>()
                 {
@@ -85,7 +85,7 @@ namespace IdentityServer.EfCore.Storage.UnitTests.Mappers
         [Fact]
         public void missing_values_should_use_defaults()
         {
-            var entity = new dbosoft.IdentityServer.EfCore.Storage.Entities.Client
+            var entity = new Entities.Client
             {
                 ClientSecrets = new System.Collections.Generic.List<ClientSecret>
                 {

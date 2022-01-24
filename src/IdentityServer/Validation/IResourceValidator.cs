@@ -3,9 +3,9 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Validation.Models;
 
-namespace dbosoft.IdentityServer.Validation
+namespace Dbosoft.IdentityServer.Validation
 {
     /// <summary>
     /// Validates requested resources (scopes and resource indicators)

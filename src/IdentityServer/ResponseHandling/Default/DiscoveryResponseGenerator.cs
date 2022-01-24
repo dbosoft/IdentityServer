@@ -7,19 +7,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Configuration;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Services;
-using dbosoft.IdentityServer.Storage.Stores;
-using dbosoft.IdentityServer.Validation;
-using dbosoft.IdentityServer.Validation.Default;
+using Dbosoft.IdentityServer.Configuration;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.Validation;
+using Dbosoft.IdentityServer.Validation.Default;
 using IdentityModel;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
-using JsonWebKey = dbosoft.IdentityServer.Models.JsonWebKey;
+using JsonWebKey = Dbosoft.IdentityServer.Models.JsonWebKey;
 
-namespace dbosoft.IdentityServer.ResponseHandling.Default
+namespace Dbosoft.IdentityServer.ResponseHandling.Default
 {
     /// <summary>
     /// Default implementation of the discovery endpoint response generator

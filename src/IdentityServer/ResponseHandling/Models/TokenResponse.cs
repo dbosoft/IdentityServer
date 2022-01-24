@@ -4,7 +4,7 @@
 
 using System.Collections.Generic;
 
-namespace dbosoft.IdentityServer.ResponseHandling.Models
+namespace Dbosoft.IdentityServer.ResponseHandling.Models
 {
     /// <summary>
     /// Models a token response

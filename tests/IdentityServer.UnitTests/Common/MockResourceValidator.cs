@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Validation;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Validation;
+using Dbosoft.IdentityServer.Validation.Models;
 
-namespace IdentityServer.UnitTests.Common
+namespace Dbosoft.IdentityServer.UnitTests.Common
 {
     class MockResourceValidator : IResourceValidator
     {

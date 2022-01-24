@@ -4,13 +4,13 @@
 
 using System;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.EfCore.Storage.Entities;
-using dbosoft.IdentityServer.EfCore.Storage.Extensions;
-using dbosoft.IdentityServer.EfCore.Storage.Interfaces;
-using dbosoft.IdentityServer.EfCore.Storage.Options;
+using Dbosoft.IdentityServer.EfCore.Storage.Entities;
+using Dbosoft.IdentityServer.EfCore.Storage.Extensions;
+using Dbosoft.IdentityServer.EfCore.Storage.Interfaces;
+using Dbosoft.IdentityServer.EfCore.Storage.Options;
 using Microsoft.EntityFrameworkCore;
 
-namespace dbosoft.IdentityServer.EfCore.Storage.DbContexts
+namespace Dbosoft.IdentityServer.EfCore.Storage.DbContexts
 {
     /// <summary>
     /// DbContext for the IdentityServer operational data.

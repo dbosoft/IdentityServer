@@ -3,10 +3,10 @@
 
 
 using System.Collections.Generic;
-using dbosoft.IdentityServer.Models;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Storage.Models;
 
-namespace IdentityServer.UnitTests.Validation.Setup
+namespace Dbosoft.IdentityServer.UnitTests.Validation.Setup
 {
     internal class TestScopes
     {

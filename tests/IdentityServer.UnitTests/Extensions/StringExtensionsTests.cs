@@ -1,7 +1,7 @@
-﻿using dbosoft.IdentityServer.Extensions;
+﻿using Dbosoft.IdentityServer.Extensions;
 using Xunit;
 
-namespace IdentityServer.UnitTests.Extensions
+namespace Dbosoft.IdentityServer.UnitTests.Extensions
 {
     public class StringExtensionsTests
     {

@@ -3,9 +3,9 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models.Contexts;
+using Dbosoft.IdentityServer.Models.Contexts;
 
-namespace dbosoft.IdentityServer.Services
+namespace Dbosoft.IdentityServer.Services
 {
     /// <summary>
     /// The service responsible for performing back-channel logout notification.

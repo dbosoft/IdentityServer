@@ -4,10 +4,10 @@
 
 using System;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Logging;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Logging;
 
-namespace dbosoft.IdentityServer.Events.Infrastructure
+namespace Dbosoft.IdentityServer.Events.Infrastructure
 {
     /// <summary>
     /// Models base class for events raised from IdentityServer.

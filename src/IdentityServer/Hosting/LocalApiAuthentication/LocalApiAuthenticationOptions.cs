@@ -4,7 +4,7 @@
 
 using Microsoft.AspNetCore.Authentication;
 
-namespace dbosoft.IdentityServer.Hosting.LocalApiAuthentication
+namespace Dbosoft.IdentityServer.Hosting.LocalApiAuthentication
 {
     /// <summary>
     /// Options for local API authentication

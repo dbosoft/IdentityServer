@@ -5,14 +5,14 @@
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
-using dbosoft.IdentityServer.Infrastructure;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.Infrastructure;
+using Dbosoft.IdentityServer.Storage.Models;
 using Microsoft.AspNetCore.Http;
 
 #pragma warning disable 1591
 
-namespace dbosoft.IdentityServer.Extensions
+namespace Dbosoft.IdentityServer.Extensions
 {
     public static class HttpResponseExtensions
     {

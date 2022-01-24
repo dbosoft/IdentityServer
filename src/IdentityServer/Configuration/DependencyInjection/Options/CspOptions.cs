@@ -2,9 +2,9 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Models;
 
-namespace dbosoft.IdentityServer.Configuration.DependencyInjection.Options
+namespace Dbosoft.IdentityServer.Configuration.DependencyInjection.Options
 {
     /// <summary>
     /// Options for Content Security Policy

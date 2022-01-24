@@ -1,8 +1,9 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net60</TargetFrameworks>  
     <Description>ASP.NET Core Identity Integration for dbosoft.IdentityServer</Description>
+      <IsPackable>false</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>

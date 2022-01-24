@@ -4,12 +4,12 @@
 
 using System.Linq;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Models.Contexts;
-using dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Models.Contexts;
+using Dbosoft.IdentityServer.Services;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.Test
+namespace Dbosoft.IdentityServer.Test
 {
     /// <summary>
     /// Profile service for test users

@@ -9,17 +9,17 @@ using System.Linq;
 using System.Net.Http;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Configuration;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Models;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Test;
+using Dbosoft.IdentityServer.Configuration;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.IntegrationTests.Common;
+using Dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Test;
 using FluentAssertions;
 using IdentityModel.Client;
-using IdentityServer.IntegrationTests.Common;
 using Xunit;
 
-namespace IdentityServer.IntegrationTests.Conformance.Basic
+namespace Dbosoft.IdentityServer.IntegrationTests.Conformance.Basic
 {
     public class CodeFlowTests 
     {

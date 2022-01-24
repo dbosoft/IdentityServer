@@ -8,7 +8,7 @@ using System.Linq;
 using System.Security.Claims;
 using IdentityModel;
 
-namespace dbosoft.IdentityServer.Storage.Models
+namespace Dbosoft.IdentityServer.Storage.Models
 {
     /// <summary>
     /// Models a token.

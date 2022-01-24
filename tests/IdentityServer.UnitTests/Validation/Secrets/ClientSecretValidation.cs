@@ -5,12 +5,12 @@
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
+using Dbosoft.IdentityServer.UnitTests.Validation.Setup;
 using FluentAssertions;
-using IdentityServer.UnitTests.Validation.Setup;
 using Microsoft.AspNetCore.Http;
 using Xunit;
 
-namespace IdentityServer.UnitTests.Validation.Secrets
+namespace Dbosoft.IdentityServer.UnitTests.Validation.Secrets
 {
     public class ClientSecretValidation
     {

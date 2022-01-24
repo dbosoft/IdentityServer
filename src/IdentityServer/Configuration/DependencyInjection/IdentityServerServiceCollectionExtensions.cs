@@ -3,15 +3,15 @@
 
 
 using System;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 
-namespace dbosoft.IdentityServer.Configuration.DependencyInjection
+namespace Dbosoft.IdentityServer.Configuration.DependencyInjection
 {
     /// <summary>
     /// DI extension methods for adding IdentityServer

@@ -4,10 +4,10 @@
 
 using System;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Services;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.Extensions
+namespace Dbosoft.IdentityServer.Extensions
 {
     /// <summary>
     /// Extensions for ICache

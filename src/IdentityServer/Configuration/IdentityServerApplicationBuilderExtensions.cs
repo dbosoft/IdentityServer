@@ -5,17 +5,17 @@
 using System;
 using System.Reflection;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Hosting;
-using dbosoft.IdentityServer.Storage.Stores;
-using dbosoft.IdentityServer.Stores.InMemory;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Hosting;
+using Dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.Stores.InMemory;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.Configuration
+namespace Dbosoft.IdentityServer.Configuration
 {
     /// <summary>
     /// Pipeline extension methods for adding IdentityServer

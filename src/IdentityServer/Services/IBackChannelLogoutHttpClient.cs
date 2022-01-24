@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace dbosoft.IdentityServer.Services
+namespace Dbosoft.IdentityServer.Services
 {
     /// <summary>
     /// Models making HTTP requests for back-channel logout notification.

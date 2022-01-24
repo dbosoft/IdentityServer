@@ -6,11 +6,11 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Linq;
 using System.Security.Claims;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Validation.Models;
 
-namespace dbosoft.IdentityServer.Models.Messages
+namespace Dbosoft.IdentityServer.Models.Messages
 {
     /// <summary>
     /// Represents contextual information about a authorization request.

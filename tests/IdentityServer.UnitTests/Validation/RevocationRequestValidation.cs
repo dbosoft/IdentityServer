@@ -5,18 +5,17 @@
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Models;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Validation;
-using dbosoft.IdentityServer.Validation.Default;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.UnitTests.Common;
+using Dbosoft.IdentityServer.Validation;
+using Dbosoft.IdentityServer.Validation.Default;
 using FluentAssertions;
 using IdentityModel;
-using IdentityServer.UnitTests.Common;
 using Xunit;
 
-namespace IdentityServer.UnitTests.Validation
+namespace Dbosoft.IdentityServer.UnitTests.Validation
 {
     public class RevocationRequestValidation
     {

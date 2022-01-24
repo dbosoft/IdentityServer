@@ -3,7 +3,7 @@
 
 #pragma warning disable 1591
 
-namespace dbosoft.IdentityServer.Storage
+namespace Dbosoft.IdentityServer.Storage
 {
     internal static class IdentityServerConstants
     {

@@ -6,12 +6,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Models;
-using dbosoft.IdentityServer.Stores;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Stores;
 using Microsoft.IdentityModel.Tokens;
 
-namespace dbosoft.IdentityServer.Services.Default
+namespace Dbosoft.IdentityServer.Services.Default
 {
     /// <summary>
     /// The default key material service

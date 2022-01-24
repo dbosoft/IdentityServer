@@ -6,15 +6,15 @@ using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Models;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.IntegrationTests.Common;
+using Dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Storage.Models;
 using FluentAssertions;
 using IdentityModel;
-using IdentityServer.IntegrationTests.Common;
 using Xunit;
 
-namespace IdentityServer.IntegrationTests.Endpoints.DeviceAuthorization
+namespace Dbosoft.IdentityServer.IntegrationTests.Endpoints.DeviceAuthorization
 {
     public class DeviceAuthorizationTests
     {

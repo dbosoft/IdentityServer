@@ -5,7 +5,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace IdentityServer.AspNetIdentity.TestHost.Quickstart.Grants
+namespace Dbosoft.IdentityServer.AspNetIdentity.TestHost.Quickstart.Grants
 {
     public class GrantsViewModel
     {

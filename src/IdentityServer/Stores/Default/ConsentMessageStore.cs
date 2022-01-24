@@ -3,10 +3,10 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Infrastructure;
-using dbosoft.IdentityServer.Models.Messages;
+using Dbosoft.IdentityServer.Infrastructure;
+using Dbosoft.IdentityServer.Models.Messages;
 
-namespace dbosoft.IdentityServer.Stores.Default
+namespace Dbosoft.IdentityServer.Stores.Default
 {
     internal class ConsentMessageStore : IConsentMessageStore
     {

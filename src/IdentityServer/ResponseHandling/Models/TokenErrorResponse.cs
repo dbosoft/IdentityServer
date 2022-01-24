@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using IdentityModel;
 
-namespace dbosoft.IdentityServer.ResponseHandling.Models
+namespace Dbosoft.IdentityServer.ResponseHandling.Models
 {
     /// <summary>
     /// Models a token error response

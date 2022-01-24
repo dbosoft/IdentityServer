@@ -5,14 +5,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Events;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Services;
-using dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.Events;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Storage.Stores;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace IdentityServer.EfCore.TestHost.Quickstart.Grants
+namespace Dbosoft.IdentityServer.EfCore.TestHost.Quickstart.Grants
 {
     /// <summary>
     /// This sample controller allows a user to revoke grants given to clients

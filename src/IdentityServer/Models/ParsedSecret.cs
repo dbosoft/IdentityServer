@@ -4,7 +4,7 @@
 
 using System.Collections.Generic;
 
-namespace dbosoft.IdentityServer.Models
+namespace Dbosoft.IdentityServer.Models
 {
     /// <summary>
     /// Represents a secret extracted from the HttpContext

@@ -6,12 +6,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models;
-using dbosoft.IdentityServer.Validation.Contexts;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Validation.Contexts;
+using Dbosoft.IdentityServer.Validation.Models;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.Validation.Default
+namespace Dbosoft.IdentityServer.Validation.Default
 {
     /// <summary>
     /// Validates an extension grant request using the registered validators

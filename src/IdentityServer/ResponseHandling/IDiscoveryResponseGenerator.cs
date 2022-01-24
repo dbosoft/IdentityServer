@@ -4,9 +4,9 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Models;
 
-namespace dbosoft.IdentityServer.ResponseHandling
+namespace Dbosoft.IdentityServer.ResponseHandling
 {
     /// <summary>
     /// Interface for discovery endpoint response generator

@@ -3,9 +3,9 @@
 
 
 using System;
-using dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.Storage.Stores;
 
-namespace dbosoft.IdentityServer.Storage.Extensions
+namespace Dbosoft.IdentityServer.Storage.Extensions
 {
     /// <summary>
     /// Extensions for PersistedGrantFilter.

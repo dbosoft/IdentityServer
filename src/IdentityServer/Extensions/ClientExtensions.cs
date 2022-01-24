@@ -7,10 +7,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Models;
 using Microsoft.IdentityModel.Tokens;
 
-namespace dbosoft.IdentityServer.Extensions
+namespace Dbosoft.IdentityServer.Extensions
 {
     /// <summary>
     /// Extension methods for client.

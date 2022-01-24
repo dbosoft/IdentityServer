@@ -6,11 +6,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Events.Infrastructure;
-using dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Events.Infrastructure;
+using Dbosoft.IdentityServer.Services;
 using FluentAssertions;
 
-namespace IdentityServer.UnitTests.Common
+namespace Dbosoft.IdentityServer.UnitTests.Common
 {
     public class TestEventService : IEventService
     {

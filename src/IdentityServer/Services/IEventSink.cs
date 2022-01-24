@@ -3,9 +3,9 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Events.Infrastructure;
+using Dbosoft.IdentityServer.Events.Infrastructure;
 
-namespace dbosoft.IdentityServer.Services
+namespace Dbosoft.IdentityServer.Services
 {
     /// <summary>
     /// Models persistence of events

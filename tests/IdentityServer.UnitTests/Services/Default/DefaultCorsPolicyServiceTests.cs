@@ -3,12 +3,12 @@
 
 
 using System;
-using dbosoft.IdentityServer.Services.Default;
+using Dbosoft.IdentityServer.Services.Default;
+using Dbosoft.IdentityServer.UnitTests.Common;
 using FluentAssertions;
-using IdentityServer.UnitTests.Common;
 using Xunit;
 
-namespace IdentityServer.UnitTests.Services.Default
+namespace Dbosoft.IdentityServer.UnitTests.Services.Default
 {
     public class DefaultCorsPolicyServiceTests
     {

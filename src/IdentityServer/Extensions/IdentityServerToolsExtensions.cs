@@ -5,11 +5,11 @@
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
 using IdentityModel;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace dbosoft.IdentityServer.Extensions
+namespace Dbosoft.IdentityServer.Extensions
 {
     /// <summary>
     /// Extensions for IdentityServerTools

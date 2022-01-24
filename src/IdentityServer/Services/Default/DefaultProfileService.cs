@@ -3,11 +3,11 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Models.Contexts;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Models.Contexts;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.Services.Default
+namespace Dbosoft.IdentityServer.Services.Default
 {
     /// <summary>
     /// Default profile service implementation.

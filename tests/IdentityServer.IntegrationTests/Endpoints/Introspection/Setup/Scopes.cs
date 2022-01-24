@@ -3,10 +3,10 @@
 
 
 using System.Collections.Generic;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Storage.Models;
 
-namespace IdentityServer.IntegrationTests.Endpoints.Introspection.Setup
+namespace Dbosoft.IdentityServer.IntegrationTests.Endpoints.Introspection.Setup
 {
     internal class Scopes
     {

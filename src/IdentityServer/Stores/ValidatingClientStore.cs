@@ -3,15 +3,15 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Events;
-using dbosoft.IdentityServer.Services;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Storage.Stores;
-using dbosoft.IdentityServer.Validation;
-using dbosoft.IdentityServer.Validation.Contexts;
+using Dbosoft.IdentityServer.Events;
+using Dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.Validation;
+using Dbosoft.IdentityServer.Validation.Contexts;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.Stores
+namespace Dbosoft.IdentityServer.Stores
 {
     /// <summary>
     /// Client store decorator for running runtime configuration validation checks

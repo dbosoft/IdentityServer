@@ -4,10 +4,10 @@
 
 using System;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Events.Infrastructure;
+using Dbosoft.IdentityServer.Events.Infrastructure;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.Services.Default
+namespace Dbosoft.IdentityServer.Services.Default
 {
     /// <summary>
     /// Default implementation of the event service. Write events raised to the log.

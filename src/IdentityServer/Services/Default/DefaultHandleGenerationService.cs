@@ -5,7 +5,7 @@
 using System.Threading.Tasks;
 using IdentityModel;
 
-namespace dbosoft.IdentityServer.Services.Default
+namespace Dbosoft.IdentityServer.Services.Default
 {
     /// <summary>
     /// Default handle generation service

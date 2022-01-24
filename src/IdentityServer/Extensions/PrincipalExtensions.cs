@@ -9,7 +9,7 @@ using System.Security.Claims;
 using System.Security.Principal;
 using IdentityModel;
 
-namespace dbosoft.IdentityServer.Extensions
+namespace Dbosoft.IdentityServer.Extensions
 {
     /// <summary>
     /// Extension methods for <see cref="System.Security.Principal.IPrincipal"/> and <see cref="System.Security.Principal.IIdentity"/> .

@@ -4,7 +4,7 @@
 
 using System.Threading.Tasks;
 
-namespace dbosoft.IdentityServer.Services
+namespace Dbosoft.IdentityServer.Services
 {
     /// <summary>
     /// Implements device flow user code generation

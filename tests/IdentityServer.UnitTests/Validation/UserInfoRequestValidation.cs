@@ -2,21 +2,21 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using FluentAssertions;
-using IdentityModel;
-using IdentityServer.UnitTests.Validation.Setup;
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Storage.Stores;
-using dbosoft.IdentityServer.Stores.InMemory;
-using dbosoft.IdentityServer.Validation.Default;
-using dbosoft.IdentityServer.Validation.Models;
-using IdentityServer.UnitTests.Common;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.Stores.InMemory;
+using Dbosoft.IdentityServer.UnitTests.Common;
+using Dbosoft.IdentityServer.UnitTests.Validation.Setup;
+using Dbosoft.IdentityServer.Validation.Default;
+using Dbosoft.IdentityServer.Validation.Models;
+using FluentAssertions;
+using IdentityModel;
 using Xunit;
 
-namespace IdentityServer.UnitTests.Validation
+namespace Dbosoft.IdentityServer.UnitTests.Validation
 {
     public class UserInfoRequestValidation
     {

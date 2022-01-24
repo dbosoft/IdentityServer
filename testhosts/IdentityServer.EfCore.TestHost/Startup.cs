@@ -2,18 +2,17 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using dbosoft.IdentityServer.Configuration;
-using dbosoft.IdentityServer.Configuration.DependencyInjection;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
-using dbosoft.IdentityServer.EfCore;
-using dbosoft.IdentityServer.Test;
-using IdentityServer.EfCore.TestHost.Quickstart;
+using Dbosoft.IdentityServer.Configuration;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
+using Dbosoft.IdentityServer.EfCore.TestHost.Quickstart;
+using Dbosoft.IdentityServer.Test;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace IdentityServer.EfCore.TestHost
+namespace Dbosoft.IdentityServer.EfCore.TestHost
 {
     public class Startup
     {

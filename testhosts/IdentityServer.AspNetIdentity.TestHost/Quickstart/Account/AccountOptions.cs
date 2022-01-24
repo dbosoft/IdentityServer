@@ -4,7 +4,7 @@
 
 using System;
 
-namespace IdentityServer.AspNetIdentity.TestHost.Quickstart.Account
+namespace Dbosoft.IdentityServer.AspNetIdentity.TestHost.Quickstart.Account
 {
     public class AccountOptions
     {

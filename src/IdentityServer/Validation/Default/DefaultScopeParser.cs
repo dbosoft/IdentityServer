@@ -4,10 +4,10 @@
 
 using System;
 using System.Collections.Generic;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Validation.Models;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.Validation.Default
+namespace Dbosoft.IdentityServer.Validation.Default
 {
     /// <summary>
     /// Default implementation of IScopeParser.

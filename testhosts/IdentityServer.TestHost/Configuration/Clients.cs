@@ -3,9 +3,9 @@
 
 
 using System.Collections.Generic;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Models;
 
-namespace IdentityServer.TestHost.Configuration
+namespace Dbosoft.IdentityServer.TestHost.Configuration
 {
     public static class Clients
     {

@@ -5,7 +5,7 @@
 using System.Threading.Tasks;
 using Microsoft.IdentityModel.Tokens;
 
-namespace dbosoft.IdentityServer.Stores.InMemory
+namespace Dbosoft.IdentityServer.Stores.InMemory
 {
     /// <summary>
     /// Default signing credentials store

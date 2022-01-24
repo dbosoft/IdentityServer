@@ -2,9 +2,9 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using dbosoft.IdentityServer.Models.Messages;
+using Dbosoft.IdentityServer.Models.Messages;
 
-namespace IdentityServer.AspNetIdentity.TestHost.Quickstart.Home
+namespace Dbosoft.IdentityServer.AspNetIdentity.TestHost.Quickstart.Home
 {
     public class ErrorViewModel
     {

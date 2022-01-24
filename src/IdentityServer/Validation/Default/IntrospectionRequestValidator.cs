@@ -4,11 +4,11 @@
 
 using System.Collections.Specialized;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Validation.Models;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.Validation.Default
+namespace Dbosoft.IdentityServer.Validation.Default
 {
     /// <summary>
     /// The introspection request validator

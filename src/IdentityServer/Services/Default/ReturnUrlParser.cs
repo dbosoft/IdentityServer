@@ -4,9 +4,9 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models.Messages;
+using Dbosoft.IdentityServer.Models.Messages;
 
-namespace dbosoft.IdentityServer.Services.Default
+namespace Dbosoft.IdentityServer.Services.Default
 {
     /// <summary>
     /// Parses a return URL using all registered URL parsers

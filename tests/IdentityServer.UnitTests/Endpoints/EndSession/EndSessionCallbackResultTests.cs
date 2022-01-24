@@ -4,14 +4,14 @@
 
 using System.Linq;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
-using dbosoft.IdentityServer.Endpoints.Results;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.Endpoints.Results;
+using Dbosoft.IdentityServer.Validation.Models;
 using FluentAssertions;
 using Microsoft.AspNetCore.Http;
 using Xunit;
 
-namespace IdentityServer.UnitTests.Endpoints.EndSession
+namespace Dbosoft.IdentityServer.UnitTests.Endpoints.EndSession
 {
     public class EndSessionCallbackResultTests
     {

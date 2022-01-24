@@ -6,11 +6,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Models;
 using IdentityModel;
 
-namespace dbosoft.IdentityServer.Validation.Models
+namespace Dbosoft.IdentityServer.Validation.Models
 {
     /// <summary>
     /// Models the result of custom grant validation.

@@ -3,14 +3,14 @@
 
 
 using System;
-using dbosoft.IdentityServer.EfCore.Storage.DbContexts;
-using dbosoft.IdentityServer.EfCore.Storage.Interfaces;
-using dbosoft.IdentityServer.EfCore.Storage.Options;
-using dbosoft.IdentityServer.EfCore.Storage.TokenCleanup;
+using Dbosoft.IdentityServer.EfCore.Storage.DbContexts;
+using Dbosoft.IdentityServer.EfCore.Storage.Interfaces;
+using Dbosoft.IdentityServer.EfCore.Storage.Options;
+using Dbosoft.IdentityServer.EfCore.Storage.TokenCleanup;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace dbosoft.IdentityServer.EfCore.Storage.Configuration
+namespace Dbosoft.IdentityServer.EfCore.Storage.Configuration
 {
     /// <summary>
     /// Extension methods to add EF database support to IdentityServer.

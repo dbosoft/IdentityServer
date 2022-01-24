@@ -1,11 +1,11 @@
-﻿using Microsoft.IdentityModel.Tokens;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models;
-using dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Services;
+using Microsoft.IdentityModel.Tokens;
 
-namespace IdentityServer.UnitTests.Common
+namespace Dbosoft.IdentityServer.UnitTests.Common
 {
     class MockKeyMaterialService : IKeyMaterialService
     {

@@ -3,7 +3,7 @@
 
 
 
-namespace IdentityServer.EfCore.TestHost.Quickstart.Account
+namespace Dbosoft.IdentityServer.EfCore.TestHost.Quickstart.Account
 {
     public class RedirectViewModel
     {

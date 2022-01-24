@@ -2,23 +2,22 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Dbosoft.IdentityServer.IntegrationTests.Clients.Setup;
 using FluentAssertions;
 using IdentityModel;
 using IdentityModel.Client;
-using IdentityServer.IntegrationTests.Clients.Setup;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
 using Xunit;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
-namespace IdentityServer.IntegrationTests.Clients
+namespace Dbosoft.IdentityServer.IntegrationTests.Clients
 {
     public class CustomTokenResponseClients
     {

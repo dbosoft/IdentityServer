@@ -5,9 +5,9 @@
 using System.Linq;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using static dbosoft.IdentityServer.IdentityServerConstants;
+using static Dbosoft.IdentityServer.IdentityServerConstants;
 
-namespace IdentityServer.TestHost
+namespace Dbosoft.IdentityServer.TestHost
 {
     [Route("localApi")]
     [Authorize(LocalApi.PolicyName)]

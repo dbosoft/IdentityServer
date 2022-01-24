@@ -4,7 +4,7 @@
 
 #pragma warning disable 1591
 
-namespace dbosoft.IdentityServer.ResponseHandling.Models
+namespace Dbosoft.IdentityServer.ResponseHandling.Models
 {
     public class DeviceAuthorizationResponse
     {

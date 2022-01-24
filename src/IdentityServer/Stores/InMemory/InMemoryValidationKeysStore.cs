@@ -5,9 +5,9 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Models;
 
-namespace dbosoft.IdentityServer.Stores.InMemory
+namespace Dbosoft.IdentityServer.Stores.InMemory
 {
     /// <summary>
     /// The default validation key store

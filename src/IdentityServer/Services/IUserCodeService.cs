@@ -4,7 +4,7 @@
 
 using System.Threading.Tasks;
 
-namespace dbosoft.IdentityServer.Services
+namespace Dbosoft.IdentityServer.Services
 {
     /// <summary>
     /// Implements user code generation

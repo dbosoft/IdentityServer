@@ -6,13 +6,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Storage.Stores;
-using dbosoft.IdentityServer.Storage.Stores.Serialization;
+using Dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.Storage.Stores.Serialization;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.Services.Default
+namespace Dbosoft.IdentityServer.Services.Default
 {
     /// <summary>
     /// Default persisted grant service

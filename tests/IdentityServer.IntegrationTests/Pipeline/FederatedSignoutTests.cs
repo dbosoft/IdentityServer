@@ -8,17 +8,16 @@ using System.Net;
 using System.Net.Http;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer;
-using dbosoft.IdentityServer.Models;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Test;
+using Dbosoft.IdentityServer.IntegrationTests.Common;
+using Dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Test;
 using FluentAssertions;
 using IdentityModel;
-using IdentityServer.IntegrationTests.Common;
 using Microsoft.AspNetCore.Authentication;
 using Xunit;
 
-namespace IdentityServer.IntegrationTests.Pipeline
+namespace Dbosoft.IdentityServer.IntegrationTests.Pipeline
 {
     public class FederatedSignoutTests
     {

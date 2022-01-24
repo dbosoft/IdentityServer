@@ -3,10 +3,10 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Stores;
 
-namespace dbosoft.IdentityServer.Extensions
+namespace Dbosoft.IdentityServer.Extensions
 {
     /// <summary>
     /// Extension for IClientStore

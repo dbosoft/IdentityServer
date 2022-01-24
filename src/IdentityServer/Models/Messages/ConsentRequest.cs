@@ -7,10 +7,10 @@ using System.Collections.Specialized;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Extensions;
 using IdentityModel;
 
-namespace dbosoft.IdentityServer.Models.Messages
+namespace Dbosoft.IdentityServer.Models.Messages
 {
     /// <summary>
     /// Models the parameters to identify a request for consent.

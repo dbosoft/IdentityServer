@@ -4,7 +4,7 @@
 
 using System.Collections.Generic;
 
-namespace dbosoft.IdentityServer.Validation.Models
+namespace Dbosoft.IdentityServer.Validation.Models
 {
     /// <summary>
     /// Represents a validated end session (logout) request

@@ -1,9 +1,9 @@
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Stores;
 
-namespace dbosoft.IdentityServer.Services.Default
+namespace Dbosoft.IdentityServer.Services.Default
 {
     /// <summary>
     /// Default wrapper service for IDeviceFlowStore, handling key hashing

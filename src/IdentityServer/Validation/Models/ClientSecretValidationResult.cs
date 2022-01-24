@@ -2,10 +2,10 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using dbosoft.IdentityServer.Models;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Storage.Models;
 
-namespace dbosoft.IdentityServer.Validation.Models
+namespace Dbosoft.IdentityServer.Validation.Models
 {
     /// <summary>
     /// Validation result for client validation

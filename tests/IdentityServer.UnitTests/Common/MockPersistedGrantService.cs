@@ -5,10 +5,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models;
-using dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Services;
 
-namespace IdentityServer.UnitTests.Common
+namespace Dbosoft.IdentityServer.UnitTests.Common
 {
     public class MockPersistedGrantService : IPersistedGrantService
     {

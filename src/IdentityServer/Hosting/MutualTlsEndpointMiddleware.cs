@@ -1,12 +1,12 @@
 using System;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
-using dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.Extensions;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.Hosting
+namespace Dbosoft.IdentityServer.Hosting
 {
     /// <summary>
     ///     Middleware for re-writing the MTLS enabled endpoints to the standard protocol endpoints

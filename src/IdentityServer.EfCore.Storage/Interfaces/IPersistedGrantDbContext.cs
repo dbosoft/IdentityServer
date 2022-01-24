@@ -4,10 +4,10 @@
 
 using System;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.EfCore.Storage.Entities;
+using Dbosoft.IdentityServer.EfCore.Storage.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace dbosoft.IdentityServer.EfCore.Storage.Interfaces
+namespace Dbosoft.IdentityServer.EfCore.Storage.Interfaces
 {
     /// <summary>
     /// Abstraction for the operational data context.

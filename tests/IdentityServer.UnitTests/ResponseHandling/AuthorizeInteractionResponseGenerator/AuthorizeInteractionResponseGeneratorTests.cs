@@ -5,29 +5,28 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.UnitTests.Common;
+using Dbosoft.IdentityServer.Validation.Models;
 using FluentAssertions;
-using IdentityServer.UnitTests.Common;
 using Xunit;
 using static IdentityModel.OidcConstants;
 
-namespace IdentityServer.UnitTests.ResponseHandling.AuthorizeInteractionResponseGenerator
+namespace Dbosoft.IdentityServer.UnitTests.ResponseHandling.AuthorizeInteractionResponseGenerator
 {
     public class AuthorizeInteractionResponseGeneratorTests
     {
         private IdentityServerOptions _options = new IdentityServerOptions();
-        private dbosoft.IdentityServer.ResponseHandling.Default.AuthorizeInteractionResponseGenerator _subject;
+        private IdentityServer.ResponseHandling.Default.AuthorizeInteractionResponseGenerator _subject;
         private MockConsentService _mockConsentService = new MockConsentService();
         private StubClock _clock = new StubClock();
 
         public AuthorizeInteractionResponseGeneratorTests()
         {
-            _subject = new dbosoft.IdentityServer.ResponseHandling.Default.AuthorizeInteractionResponseGenerator(
+            _subject = new IdentityServer.ResponseHandling.Default.AuthorizeInteractionResponseGenerator(
                 _clock,
-                TestLogger.Create<dbosoft.IdentityServer.ResponseHandling.Default.AuthorizeInteractionResponseGenerator>(),
+                TestLogger.Create<IdentityServer.ResponseHandling.Default.AuthorizeInteractionResponseGenerator>(),
                 _mockConsentService,
                 new MockProfileService());
         }

@@ -4,10 +4,10 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Models;
 using Microsoft.IdentityModel.Tokens;
 
-namespace dbosoft.IdentityServer.Services
+namespace Dbosoft.IdentityServer.Services
 {
     /// <summary>
     /// Interface for the key material service

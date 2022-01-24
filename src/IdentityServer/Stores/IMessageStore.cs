@@ -3,9 +3,9 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models.Messages;
+using Dbosoft.IdentityServer.Models.Messages;
 
-namespace dbosoft.IdentityServer.Stores
+namespace Dbosoft.IdentityServer.Stores
 {
     /// <summary>
     /// Interface for a message store

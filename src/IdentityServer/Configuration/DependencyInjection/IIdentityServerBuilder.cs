@@ -4,7 +4,7 @@
 
 using Microsoft.Extensions.DependencyInjection;
 
-namespace dbosoft.IdentityServer.Configuration.DependencyInjection
+namespace Dbosoft.IdentityServer.Configuration.DependencyInjection
 {
     /// <summary>
     /// IdentityServer builder Interface

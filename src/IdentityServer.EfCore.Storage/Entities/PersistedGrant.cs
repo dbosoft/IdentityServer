@@ -6,7 +6,7 @@
 
 using System;
 
-namespace dbosoft.IdentityServer.EfCore.Storage.Entities
+namespace Dbosoft.IdentityServer.EfCore.Storage.Entities
 {
     public class PersistedGrant
     {

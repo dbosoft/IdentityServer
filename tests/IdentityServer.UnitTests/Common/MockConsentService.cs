@@ -6,11 +6,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Services;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Validation.Models;
 
-namespace IdentityServer.UnitTests.Common
+namespace Dbosoft.IdentityServer.UnitTests.Common
 {
     public class MockConsentService : IConsentService
     {

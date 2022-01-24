@@ -1,12 +1,12 @@
-﻿using Xunit;
-using FluentAssertions;
+﻿using System.Linq;
 using System.Threading.Tasks;
-using System.Linq;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Storage.Stores;
-using dbosoft.IdentityServer.Stores.InMemory;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.Stores.InMemory;
+using FluentAssertions;
+using Xunit;
 
-namespace IdentityServer.UnitTests.Stores
+namespace Dbosoft.IdentityServer.UnitTests.Stores
 {
     public class InMemoryPersistedGrantStoreTests
     {

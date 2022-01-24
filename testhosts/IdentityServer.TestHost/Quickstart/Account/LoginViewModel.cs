@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace IdentityServer.TestHost.Quickstart.Account
+namespace Dbosoft.IdentityServer.TestHost.Quickstart.Account
 {
     public class LoginViewModel : LoginInputModel
     {

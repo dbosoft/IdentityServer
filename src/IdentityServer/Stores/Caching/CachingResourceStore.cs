@@ -5,14 +5,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Services;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Stores;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.Stores.Caching
+namespace Dbosoft.IdentityServer.Stores.Caching
 {
     /// <summary>
     /// Caching decorator for IResourceStore

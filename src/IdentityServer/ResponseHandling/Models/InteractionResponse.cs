@@ -2,9 +2,9 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Extensions;
 
-namespace dbosoft.IdentityServer.ResponseHandling.Models
+namespace Dbosoft.IdentityServer.ResponseHandling.Models
 {
     /// <summary>
     /// Indicates interaction outcome for user on authorization endpoint.

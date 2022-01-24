@@ -5,11 +5,11 @@
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Linq;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Validation.Models;
 using IdentityModel;
 
-namespace dbosoft.IdentityServer.Models.Messages
+namespace Dbosoft.IdentityServer.Models.Messages
 {
     /// <summary>
     /// Models the validated singout context.

@@ -3,9 +3,9 @@
 
 
 using System.Collections.Generic;
-using dbosoft.IdentityServer.Test;
+using Dbosoft.IdentityServer.Test;
 
-namespace IdentityServer.IntegrationTests.Endpoints.Introspection.Setup
+namespace Dbosoft.IdentityServer.IntegrationTests.Endpoints.Introspection.Setup
 {
     public static class Users
     {

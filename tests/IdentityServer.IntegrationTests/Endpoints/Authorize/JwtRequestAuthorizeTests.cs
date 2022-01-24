@@ -12,19 +12,18 @@ using System.Security.Claims;
 using System.Security.Cryptography.X509Certificates;
 using System.Text.Json;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer;
-using dbosoft.IdentityServer.Configuration;
-using dbosoft.IdentityServer.Models;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Test;
+using Dbosoft.IdentityServer.Configuration;
+using Dbosoft.IdentityServer.IntegrationTests.Common;
+using Dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Test;
 using FluentAssertions;
 using IdentityModel;
-using IdentityServer.IntegrationTests.Common;
 using Microsoft.IdentityModel.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Xunit;
 
-namespace IdentityServer.IntegrationTests.Endpoints.Authorize
+namespace Dbosoft.IdentityServer.IntegrationTests.Endpoints.Authorize
 {
     public class JwtRequestAuthorizeTests
     {

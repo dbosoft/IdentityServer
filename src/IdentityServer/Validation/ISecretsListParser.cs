@@ -2,10 +2,10 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Models;
 using Microsoft.AspNetCore.Http;
 
-namespace dbosoft.IdentityServer.Validation
+namespace Dbosoft.IdentityServer.Validation
 {
     /// <summary>
     /// Parser for finding the best secret in an Enumerable List

@@ -3,7 +3,7 @@
 
 #pragma warning disable 1591
 
-namespace dbosoft.IdentityServer.Storage.Models
+namespace Dbosoft.IdentityServer.Storage.Models
 {
     public static class GrantType
     {

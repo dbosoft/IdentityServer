@@ -7,16 +7,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Models.Contexts;
-using dbosoft.IdentityServer.Services;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Storage.Stores;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Models.Contexts;
+using Dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.Validation.Models;
 using IdentityModel;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.ResponseHandling.Default
+namespace Dbosoft.IdentityServer.ResponseHandling.Default
 {
     /// <summary>
     /// The userinfo response generator

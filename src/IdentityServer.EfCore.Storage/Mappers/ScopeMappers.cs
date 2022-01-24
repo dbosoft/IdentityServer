@@ -3,9 +3,9 @@
 
 
 using AutoMapper;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Models;
 
-namespace dbosoft.IdentityServer.EfCore.Storage.Mappers
+namespace Dbosoft.IdentityServer.EfCore.Storage.Mappers
 {
     /// <summary>
     /// Extension methods to map to/from entity/model for scopes.

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Stores;
 
-namespace IdentityServer.UnitTests.Common
+namespace Dbosoft.IdentityServer.UnitTests.Common
 {
     class MockReferenceTokenStore : IReferenceTokenStore
     {

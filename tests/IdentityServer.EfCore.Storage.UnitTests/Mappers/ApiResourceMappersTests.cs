@@ -3,14 +3,14 @@
 
 
 using System.Linq;
-using dbosoft.IdentityServer.EfCore.Storage.Entities;
-using dbosoft.IdentityServer.EfCore.Storage.Mappers;
+using Dbosoft.IdentityServer.EfCore.Storage.Entities;
+using Dbosoft.IdentityServer.EfCore.Storage.Mappers;
 using FluentAssertions;
 using Xunit;
-using ApiResource = dbosoft.IdentityServer.Storage.Models.ApiResource;
-using Secret = dbosoft.IdentityServer.Storage.Models.Secret;
+using ApiResource = Dbosoft.IdentityServer.Storage.Models.ApiResource;
+using Secret = Dbosoft.IdentityServer.Storage.Models.Secret;
 
-namespace IdentityServer.EfCore.Storage.UnitTests.Mappers
+namespace Dbosoft.IdentityServer.EfCore.Storage.UnitTests.Mappers
 {
     public class ApiResourceMappersTests
     {
@@ -64,7 +64,7 @@ namespace IdentityServer.EfCore.Storage.UnitTests.Mappers
         [Fact]
         public void missing_values_should_use_defaults()
         {
-            var entity = new dbosoft.IdentityServer.EfCore.Storage.Entities.ApiResource
+            var entity = new Entities.ApiResource
             {
                 Secrets = new System.Collections.Generic.List<ApiResourceSecret>
                 {

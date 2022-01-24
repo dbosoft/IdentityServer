@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models.Contexts;
-using dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Models.Contexts;
+using Dbosoft.IdentityServer.Services;
 
-namespace IdentityServer.UnitTests.Common
+namespace Dbosoft.IdentityServer.UnitTests.Common
 {
     public class MockLogoutNotificationService : ILogoutNotificationService
     {

@@ -2,10 +2,10 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using dbosoft.IdentityServer.Events.Infrastructure;
-using static dbosoft.IdentityServer.Constants;
+using Dbosoft.IdentityServer.Events.Infrastructure;
+using static Dbosoft.IdentityServer.Constants;
 
-namespace dbosoft.IdentityServer.Events
+namespace Dbosoft.IdentityServer.Events
 {
     /// <summary>
     /// Event for failed user authentication
@@ -14,7 +14,7 @@ namespace dbosoft.IdentityServer.Events
     public class UserLoginFailureEvent : Event
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="T:dbosoft.IdentityServer.Events.UserLoginFailureEvent" /> class.
+        /// Initializes a new instance of the <see cref="T:Dbosoft.IdentityServer.Events.UserLoginFailureEvent" /> class.
         /// </summary>
         /// <param name="username">The username.</param>
         /// <param name="error">The error.</param>

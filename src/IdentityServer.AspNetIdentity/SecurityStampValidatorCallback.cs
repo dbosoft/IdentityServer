@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 
-namespace dbosoft.IdentityServer.AspNetIdentity
+namespace Dbosoft.IdentityServer.AspNetIdentity
 {
     /// <summary>
     /// Implements callback for SecurityStampValidator's OnRefreshingPrincipal event.

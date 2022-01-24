@@ -6,7 +6,7 @@
 using System;
 using Microsoft.AspNetCore.Http;
 
-namespace dbosoft.IdentityServer.Hosting
+namespace Dbosoft.IdentityServer.Hosting
 {
     public class Endpoint
     {

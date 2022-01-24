@@ -10,16 +10,15 @@ using System.Net.Http;
 using System.Security.Claims;
 using System.Threading;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer;
-using dbosoft.IdentityServer.Configuration;
-using dbosoft.IdentityServer.Configuration.DependencyInjection;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Models.Messages;
-using dbosoft.IdentityServer.Services;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Test;
+using Dbosoft.IdentityServer.Configuration;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Models.Messages;
+using Dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Test;
 using FluentAssertions;
 using IdentityModel.Client;
 using Microsoft.AspNetCore.Authentication;
@@ -30,7 +29,7 @@ using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace IdentityServer.IntegrationTests.Common
+namespace Dbosoft.IdentityServer.IntegrationTests.Common
 {
     public class IdentityServerPipeline
     {

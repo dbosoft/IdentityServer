@@ -4,9 +4,9 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models.Messages;
+using Dbosoft.IdentityServer.Models.Messages;
 
-namespace dbosoft.IdentityServer.Stores
+namespace Dbosoft.IdentityServer.Stores
 {
     /// <summary>
     /// Interface for authorization request messages that are sent from the authorization endpoint to the login and consent UI.

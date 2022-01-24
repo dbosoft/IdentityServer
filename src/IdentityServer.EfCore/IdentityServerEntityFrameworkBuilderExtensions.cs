@@ -3,21 +3,21 @@
 
 
 using System;
-using dbosoft.IdentityServer.Configuration.DependencyInjection;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
-using dbosoft.IdentityServer.EfCore.Services;
-using dbosoft.IdentityServer.EfCore.Storage.Configuration;
-using dbosoft.IdentityServer.EfCore.Storage.DbContexts;
-using dbosoft.IdentityServer.EfCore.Storage.Interfaces;
-using dbosoft.IdentityServer.EfCore.Storage.Options;
-using dbosoft.IdentityServer.EfCore.Storage.Stores;
-using dbosoft.IdentityServer.EfCore.Storage.TokenCleanup;
-using dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
+using Dbosoft.IdentityServer.EfCore.Services;
+using Dbosoft.IdentityServer.EfCore.Storage.Configuration;
+using Dbosoft.IdentityServer.EfCore.Storage.DbContexts;
+using Dbosoft.IdentityServer.EfCore.Storage.Interfaces;
+using Dbosoft.IdentityServer.EfCore.Storage.Options;
+using Dbosoft.IdentityServer.EfCore.Storage.Stores;
+using Dbosoft.IdentityServer.EfCore.Storage.TokenCleanup;
+using Dbosoft.IdentityServer.Storage.Stores;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace dbosoft.IdentityServer.EfCore
+namespace Dbosoft.IdentityServer.EfCore
 {
     /// <summary>
     /// Extension methods to add EF database support to IdentityServer.

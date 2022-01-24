@@ -6,10 +6,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
-using dbosoft.IdentityServer.Models.Contexts;
+using Dbosoft.IdentityServer.Models.Contexts;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.Extensions
+namespace Dbosoft.IdentityServer.Extensions
 {
     /// <summary>
     /// Extensions for ProfileDataRequestContext

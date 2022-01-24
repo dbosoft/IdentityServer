@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
-using dbosoft.IdentityServer.Services;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Storage.Models;
 
-namespace IdentityServer.UnitTests.Common
+namespace Dbosoft.IdentityServer.UnitTests.Common
 {
     class MockTokenCreationService : ITokenCreationService
     {

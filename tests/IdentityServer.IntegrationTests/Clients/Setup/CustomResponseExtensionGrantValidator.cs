@@ -4,12 +4,12 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models;
-using dbosoft.IdentityServer.Validation;
-using dbosoft.IdentityServer.Validation.Contexts;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Validation;
+using Dbosoft.IdentityServer.Validation.Contexts;
+using Dbosoft.IdentityServer.Validation.Models;
 
-namespace IdentityServer.IntegrationTests.Clients.Setup
+namespace Dbosoft.IdentityServer.IntegrationTests.Clients.Setup
 {
     public class CustomResponseExtensionGrantValidator : IExtensionGrantValidator
     {

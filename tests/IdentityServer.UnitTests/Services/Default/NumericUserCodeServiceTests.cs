@@ -1,9 +1,9 @@
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Services.Default;
+using Dbosoft.IdentityServer.Services.Default;
 using FluentAssertions;
 using Xunit;
 
-namespace IdentityServer.UnitTests.Services.Default
+namespace Dbosoft.IdentityServer.UnitTests.Services.Default
 {
     public class NumericUserCodeGeneratorTests
     {

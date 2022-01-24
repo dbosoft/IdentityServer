@@ -3,9 +3,9 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models.Messages;
+using Dbosoft.IdentityServer.Models.Messages;
 
-namespace dbosoft.IdentityServer.Services
+namespace Dbosoft.IdentityServer.Services
 {
     /// <summary>
     /// Interface for the return URL parser

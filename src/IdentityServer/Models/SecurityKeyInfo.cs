@@ -4,7 +4,7 @@
 
 using Microsoft.IdentityModel.Tokens;
 
-namespace dbosoft.IdentityServer.Models
+namespace Dbosoft.IdentityServer.Models
 {
     /// <summary>
     /// Information about a security key

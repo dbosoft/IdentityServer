@@ -3,11 +3,11 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models.Messages;
-using dbosoft.IdentityServer.ResponseHandling.Models;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Models.Messages;
+using Dbosoft.IdentityServer.ResponseHandling.Models;
+using Dbosoft.IdentityServer.Validation.Models;
 
-namespace dbosoft.IdentityServer.ResponseHandling
+namespace Dbosoft.IdentityServer.ResponseHandling
 {
     /// <summary>
     /// Interface for determining if user must login or consent when making requests to the authorization endpoint.

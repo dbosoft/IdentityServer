@@ -3,10 +3,10 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models.Contexts;
-using dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Models.Contexts;
+using Dbosoft.IdentityServer.Services;
 
-namespace IdentityServer.UnitTests.Endpoints.EndSession
+namespace Dbosoft.IdentityServer.UnitTests.Endpoints.EndSession
 {
     internal class StubBackChannelLogoutClient : IBackChannelLogoutService
     {

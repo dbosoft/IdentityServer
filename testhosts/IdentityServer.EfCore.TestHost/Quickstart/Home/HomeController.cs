@@ -3,14 +3,14 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace IdentityServer.EfCore.TestHost.Quickstart.Home
+namespace Dbosoft.IdentityServer.EfCore.TestHost.Quickstart.Home
 {
     [SecurityHeaders]
     [AllowAnonymous]

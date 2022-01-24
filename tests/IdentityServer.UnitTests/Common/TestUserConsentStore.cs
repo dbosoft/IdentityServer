@@ -3,14 +3,14 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Services.Default;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Storage.Stores;
-using dbosoft.IdentityServer.Storage.Stores.Serialization;
-using dbosoft.IdentityServer.Stores.Default;
-using dbosoft.IdentityServer.Stores.InMemory;
+using Dbosoft.IdentityServer.Services.Default;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.Storage.Stores.Serialization;
+using Dbosoft.IdentityServer.Stores.Default;
+using Dbosoft.IdentityServer.Stores.InMemory;
 
-namespace IdentityServer.UnitTests.Common
+namespace Dbosoft.IdentityServer.UnitTests.Common
 {
     public class TestUserConsentStore : IUserConsentStore
     {

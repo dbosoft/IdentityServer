@@ -3,7 +3,7 @@
 
 #pragma warning disable 1591
 
-namespace dbosoft.IdentityServer.Events.Infrastructure
+namespace Dbosoft.IdentityServer.Events.Infrastructure
 {
     public static class EventIds
     {

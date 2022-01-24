@@ -5,14 +5,14 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.EfCore.Storage.Interfaces;
-using dbosoft.IdentityServer.EfCore.Storage.Mappers;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.EfCore.Storage.Interfaces;
+using Dbosoft.IdentityServer.EfCore.Storage.Mappers;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Stores;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.EfCore.Storage.Stores
+namespace Dbosoft.IdentityServer.EfCore.Storage.Stores
 {
     /// <summary>
     /// Implementation of IClientStore thats uses EF.

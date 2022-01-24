@@ -3,9 +3,9 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Models;
 
-namespace dbosoft.IdentityServer.Storage.Stores
+namespace Dbosoft.IdentityServer.Storage.Stores
 {
     /// <summary>
     /// Interface for reference token storage

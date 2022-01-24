@@ -6,22 +6,22 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
-using dbosoft.IdentityServer.Models;
-using dbosoft.IdentityServer.Services;
-using dbosoft.IdentityServer.Services.Default;
-using dbosoft.IdentityServer.Storage.Stores;
-using dbosoft.IdentityServer.Storage.Stores.Serialization;
-using dbosoft.IdentityServer.Stores;
-using dbosoft.IdentityServer.Stores.Default;
-using dbosoft.IdentityServer.Stores.InMemory;
-using dbosoft.IdentityServer.Validation;
-using dbosoft.IdentityServer.Validation.Default;
-using IdentityServer.UnitTests.Common;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Services.Default;
+using Dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.Storage.Stores.Serialization;
+using Dbosoft.IdentityServer.Stores;
+using Dbosoft.IdentityServer.Stores.Default;
+using Dbosoft.IdentityServer.Stores.InMemory;
+using Dbosoft.IdentityServer.UnitTests.Common;
+using Dbosoft.IdentityServer.Validation;
+using Dbosoft.IdentityServer.Validation.Default;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Logging;
 
-namespace IdentityServer.UnitTests.Validation.Setup
+namespace Dbosoft.IdentityServer.UnitTests.Validation.Setup
 {
     internal static class Factory
     {

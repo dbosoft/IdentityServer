@@ -5,7 +5,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace dbosoft.IdentityServer.Services
+namespace Dbosoft.IdentityServer.Services
 {
     /// <summary>
     /// Abstract interface to model data caching

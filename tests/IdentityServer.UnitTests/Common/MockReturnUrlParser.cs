@@ -4,11 +4,11 @@
 
 using System.Linq;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models.Messages;
-using dbosoft.IdentityServer.Services;
-using dbosoft.IdentityServer.Services.Default;
+using Dbosoft.IdentityServer.Models.Messages;
+using Dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Services.Default;
 
-namespace IdentityServer.UnitTests.Common
+namespace Dbosoft.IdentityServer.UnitTests.Common
 {
     public class MockReturnUrlParser : ReturnUrlParser
     {

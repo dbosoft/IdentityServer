@@ -4,7 +4,7 @@
 
 using System.Collections.Generic;
 
-namespace dbosoft.IdentityServer.Logging.Models
+namespace Dbosoft.IdentityServer.Logging.Models
 {
     internal class TokenValidationLog
     {

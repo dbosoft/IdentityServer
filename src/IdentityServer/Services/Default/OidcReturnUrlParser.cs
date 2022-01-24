@@ -5,13 +5,13 @@
 using System;
 using System.Collections.Specialized;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Models.Messages;
-using dbosoft.IdentityServer.Stores;
-using dbosoft.IdentityServer.Validation;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Models.Messages;
+using Dbosoft.IdentityServer.Stores;
+using Dbosoft.IdentityServer.Validation;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.Services.Default
+namespace Dbosoft.IdentityServer.Services.Default
 {
     internal class OidcReturnUrlParser : IReturnUrlParser
     {

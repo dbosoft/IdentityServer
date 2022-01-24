@@ -5,23 +5,23 @@ using System;
 using System.Collections.Specialized;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
-using dbosoft.IdentityServer.Endpoints.Results;
-using dbosoft.IdentityServer.Events;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Hosting;
-using dbosoft.IdentityServer.Logging.Models;
-using dbosoft.IdentityServer.Models.Messages;
-using dbosoft.IdentityServer.ResponseHandling;
-using dbosoft.IdentityServer.ResponseHandling.Models;
-using dbosoft.IdentityServer.Services;
-using dbosoft.IdentityServer.Validation;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.Endpoints.Results;
+using Dbosoft.IdentityServer.Events;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Hosting;
+using Dbosoft.IdentityServer.Logging.Models;
+using Dbosoft.IdentityServer.Models.Messages;
+using Dbosoft.IdentityServer.ResponseHandling;
+using Dbosoft.IdentityServer.ResponseHandling.Models;
+using Dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Validation;
+using Dbosoft.IdentityServer.Validation.Models;
 using IdentityModel;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.Endpoints
+namespace Dbosoft.IdentityServer.Endpoints
 {
     internal abstract class AuthorizeEndpointBase : IEndpointHandler
     {

@@ -3,14 +3,14 @@
 
 using System.Net;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
-using dbosoft.IdentityServer.Endpoints.Results;
-using dbosoft.IdentityServer.Hosting;
-using dbosoft.IdentityServer.ResponseHandling;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.Endpoints.Results;
+using Dbosoft.IdentityServer.Hosting;
+using Dbosoft.IdentityServer.ResponseHandling;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.Endpoints
+namespace Dbosoft.IdentityServer.Endpoints
 {
     internal class DiscoveryKeyEndpoint : IEndpointHandler
     {

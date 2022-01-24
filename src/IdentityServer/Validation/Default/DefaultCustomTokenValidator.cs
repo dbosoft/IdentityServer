@@ -3,12 +3,12 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Services;
-using dbosoft.IdentityServer.Storage.Stores;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.Validation.Models;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.Validation.Default
+namespace Dbosoft.IdentityServer.Validation.Default
 {
     /// <summary>
     /// Default custom token validator

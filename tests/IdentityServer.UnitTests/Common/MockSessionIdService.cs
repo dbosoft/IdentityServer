@@ -3,7 +3,7 @@
 
 
 
-namespace IdentityServer.UnitTests.Common
+namespace Dbosoft.IdentityServer.UnitTests.Common
 {
     //public class MockSessionIdService : ISessionIdService
     //{

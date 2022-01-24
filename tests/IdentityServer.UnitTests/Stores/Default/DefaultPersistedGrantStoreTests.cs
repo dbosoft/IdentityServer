@@ -7,18 +7,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Storage.Stores;
-using dbosoft.IdentityServer.Storage.Stores.Serialization;
-using dbosoft.IdentityServer.Stores.Default;
-using dbosoft.IdentityServer.Stores.InMemory;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.Storage.Stores.Serialization;
+using Dbosoft.IdentityServer.Stores.Default;
+using Dbosoft.IdentityServer.Stores.InMemory;
+using Dbosoft.IdentityServer.UnitTests.Common;
 using FluentAssertions;
-using IdentityServer.UnitTests.Common;
 using Xunit;
 
-namespace IdentityServer.UnitTests.Stores.Default
+namespace Dbosoft.IdentityServer.UnitTests.Stores.Default
 {
     public class DefaultPersistedGrantStoreTests
     {

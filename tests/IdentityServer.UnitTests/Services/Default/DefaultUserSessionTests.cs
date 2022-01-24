@@ -7,16 +7,15 @@ using System.Linq;
 using System.Net;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Services.Default;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Services.Default;
+using Dbosoft.IdentityServer.UnitTests.Common;
 using FluentAssertions;
-using IdentityServer.UnitTests.Common;
 using Microsoft.AspNetCore.Authentication;
 using Xunit;
 
-namespace IdentityServer.UnitTests.Services.Default
+namespace Dbosoft.IdentityServer.UnitTests.Services.Default
 {
     public class DefaultUserSessionTests
     {

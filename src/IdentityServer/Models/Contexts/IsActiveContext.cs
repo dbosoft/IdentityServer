@@ -4,10 +4,10 @@
 
 using System;
 using System.Security.Claims;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Storage.Models;
 
-namespace dbosoft.IdentityServer.Models.Contexts
+namespace Dbosoft.IdentityServer.Models.Contexts
 {
     /// <summary>
     /// Context describing the is-active check

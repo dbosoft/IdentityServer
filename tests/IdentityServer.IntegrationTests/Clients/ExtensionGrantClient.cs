@@ -11,16 +11,15 @@ using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Dbosoft.IdentityServer.IntegrationTests.Clients.Setup;
 using FluentAssertions;
 using IdentityModel;
 using IdentityModel.Client;
-using IdentityServer.IntegrationTests.Clients.Setup;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
-
 using Xunit;
 
-namespace IdentityServer.IntegrationTests.Clients
+namespace Dbosoft.IdentityServer.IntegrationTests.Clients
 {
     public class ExtensionGrantClient
     {

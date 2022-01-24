@@ -3,7 +3,7 @@
 
 #pragma warning disable 1591
 
-namespace dbosoft.IdentityServer.Models
+namespace Dbosoft.IdentityServer.Models
 {
     public class DiscoveryDocument
     {

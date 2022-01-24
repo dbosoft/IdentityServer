@@ -7,12 +7,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Validation.Models;
 using IdentityModel;
 
 #pragma warning disable 1591
 
-namespace dbosoft.IdentityServer.Extensions
+namespace Dbosoft.IdentityServer.Extensions
 {
     public static class ValidatedAuthorizeRequestExtensions
     {

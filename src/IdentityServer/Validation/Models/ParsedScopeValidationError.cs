@@ -4,7 +4,7 @@
 
 using System;
 
-namespace dbosoft.IdentityServer.Validation.Models
+namespace Dbosoft.IdentityServer.Validation.Models
 {
     /// <summary>
     /// Models an error parsing a scope.

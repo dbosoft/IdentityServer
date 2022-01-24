@@ -2,9 +2,9 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using dbosoft.IdentityServer.Events.Infrastructure;
+using Dbosoft.IdentityServer.Events.Infrastructure;
 
-namespace dbosoft.IdentityServer.Events
+namespace Dbosoft.IdentityServer.Events
 {
     /// <summary>
     /// Event for successful client authentication

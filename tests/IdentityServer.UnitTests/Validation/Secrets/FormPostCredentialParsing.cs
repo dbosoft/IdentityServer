@@ -4,16 +4,15 @@
 
 using System.IO;
 using System.Text;
-using dbosoft.IdentityServer;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
-using dbosoft.IdentityServer.Validation.Default;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.UnitTests.Common;
+using Dbosoft.IdentityServer.Validation.Default;
 using FluentAssertions;
-using IdentityServer.UnitTests.Common;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Xunit;
 
-namespace IdentityServer.UnitTests.Validation.Secrets
+namespace Dbosoft.IdentityServer.UnitTests.Validation.Secrets
 {
     public class FormPostCredentialExtraction
     {

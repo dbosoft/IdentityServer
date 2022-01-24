@@ -3,7 +3,7 @@
 
 #pragma warning disable 1591
 
-namespace dbosoft.IdentityServer.EfCore.Storage.Entities
+namespace Dbosoft.IdentityServer.EfCore.Storage.Entities
 {
     public class ApiResourceScope
     {

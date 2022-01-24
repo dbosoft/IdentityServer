@@ -5,16 +5,16 @@
 using System;
 using System.Collections.Specialized;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Validation;
-using dbosoft.IdentityServer.Validation.Contexts;
-using dbosoft.IdentityServer.Validation.Default;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.UnitTests.Validation.Setup;
+using Dbosoft.IdentityServer.Validation;
+using Dbosoft.IdentityServer.Validation.Contexts;
+using Dbosoft.IdentityServer.Validation.Default;
+using Dbosoft.IdentityServer.Validation.Models;
 using FluentAssertions;
 using IdentityModel;
-using IdentityServer.UnitTests.Validation.Setup;
 using Xunit;
 
-namespace IdentityServer.UnitTests.Validation.AuthorizeRequest_Validation
+namespace Dbosoft.IdentityServer.UnitTests.Validation.AuthorizeRequest_Validation
 {
     public class Authorize_ProtocolValidation_CustomValidator
     {

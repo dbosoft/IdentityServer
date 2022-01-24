@@ -9,7 +9,7 @@ using Microsoft.Net.Http.Headers;
 
 #pragma warning disable 1591
 
-namespace dbosoft.IdentityServer.Extensions
+namespace Dbosoft.IdentityServer.Extensions
 {
     public static class HttpRequestExtensions
     {

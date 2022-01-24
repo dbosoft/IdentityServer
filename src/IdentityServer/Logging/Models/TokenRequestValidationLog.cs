@@ -4,10 +4,10 @@
 
 using System.Collections.Generic;
 using System.Linq;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Validation.Models;
 
-namespace dbosoft.IdentityServer.Logging.Models
+namespace Dbosoft.IdentityServer.Logging.Models
 {
     internal class TokenRequestValidationLog
     {

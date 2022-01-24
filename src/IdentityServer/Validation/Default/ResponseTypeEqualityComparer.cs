@@ -5,7 +5,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace dbosoft.IdentityServer.Validation.Default
+namespace Dbosoft.IdentityServer.Validation.Default
 {
     /// <summary>
     /// Compares resource_type strings, where the order of space-delimited values is insignificant.

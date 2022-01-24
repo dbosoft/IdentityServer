@@ -5,7 +5,7 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 
-namespace dbosoft.IdentityServer.Hosting
+namespace Dbosoft.IdentityServer.Hosting
 {
     /// <summary>
     /// Endpoint result

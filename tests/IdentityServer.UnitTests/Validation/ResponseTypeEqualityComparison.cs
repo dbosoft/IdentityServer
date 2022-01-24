@@ -2,11 +2,11 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using dbosoft.IdentityServer.Validation.Default;
+using Dbosoft.IdentityServer.Validation.Default;
 using FluentAssertions;
 using Xunit;
 
-namespace IdentityServer.UnitTests.Validation
+namespace Dbosoft.IdentityServer.UnitTests.Validation
 {
     /// <summary>
     /// Tests for ResponseTypeEqualityComparer

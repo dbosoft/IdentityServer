@@ -5,14 +5,14 @@
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Validation.Default;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.UnitTests.Common;
+using Dbosoft.IdentityServer.Validation.Default;
+using Dbosoft.IdentityServer.Validation.Models;
 using FluentAssertions;
-using IdentityServer.UnitTests.Common;
 using Microsoft.AspNetCore.Http;
 using Xunit;
 
-namespace IdentityServer.UnitTests.Validation
+namespace Dbosoft.IdentityServer.UnitTests.Validation
 {
     public class BearerTokenUsageValidation
     {

@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 
-namespace IdentityServer.AspNetIdentity.TestHost.Models.ManageViewModels
+namespace Dbosoft.IdentityServer.AspNetIdentity.TestHost.Models.ManageViewModels
 {
     public class ExternalLoginsViewModel
     {

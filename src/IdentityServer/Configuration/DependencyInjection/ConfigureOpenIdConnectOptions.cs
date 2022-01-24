@@ -4,12 +4,12 @@
 
 using System;
 using System.Linq;
-using dbosoft.IdentityServer.Infrastructure;
+using Dbosoft.IdentityServer.Infrastructure;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;
 
-namespace dbosoft.IdentityServer.Configuration.DependencyInjection
+namespace Dbosoft.IdentityServer.Configuration.DependencyInjection
 {
     internal class ConfigureOpenIdConnectOptions : IPostConfigureOptions<OpenIdConnectOptions>
     {

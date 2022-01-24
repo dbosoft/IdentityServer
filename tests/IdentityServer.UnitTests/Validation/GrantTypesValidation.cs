@@ -4,12 +4,12 @@
 
 using System;
 using System.Collections.Generic;
-using dbosoft.IdentityServer.Models;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Storage.Models;
 using FluentAssertions;
 using Xunit;
 
-namespace IdentityServer.UnitTests.Validation
+namespace Dbosoft.IdentityServer.UnitTests.Validation
 {
     public class GrantTypesValidation
     {

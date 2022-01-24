@@ -5,13 +5,12 @@
 using System;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
-using dbosoft.IdentityServer;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Models;
-using dbosoft.IdentityServer.Storage.Models;
-using IdentityServer.IntegrationTests.Common;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.IntegrationTests.Common;
+using Dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Storage.Models;
 
-namespace IdentityServer.IntegrationTests.Clients.Setup
+namespace Dbosoft.IdentityServer.IntegrationTests.Clients.Setup
 {
     internal class Clients
     {

@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace dbosoft.IdentityServer.Models.Messages
+namespace Dbosoft.IdentityServer.Models.Messages
 {
     /// <summary>
     /// Models the user's response to the consent screen.

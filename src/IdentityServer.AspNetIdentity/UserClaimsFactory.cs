@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using IdentityModel;
 using Microsoft.AspNetCore.Identity;
 
-namespace dbosoft.IdentityServer.AspNetIdentity
+namespace Dbosoft.IdentityServer.AspNetIdentity
 {
     internal class UserClaimsFactory<TUser> : IUserClaimsPrincipalFactory<TUser>
         where TUser : class

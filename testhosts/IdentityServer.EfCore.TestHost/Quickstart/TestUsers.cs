@@ -4,11 +4,10 @@
 
 using System.Collections.Generic;
 using System.Security.Claims;
-using dbosoft.IdentityServer;
-using dbosoft.IdentityServer.Test;
+using Dbosoft.IdentityServer.Test;
 using IdentityModel;
 
-namespace IdentityServer.EfCore.TestHost.Quickstart
+namespace Dbosoft.IdentityServer.EfCore.TestHost.Quickstart
 {
     public class TestUsers
     {

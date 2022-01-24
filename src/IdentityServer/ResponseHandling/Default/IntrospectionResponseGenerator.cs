@@ -5,14 +5,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Events;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Services;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Events;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Validation.Models;
 using IdentityModel;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.ResponseHandling.Default
+namespace Dbosoft.IdentityServer.ResponseHandling.Default
 {
     /// <summary>
     /// The introspection response generator

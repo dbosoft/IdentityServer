@@ -10,7 +10,7 @@ using Serilog;
 using Serilog.Events;
 using Serilog.Sinks.SystemConsole.Themes;
 
-namespace IdentityServer.EfCore.TestHost
+namespace Dbosoft.IdentityServer.EfCore.TestHost
 {
     public class Program
     {

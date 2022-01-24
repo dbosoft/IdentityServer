@@ -1,10 +1,10 @@
-﻿using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Hosting;
+﻿using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Hosting;
 using Xunit;
-using static dbosoft.IdentityServer.Constants;
+using static Dbosoft.IdentityServer.Constants;
 
-namespace IdentityServer.UnitTests.Extensions
+namespace Dbosoft.IdentityServer.UnitTests.Extensions
 {
     public class EndpointOptionsExtensionsTests
     {

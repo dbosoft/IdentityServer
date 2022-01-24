@@ -5,7 +5,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace dbosoft.IdentityServer.Logging
+namespace Dbosoft.IdentityServer.Logging
 {
     /// <summary>
     /// Helper to JSON serialize object data for logging.

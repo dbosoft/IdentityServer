@@ -6,16 +6,15 @@ using System;
 using System.Collections.Specialized;
 using System.Linq;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer;
-using dbosoft.IdentityServer.Models;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.UnitTests.Validation.Setup;
+using Dbosoft.IdentityServer.Validation.Models;
 using FluentAssertions;
 using IdentityModel;
-using IdentityServer.UnitTests.Validation.Setup;
 using Xunit;
 
-namespace IdentityServer.UnitTests.Validation
+namespace Dbosoft.IdentityServer.UnitTests.Validation
 {
     public class DeviceAuthorizationRequestValidation
     {

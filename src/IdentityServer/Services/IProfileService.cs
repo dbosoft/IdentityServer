@@ -3,9 +3,9 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models.Contexts;
+using Dbosoft.IdentityServer.Models.Contexts;
 
-namespace dbosoft.IdentityServer.Services
+namespace Dbosoft.IdentityServer.Services
 {
     /// <summary>
     /// This interface allows IdentityServer to connect to your user and profile store.

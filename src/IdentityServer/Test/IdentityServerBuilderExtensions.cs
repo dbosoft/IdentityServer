@@ -3,11 +3,11 @@
 
 
 using System.Collections.Generic;
-using dbosoft.IdentityServer.Configuration.DependencyInjection;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace dbosoft.IdentityServer.Test
+namespace Dbosoft.IdentityServer.Test
 {
     /// <summary>
     /// Extension methods for the IdentityServer builder

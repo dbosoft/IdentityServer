@@ -9,19 +9,19 @@ using System.Linq;
 using System.Net.Http;
 using System.Security.Claims;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
+using Dbosoft.IdentityServer.IntegrationTests.Clients.Setup;
+using Dbosoft.IdentityServer.IntegrationTests.Common;
 using FluentAssertions;
 using IdentityModel;
 using IdentityModel.Client;
-using IdentityServer.IntegrationTests.Clients.Setup;
-using IdentityServer.IntegrationTests.Common;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.IdentityModel.Tokens;
-using System.Text.Json;
 using Xunit;
 
-namespace IdentityServer.IntegrationTests.Clients
+namespace Dbosoft.IdentityServer.IntegrationTests.Clients
 {
     public class ClientAssertionClient
     {

@@ -6,7 +6,7 @@ using System.Text;
 using IdentityModel;
 using Microsoft.IdentityModel.Tokens;
 
-namespace dbosoft.IdentityServer.Configuration
+namespace Dbosoft.IdentityServer.Configuration
 {
     /// <summary>
     /// Crypto helper

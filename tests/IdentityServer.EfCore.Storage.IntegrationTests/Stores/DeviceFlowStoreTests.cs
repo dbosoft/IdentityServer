@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.EfCore.Storage.DbContexts;
-using dbosoft.IdentityServer.EfCore.Storage.Entities;
-using dbosoft.IdentityServer.EfCore.Storage.Options;
-using dbosoft.IdentityServer.EfCore.Storage.Stores;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Storage.Stores.Serialization;
+using Dbosoft.IdentityServer.EfCore.Storage.DbContexts;
+using Dbosoft.IdentityServer.EfCore.Storage.Entities;
+using Dbosoft.IdentityServer.EfCore.Storage.Options;
+using Dbosoft.IdentityServer.EfCore.Storage.Stores;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Stores.Serialization;
 using FluentAssertions;
 using IdentityModel;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.InMemory.Infrastructure.Internal;
 using Xunit;
 
-namespace IdentityServer.EfCore.Storage.IntegrationTests.Stores
+namespace Dbosoft.IdentityServer.EfCore.Storage.IntegrationTests.Stores
 {
     public class DeviceFlowStoreTests : IntegrationTest<DeviceFlowStoreTests, PersistedGrantDbContext, OperationalStoreOptions>
     {

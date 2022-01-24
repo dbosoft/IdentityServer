@@ -4,7 +4,7 @@
 
 using Microsoft.EntityFrameworkCore;
 
-namespace IdentityServer.EfCore.Storage.IntegrationTests
+namespace Dbosoft.IdentityServer.EfCore.Storage.IntegrationTests
 {
     /// <summary>
     /// Helper methods to initialize DbContextOptions for the specified database provider and context.

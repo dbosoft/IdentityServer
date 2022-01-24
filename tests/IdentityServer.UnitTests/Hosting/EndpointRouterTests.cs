@@ -5,16 +5,16 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
-using dbosoft.IdentityServer.Hosting;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.Hosting;
+using Dbosoft.IdentityServer.UnitTests.Common;
 using FluentAssertions;
-using IdentityServer.UnitTests.Common;
 using Microsoft.AspNetCore.Http;
 using Xunit;
-using static dbosoft.IdentityServer.Constants;
-using Endpoint = dbosoft.IdentityServer.Hosting.Endpoint;
+using static Dbosoft.IdentityServer.Constants;
+using Endpoint = Dbosoft.IdentityServer.Hosting.Endpoint;
 
-namespace IdentityServer.UnitTests.Hosting
+namespace Dbosoft.IdentityServer.UnitTests.Hosting
 {
     public class EndpointRouterTests
     {

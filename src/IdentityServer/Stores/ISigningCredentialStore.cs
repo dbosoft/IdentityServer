@@ -5,7 +5,7 @@
 using System.Threading.Tasks;
 using Microsoft.IdentityModel.Tokens;
 
-namespace dbosoft.IdentityServer.Stores
+namespace Dbosoft.IdentityServer.Stores
 {
     /// <summary>
     /// Interface for a signing credential store

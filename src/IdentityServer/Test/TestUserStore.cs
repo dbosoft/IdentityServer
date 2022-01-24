@@ -9,7 +9,7 @@ using System.Linq;
 using System.Security.Claims;
 using IdentityModel;
 
-namespace dbosoft.IdentityServer.Test
+namespace Dbosoft.IdentityServer.Test
 {
     /// <summary>
     /// Store for test users

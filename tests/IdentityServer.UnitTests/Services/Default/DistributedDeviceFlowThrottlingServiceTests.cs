@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
-using dbosoft.IdentityServer.Services.Default;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.Services.Default;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.UnitTests.Common;
 using FluentAssertions;
-using IdentityServer.UnitTests.Common;
 using Microsoft.Extensions.Caching.Distributed;
 using Xunit;
 
-namespace IdentityServer.UnitTests.Services.Default
+namespace Dbosoft.IdentityServer.UnitTests.Services.Default
 {
     public class DistributedDeviceFlowThrottlingServiceTests
     {
