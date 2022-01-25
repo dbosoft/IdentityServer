@@ -6,11 +6,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using dbosoft.IdentityServer.Infrastructure;
+using Dbosoft.IdentityServer.Infrastructure;
 using IdentityModel;
 using Microsoft.AspNetCore.Authentication;
 
-namespace dbosoft.IdentityServer.Extensions
+namespace Dbosoft.IdentityServer.Extensions
 {
     /// <summary>
     /// Extensions for AuthenticationProperties

@@ -6,18 +6,17 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer;
-using dbosoft.IdentityServer.Events;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Models.Messages;
-using dbosoft.IdentityServer.Services;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Events;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Models.Messages;
+using Dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Validation.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace IdentityServer.EfCore.TestHost.Quickstart.Consent
+namespace Dbosoft.IdentityServer.EfCore.TestHost.Quickstart.Consent
 {
     /// <summary>
     /// This controller processes the consent UI

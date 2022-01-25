@@ -3,13 +3,13 @@
 
 
 using System.Collections.Generic;
-using dbosoft.IdentityServer.Services.InMemory;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Services.InMemory;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.UnitTests.Common;
 using FluentAssertions;
-using IdentityServer.UnitTests.Common;
 using Xunit;
 
-namespace IdentityServer.UnitTests.Services.InMemory
+namespace Dbosoft.IdentityServer.UnitTests.Services.InMemory
 {
     public class InMemoryCorsPolicyServiceTests
     {

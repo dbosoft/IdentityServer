@@ -4,16 +4,16 @@
 
 using System.Net;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Endpoints.Results;
-using dbosoft.IdentityServer.Hosting;
-using dbosoft.IdentityServer.ResponseHandling;
-using dbosoft.IdentityServer.Validation;
-using dbosoft.IdentityServer.Validation.Default;
+using Dbosoft.IdentityServer.Endpoints.Results;
+using Dbosoft.IdentityServer.Hosting;
+using Dbosoft.IdentityServer.ResponseHandling;
+using Dbosoft.IdentityServer.Validation;
+using Dbosoft.IdentityServer.Validation.Default;
 using IdentityModel;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.Endpoints
+namespace Dbosoft.IdentityServer.Endpoints
 {
     /// <summary>
     /// The userinfo endpoint

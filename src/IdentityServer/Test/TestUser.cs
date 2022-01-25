@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Security.Claims;
 using IdentityModel;
 
-namespace dbosoft.IdentityServer.Test
+namespace Dbosoft.IdentityServer.Test
 {
     /// <summary>
     /// In-memory user object for testing. Not intended for modeling users in production.

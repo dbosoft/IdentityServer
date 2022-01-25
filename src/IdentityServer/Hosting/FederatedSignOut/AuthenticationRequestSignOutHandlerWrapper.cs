@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 
-namespace dbosoft.IdentityServer.Hosting.FederatedSignOut
+namespace Dbosoft.IdentityServer.Hosting.FederatedSignOut
 {
     internal class AuthenticationRequestSignOutHandlerWrapper : AuthenticationRequestHandlerWrapper, IAuthenticationSignOutHandler
     {

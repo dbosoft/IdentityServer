@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace dbosoft.IdentityServer.Hosting.LocalApiAuthentication
+namespace Dbosoft.IdentityServer.Hosting.LocalApiAuthentication
 {
     /// <summary>
     /// Extensions for registering the local access token authentication handler

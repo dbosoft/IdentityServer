@@ -10,14 +10,14 @@ using System.Security.Claims;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Dbosoft.IdentityServer.IntegrationTests.Endpoints.Introspection.Setup;
 using FluentAssertions;
 using IdentityModel.Client;
-using IdentityServer.IntegrationTests.Endpoints.Introspection.Setup;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
 using Xunit;
 
-namespace IdentityServer.IntegrationTests.Endpoints.Introspection
+namespace Dbosoft.IdentityServer.IntegrationTests.Endpoints.Introspection
 {
     public class IntrospectionTests
     {

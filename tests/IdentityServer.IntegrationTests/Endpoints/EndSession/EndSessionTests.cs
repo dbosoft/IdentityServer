@@ -12,17 +12,17 @@ using System.Text;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Test;
+using Dbosoft.IdentityServer.IntegrationTests.Common;
+using Dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Test;
 using FluentAssertions;
 using IdentityModel;
-using IdentityServer.IntegrationTests.Common;
 using Microsoft.AspNetCore.WebUtilities;
 using Xunit;
-using static dbosoft.IdentityServer.IdentityServerConstants;
+using static Dbosoft.IdentityServer.IdentityServerConstants;
 
-namespace IdentityServer.IntegrationTests.Endpoints.EndSession
+namespace Dbosoft.IdentityServer.IntegrationTests.Endpoints.EndSession
 {
     public class EndSessionTests
     {

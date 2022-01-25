@@ -5,10 +5,10 @@
 using System;
 using System.Collections.Generic;
 using System.Security.Claims;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Validation.Models;
 
-namespace dbosoft.IdentityServer.Models.Contexts
+namespace Dbosoft.IdentityServer.Models.Contexts
 {
     /// <summary>
     /// Class describing the profile data request

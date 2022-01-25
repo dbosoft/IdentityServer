@@ -6,14 +6,14 @@ using System;
 using System.Security.Claims;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Validation;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Validation;
+using Dbosoft.IdentityServer.Validation.Models;
 using IdentityModel;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace dbosoft.IdentityServer.Hosting.LocalApiAuthentication
+namespace Dbosoft.IdentityServer.Hosting.LocalApiAuthentication
 {
     /// <summary>
     /// Authentication handler for validating access token from the local IdentityServer

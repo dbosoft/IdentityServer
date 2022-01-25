@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace dbosoft.IdentityServer.Infrastructure
+namespace Dbosoft.IdentityServer.Infrastructure
 {
     /// <summary>
     /// State formatter using IDistributedCache

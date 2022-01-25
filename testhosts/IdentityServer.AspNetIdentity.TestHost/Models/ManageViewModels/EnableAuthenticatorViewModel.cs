@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace IdentityServer.AspNetIdentity.TestHost.Models.ManageViewModels
+namespace Dbosoft.IdentityServer.AspNetIdentity.TestHost.Models.ManageViewModels
 {
     public class EnableAuthenticatorViewModel
     {

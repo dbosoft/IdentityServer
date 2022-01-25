@@ -1,11 +1,9 @@
-using dbosoft.IdentityServer;
-using dbosoft.IdentityServer.AspNetIdentity;
-using dbosoft.IdentityServer.Configuration;
-using dbosoft.IdentityServer.Configuration.DependencyInjection;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
-using IdentityServer.AspNetIdentity.TestHost.Configuration;
-using IdentityServer.AspNetIdentity.TestHost.Data;
-using IdentityServer.AspNetIdentity.TestHost.Models;
+using Dbosoft.IdentityServer.AspNetIdentity.TestHost.Configuration;
+using Dbosoft.IdentityServer.AspNetIdentity.TestHost.Data;
+using Dbosoft.IdentityServer.AspNetIdentity.TestHost.Models;
+using Dbosoft.IdentityServer.Configuration;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -14,7 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace IdentityServer.AspNetIdentity.TestHost
+namespace Dbosoft.IdentityServer.AspNetIdentity.TestHost
 {
     public class Startup
     {

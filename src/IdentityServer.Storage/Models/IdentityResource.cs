@@ -5,9 +5,9 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using dbosoft.IdentityServer.Storage.Extensions;
+using Dbosoft.IdentityServer.Storage.Extensions;
 
-namespace dbosoft.IdentityServer.Storage.Models
+namespace Dbosoft.IdentityServer.Storage.Models
 {
     /// <summary>
     /// Models a user identity resource.

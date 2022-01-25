@@ -4,12 +4,12 @@
 
 using System.IdentityModel.Tokens.Jwt;
 using System.Threading.Tasks;
+using Dbosoft.IdentityServer.UnitTests.Validation.Setup;
 using FluentAssertions;
 using IdentityModel;
-using IdentityServer.UnitTests.Validation.Setup;
 using Xunit;
 
-namespace IdentityServer.UnitTests.Validation
+namespace Dbosoft.IdentityServer.UnitTests.Validation
 {
     public class IdentityTokenValidation
     {

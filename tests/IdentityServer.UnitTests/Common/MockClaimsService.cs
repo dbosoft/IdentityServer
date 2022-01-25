@@ -2,10 +2,10 @@
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Services;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Validation.Models;
 
-namespace IdentityServer.UnitTests.Common
+namespace Dbosoft.IdentityServer.UnitTests.Common
 {
     class MockClaimsService : IClaimsService
     {

@@ -3,10 +3,10 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Models;
 using Microsoft.AspNetCore.Http;
 
-namespace dbosoft.IdentityServer.Validation
+namespace Dbosoft.IdentityServer.Validation
 {
     /// <summary>
     /// A service for parsing secrets found on the request

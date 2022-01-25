@@ -5,16 +5,16 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Hosting;
-using dbosoft.IdentityServer.Models.Messages;
-using dbosoft.IdentityServer.Stores;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Hosting;
+using Dbosoft.IdentityServer.Models.Messages;
+using Dbosoft.IdentityServer.Stores;
+using Dbosoft.IdentityServer.Validation.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace dbosoft.IdentityServer.Endpoints.Results
+namespace Dbosoft.IdentityServer.Endpoints.Results
 {
     /// <summary>
     /// Result for consent page

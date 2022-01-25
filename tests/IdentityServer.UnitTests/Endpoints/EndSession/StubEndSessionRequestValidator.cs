@@ -5,10 +5,10 @@
 using System.Collections.Specialized;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Validation;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Validation;
+using Dbosoft.IdentityServer.Validation.Models;
 
-namespace IdentityServer.UnitTests.Endpoints.EndSession
+namespace Dbosoft.IdentityServer.UnitTests.Endpoints.EndSession
 {
     class StubEndSessionRequestValidator : IEndSessionRequestValidator
     {

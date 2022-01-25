@@ -4,14 +4,14 @@
 
 using System;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Models;
-using dbosoft.IdentityServer.Models.Messages;
-using dbosoft.IdentityServer.Storage.Stores;
-using dbosoft.IdentityServer.Validation;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Models.Messages;
+using Dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.Validation;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.Services.Default
+namespace Dbosoft.IdentityServer.Services.Default
 {
     internal class DefaultDeviceFlowInteractionService : IDeviceFlowInteractionService
     {

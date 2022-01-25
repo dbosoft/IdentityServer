@@ -8,20 +8,19 @@ using System.Net;
 using System.Net.Http;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer;
-using dbosoft.IdentityServer.Models;
-using dbosoft.IdentityServer.Models.Messages;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Stores;
-using dbosoft.IdentityServer.Stores.Default;
-using dbosoft.IdentityServer.Test;
+using Dbosoft.IdentityServer.IntegrationTests.Common;
+using Dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Models.Messages;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Stores;
+using Dbosoft.IdentityServer.Stores.Default;
+using Dbosoft.IdentityServer.Test;
 using FluentAssertions;
 using IdentityModel;
-using IdentityServer.IntegrationTests.Common;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 
-namespace IdentityServer.IntegrationTests.Endpoints.Authorize
+namespace Dbosoft.IdentityServer.IntegrationTests.Endpoints.Authorize
 {
     public class AuthorizeTests
     {

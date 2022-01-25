@@ -6,10 +6,10 @@ using System;
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Services;
 using Microsoft.AspNetCore.Authentication;
 
-namespace IdentityServer.UnitTests.Common
+namespace Dbosoft.IdentityServer.UnitTests.Common
 {
     public class MockUserSession : IUserSession
     {

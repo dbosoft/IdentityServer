@@ -2,9 +2,9 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer.EfCore.TestHost.Quickstart.Consent;
+using Dbosoft.IdentityServer.EfCore.TestHost.Quickstart.Consent;
 
-namespace IdentityServer.EfCore.TestHost.Quickstart.Device
+namespace Dbosoft.IdentityServer.EfCore.TestHost.Quickstart.Device
 {
     public class DeviceAuthorizationInputModel : ConsentInputModel
     {

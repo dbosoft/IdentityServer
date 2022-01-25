@@ -5,7 +5,7 @@
 using System;
 using Microsoft.Extensions.Logging;
 
-namespace IdentityServer.EfCore.Tests
+namespace Dbosoft.IdentityServer.EfCore.Tests
 {
     public class FakeLogger<T> : FakeLogger, ILogger<T>
     {

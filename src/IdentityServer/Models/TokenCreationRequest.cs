@@ -4,9 +4,9 @@
 
 using System;
 using System.Security.Claims;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Validation.Models;
 
-namespace dbosoft.IdentityServer.Models
+namespace Dbosoft.IdentityServer.Models
 {
     /// <summary>
     /// Models the data to create a token from a validated request.

@@ -5,14 +5,14 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.EfCore.Storage.Interfaces;
-using dbosoft.IdentityServer.Storage.Services;
+using Dbosoft.IdentityServer.EfCore.Storage.Interfaces;
+using Dbosoft.IdentityServer.Storage.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.EfCore.Services
+namespace Dbosoft.IdentityServer.EfCore.Services
 {
     /// <summary>
     /// Implementation of ICorsPolicyService that consults the client configuration in the database for allowed CORS origins.

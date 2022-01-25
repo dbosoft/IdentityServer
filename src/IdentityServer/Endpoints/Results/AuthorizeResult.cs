@@ -5,19 +5,19 @@
 using System;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Hosting;
-using dbosoft.IdentityServer.Models.Messages;
-using dbosoft.IdentityServer.ResponseHandling.Models;
-using dbosoft.IdentityServer.Services;
-using dbosoft.IdentityServer.Stores;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Hosting;
+using Dbosoft.IdentityServer.Models.Messages;
+using Dbosoft.IdentityServer.ResponseHandling.Models;
+using Dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Stores;
 using IdentityModel;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace dbosoft.IdentityServer.Endpoints.Results
+namespace Dbosoft.IdentityServer.Endpoints.Results
 {
     internal class AuthorizeResult : IEndpointResult
     {

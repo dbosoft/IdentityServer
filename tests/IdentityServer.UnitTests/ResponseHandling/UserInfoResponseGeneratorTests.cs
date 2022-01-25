@@ -7,16 +7,15 @@ using System.Collections.Generic;
 using System.Security.Claims;
 using System.Text.Json;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer;
-using dbosoft.IdentityServer.ResponseHandling.Default;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Stores.InMemory;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.ResponseHandling.Default;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Stores.InMemory;
+using Dbosoft.IdentityServer.UnitTests.Common;
+using Dbosoft.IdentityServer.Validation.Models;
 using FluentAssertions;
-using IdentityServer.UnitTests.Common;
 using Xunit;
 
-namespace IdentityServer.UnitTests.ResponseHandling
+namespace Dbosoft.IdentityServer.UnitTests.ResponseHandling
 {
     public class UserInfoResponseGeneratorTests
     {

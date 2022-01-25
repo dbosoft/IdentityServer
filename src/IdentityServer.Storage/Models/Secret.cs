@@ -4,7 +4,7 @@
 
 using System;
 
-namespace dbosoft.IdentityServer.Storage.Models
+namespace Dbosoft.IdentityServer.Storage.Models
 {
     /// <summary>
     /// Models a client secret with identifier and expiration

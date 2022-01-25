@@ -3,10 +3,10 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models.Contexts;
-using dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Models.Contexts;
+using Dbosoft.IdentityServer.Services;
 
-namespace IdentityServer.UnitTests.Validation.Setup
+namespace Dbosoft.IdentityServer.UnitTests.Validation.Setup
 {
     internal class TestProfileService : IProfileService
     {

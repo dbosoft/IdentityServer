@@ -3,9 +3,9 @@
 
 
 using System.Collections.Generic;
-using dbosoft.IdentityServer.Events.Infrastructure;
+using Dbosoft.IdentityServer.Events.Infrastructure;
 
-namespace dbosoft.IdentityServer.Events
+namespace Dbosoft.IdentityServer.Events
 {
     /// <summary>
     /// Event for granted consent.

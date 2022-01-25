@@ -1,8 +1,8 @@
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Validation;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Validation;
+using Dbosoft.IdentityServer.Validation.Models;
 
-namespace IdentityServer.UnitTests.Validation.Setup
+namespace Dbosoft.IdentityServer.UnitTests.Validation.Setup
 {
     public class TestDeviceCodeValidator : IDeviceCodeValidator
     {

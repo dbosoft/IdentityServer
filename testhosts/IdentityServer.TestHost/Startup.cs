@@ -8,16 +8,15 @@ using System.Security.Claims;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer;
-using dbosoft.IdentityServer.Configuration;
-using dbosoft.IdentityServer.Configuration.DependencyInjection;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
-using dbosoft.IdentityServer.Hosting.LocalApiAuthentication;
-using dbosoft.IdentityServer.Test;
+using Dbosoft.IdentityServer.Configuration;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
+using Dbosoft.IdentityServer.Hosting.LocalApiAuthentication;
+using Dbosoft.IdentityServer.Test;
+using Dbosoft.IdentityServer.TestHost.Configuration;
+using Dbosoft.IdentityServer.TestHost.Extensions;
+using Dbosoft.IdentityServer.TestHost.Quickstart;
 using IdentityModel;
-using IdentityServer.TestHost.Configuration;
-using IdentityServer.TestHost.Extensions;
-using IdentityServer.TestHost.Quickstart;
 using Microsoft.AspNetCore.Authentication.Certificate;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.HttpOverrides;
@@ -27,7 +26,7 @@ using Microsoft.IdentityModel.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
 
-namespace IdentityServer.TestHost
+namespace Dbosoft.IdentityServer.TestHost
 {
     public class Startup
     {

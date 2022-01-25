@@ -5,13 +5,13 @@
 using System;
 using System.Text;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Infrastructure;
-using dbosoft.IdentityServer.Models.Messages;
+using Dbosoft.IdentityServer.Infrastructure;
+using Dbosoft.IdentityServer.Models.Messages;
 using IdentityModel;
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.Stores.Default
+namespace Dbosoft.IdentityServer.Stores.Default
 {
     /// <summary>
     /// IMessageStore implementation that uses data protection to protect message.

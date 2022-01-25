@@ -3,11 +3,11 @@
 
 
 using System.Collections.Generic;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Models;
 
 #pragma warning disable 1591
 
-namespace dbosoft.IdentityServer.Models
+namespace Dbosoft.IdentityServer.Models
 {
     public class GrantTypes
     {

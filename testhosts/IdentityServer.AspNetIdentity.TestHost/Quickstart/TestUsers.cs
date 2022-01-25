@@ -4,11 +4,10 @@
 
 using System.Collections.Generic;
 using System.Security.Claims;
-using dbosoft.IdentityServer;
-using dbosoft.IdentityServer.Test;
+using Dbosoft.IdentityServer.Test;
 using IdentityModel;
 
-namespace IdentityServer.AspNetIdentity.TestHost.Quickstart
+namespace Dbosoft.IdentityServer.AspNetIdentity.TestHost.Quickstart
 {
     public class TestUsers
     {

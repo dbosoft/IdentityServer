@@ -4,7 +4,7 @@
 
 using System.Linq;
 
-namespace IdentityServer.UnitTests.Common
+namespace Dbosoft.IdentityServer.UnitTests.Common
 {
     internal static class TestExtensions
     {

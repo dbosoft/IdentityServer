@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Validation.Contexts;
+using Dbosoft.IdentityServer.Validation.Contexts;
 
-namespace dbosoft.IdentityServer.Validation.Default
+namespace Dbosoft.IdentityServer.Validation.Default
 {
     /// <summary>
     /// No-op client configuration validator (for backwards-compatibility).

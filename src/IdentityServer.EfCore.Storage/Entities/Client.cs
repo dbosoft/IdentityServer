@@ -6,9 +6,9 @@
 
 using System;
 using System.Collections.Generic;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Models;
 
-namespace dbosoft.IdentityServer.EfCore.Storage.Entities
+namespace Dbosoft.IdentityServer.EfCore.Storage.Entities
 {
     public class Client
     {

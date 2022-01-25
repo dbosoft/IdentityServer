@@ -4,10 +4,10 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models.Messages;
-using dbosoft.IdentityServer.Stores;
+using Dbosoft.IdentityServer.Models.Messages;
+using Dbosoft.IdentityServer.Stores;
 
-namespace IdentityServer.UnitTests.Common
+namespace Dbosoft.IdentityServer.UnitTests.Common
 {
     public class MockConsentMessageStore : IConsentMessageStore
     {

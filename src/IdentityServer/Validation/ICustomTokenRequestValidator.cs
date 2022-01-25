@@ -3,9 +3,9 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Validation.Contexts;
+using Dbosoft.IdentityServer.Validation.Contexts;
 
-namespace dbosoft.IdentityServer.Validation
+namespace Dbosoft.IdentityServer.Validation
 {
     /// <summary>
     /// Allows inserting custom validation logic into token requests

@@ -2,10 +2,10 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using dbosoft.IdentityServer.Endpoints;
+using Dbosoft.IdentityServer.Endpoints;
 using Microsoft.Extensions.Logging;
 
-namespace IdentityServer.UnitTests.Endpoints.EndSession
+namespace Dbosoft.IdentityServer.UnitTests.Endpoints.EndSession
 {
     public class EndSessionCallbackEndpointTests
     {

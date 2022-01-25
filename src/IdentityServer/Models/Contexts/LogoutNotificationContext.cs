@@ -3,7 +3,7 @@
 
 using System.Collections.Generic;
 
-namespace dbosoft.IdentityServer.Models.Contexts
+namespace Dbosoft.IdentityServer.Models.Contexts
 {
     /// <summary>
     /// Provides the context necessary to construct a logout notificaiton.

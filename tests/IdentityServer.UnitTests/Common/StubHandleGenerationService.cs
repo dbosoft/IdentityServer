@@ -3,10 +3,10 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Services;
-using dbosoft.IdentityServer.Services.Default;
+using Dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Services.Default;
 
-namespace IdentityServer.UnitTests.Common
+namespace Dbosoft.IdentityServer.UnitTests.Common
 {
     public class StubHandleGenerationService : DefaultHandleGenerationService, IHandleGenerationService
     {

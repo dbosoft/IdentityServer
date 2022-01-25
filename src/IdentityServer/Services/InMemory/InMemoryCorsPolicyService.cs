@@ -6,12 +6,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Storage.Services;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Services;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.Services.InMemory
+namespace Dbosoft.IdentityServer.Services.InMemory
 {
     /// <summary>
     /// CORS policy service that configures the allowed origins from a list of clients' redirect URLs.

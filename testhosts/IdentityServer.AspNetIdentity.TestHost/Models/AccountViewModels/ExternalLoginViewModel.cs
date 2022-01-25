@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace IdentityServer.AspNetIdentity.TestHost.Models.AccountViewModels
+namespace Dbosoft.IdentityServer.AspNetIdentity.TestHost.Models.AccountViewModels
 {
     public class ExternalLoginViewModel
     {

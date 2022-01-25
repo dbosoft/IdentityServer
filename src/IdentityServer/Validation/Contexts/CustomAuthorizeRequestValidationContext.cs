@@ -1,6 +1,6 @@
-﻿using dbosoft.IdentityServer.Validation.Models;
+﻿using Dbosoft.IdentityServer.Validation.Models;
 
-namespace dbosoft.IdentityServer.Validation.Contexts
+namespace Dbosoft.IdentityServer.Validation.Contexts
 {
     /// <summary>
     /// Context for custom authorize request validation.

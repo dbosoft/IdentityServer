@@ -5,14 +5,14 @@
 using System.Collections.Specialized;
 using System.Linq;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.UnitTests.Validation.Setup;
 using FluentAssertions;
 using IdentityModel;
-using IdentityServer.UnitTests.Validation.Setup;
 using Xunit;
 
-namespace IdentityServer.UnitTests.Validation.TokenRequest_Validation
+namespace Dbosoft.IdentityServer.UnitTests.Validation.TokenRequest_Validation
 {
     public class TokenRequestValidation_ClientCredentials_Invalid
     {

@@ -7,14 +7,14 @@ using System.IO;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text.Json;
-using dbosoft.IdentityServer.Models;
-using dbosoft.IdentityServer.Stores;
-using dbosoft.IdentityServer.Stores.InMemory;
+using Dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Stores;
+using Dbosoft.IdentityServer.Stores.InMemory;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using JsonWebKey = Microsoft.IdentityModel.Tokens.JsonWebKey;
 
-namespace dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions
+namespace Dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions
 {
     /// <summary>
     /// Builder extension methods for registering crypto services

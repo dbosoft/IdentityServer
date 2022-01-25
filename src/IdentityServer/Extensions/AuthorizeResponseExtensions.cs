@@ -3,9 +3,9 @@
 
 
 using System.Collections.Specialized;
-using dbosoft.IdentityServer.ResponseHandling.Models;
+using Dbosoft.IdentityServer.ResponseHandling.Models;
 
-namespace dbosoft.IdentityServer.Extensions
+namespace Dbosoft.IdentityServer.Extensions
 {
     internal static class AuthorizeResponseExtensions
     {

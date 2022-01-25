@@ -4,14 +4,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Models.Contexts;
-using dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Models.Contexts;
+using Dbosoft.IdentityServer.Storage.Stores;
 using IdentityModel;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.Services.Default
+namespace Dbosoft.IdentityServer.Services.Default
 {
     /// <summary>
     /// Default implementation of logout notification service.

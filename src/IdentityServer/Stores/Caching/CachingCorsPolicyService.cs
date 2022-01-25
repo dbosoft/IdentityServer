@@ -3,13 +3,13 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Services;
-using dbosoft.IdentityServer.Storage.Services;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Storage.Services;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.Stores.Caching
+namespace Dbosoft.IdentityServer.Stores.Caching
 {
     /// <summary>
     /// Caching decorator for ICorsPolicyService

@@ -4,9 +4,9 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Validation.Models;
 
-namespace dbosoft.IdentityServer.ResponseHandling
+namespace Dbosoft.IdentityServer.ResponseHandling
 {
     /// <summary>
     /// Interface for introspection response generator

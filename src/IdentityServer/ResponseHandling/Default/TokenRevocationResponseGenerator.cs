@@ -3,12 +3,12 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.ResponseHandling.Models;
-using dbosoft.IdentityServer.Storage.Stores;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.ResponseHandling.Models;
+using Dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.Validation.Models;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.ResponseHandling.Default
+namespace Dbosoft.IdentityServer.ResponseHandling.Default
 {
     /// <summary>
     /// Default revocation response generator

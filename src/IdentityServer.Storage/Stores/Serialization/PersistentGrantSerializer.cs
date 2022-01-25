@@ -4,7 +4,7 @@
 
 using Newtonsoft.Json;
 
-namespace dbosoft.IdentityServer.Storage.Stores.Serialization
+namespace Dbosoft.IdentityServer.Storage.Stores.Serialization
 {
     /// <summary>
     /// JSON-based persisted grant serializer

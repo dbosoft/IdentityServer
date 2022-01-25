@@ -4,11 +4,11 @@
 
 using System.Net;
 using System.Threading.Tasks;
+using Dbosoft.IdentityServer.IntegrationTests.Common;
 using FluentAssertions;
-using IdentityServer.IntegrationTests.Common;
 using Xunit;
 
-namespace IdentityServer.IntegrationTests.Endpoints.CheckSession
+namespace Dbosoft.IdentityServer.IntegrationTests.Endpoints.CheckSession
 {
     public class CheckSessionTests
     {

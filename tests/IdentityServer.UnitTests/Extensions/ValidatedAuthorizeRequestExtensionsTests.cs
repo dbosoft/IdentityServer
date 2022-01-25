@@ -1,8 +1,8 @@
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Validation.Models;
 using Xunit;
 
-namespace IdentityServer.UnitTests.Extensions
+namespace Dbosoft.IdentityServer.UnitTests.Extensions
 {
     public class ValidatedAuthorizeRequestExtensionsTests
     {

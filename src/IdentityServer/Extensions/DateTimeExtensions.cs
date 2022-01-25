@@ -5,7 +5,7 @@
 using System;
 using System.Diagnostics;
 
-namespace dbosoft.IdentityServer.Extensions
+namespace Dbosoft.IdentityServer.Extensions
 {
     internal static class DateTimeExtensions
     {

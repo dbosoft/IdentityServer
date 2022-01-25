@@ -4,12 +4,12 @@
 
 using System;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Extensions;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.Hosting.FederatedSignOut
+namespace Dbosoft.IdentityServer.Hosting.FederatedSignOut
 {
     internal class AuthenticationRequestHandlerWrapper : IAuthenticationRequestHandler
     {

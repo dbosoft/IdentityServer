@@ -3,11 +3,11 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Validation;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Validation;
+using Dbosoft.IdentityServer.Validation.Models;
 
-namespace IdentityServer.UnitTests.Validation.EndSessionRequestValidation
+namespace Dbosoft.IdentityServer.UnitTests.Validation.EndSessionRequestValidation
 {
     public class StubTokenValidator : ITokenValidator
     {

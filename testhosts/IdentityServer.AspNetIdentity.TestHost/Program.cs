@@ -10,7 +10,7 @@ using Serilog;
 using Serilog.Events;
 using Serilog.Sinks.SystemConsole.Themes;
 
-namespace IdentityServer.AspNetIdentity.TestHost
+namespace Dbosoft.IdentityServer.AspNetIdentity.TestHost
 {
     public class Program
     {

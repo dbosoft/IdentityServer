@@ -5,18 +5,18 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using dbosoft.IdentityServer.EfCore.Services;
-using dbosoft.IdentityServer.EfCore.Storage.DbContexts;
-using dbosoft.IdentityServer.EfCore.Storage.Interfaces;
-using dbosoft.IdentityServer.EfCore.Storage.Mappers;
-using dbosoft.IdentityServer.EfCore.Storage.Options;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.EfCore.Services;
+using Dbosoft.IdentityServer.EfCore.Storage.DbContexts;
+using Dbosoft.IdentityServer.EfCore.Storage.Interfaces;
+using Dbosoft.IdentityServer.EfCore.Storage.Mappers;
+using Dbosoft.IdentityServer.EfCore.Storage.Options;
+using Dbosoft.IdentityServer.Storage.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 
-namespace IdentityServer.EfCore.Tests.Services
+namespace Dbosoft.IdentityServer.EfCore.Tests.Services
 {
     public class CorsPolicyServiceTests : IntegrationTest<CorsPolicyServiceTests, ConfigurationDbContext, ConfigurationStoreOptions>
     {

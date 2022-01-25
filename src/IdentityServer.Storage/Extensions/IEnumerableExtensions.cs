@@ -8,7 +8,7 @@ using System.Linq;
 
 #pragma warning disable 1591
 
-namespace dbosoft.IdentityServer.Storage.Extensions
+namespace Dbosoft.IdentityServer.Storage.Extensions
 {
     internal static class IEnumerableExtensions
     {

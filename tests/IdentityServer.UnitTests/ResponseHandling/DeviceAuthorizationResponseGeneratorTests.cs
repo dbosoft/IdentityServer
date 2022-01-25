@@ -6,20 +6,20 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
-using dbosoft.IdentityServer.Models;
-using dbosoft.IdentityServer.ResponseHandling.Default;
-using dbosoft.IdentityServer.Services;
-using dbosoft.IdentityServer.Services.Default;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Stores.InMemory;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.ResponseHandling.Default;
+using Dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Services.Default;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Stores.InMemory;
+using Dbosoft.IdentityServer.UnitTests.Common;
+using Dbosoft.IdentityServer.Validation.Models;
 using FluentAssertions;
-using IdentityServer.UnitTests.Common;
 using Microsoft.Extensions.Logging.Abstractions;
 using Xunit;
 
-namespace IdentityServer.UnitTests.ResponseHandling
+namespace Dbosoft.IdentityServer.UnitTests.ResponseHandling
 {
     public class DeviceAuthorizationResponseGeneratorTests
     {

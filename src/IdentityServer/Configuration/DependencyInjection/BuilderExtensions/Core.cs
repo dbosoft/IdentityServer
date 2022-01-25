@@ -4,25 +4,25 @@
 
 using System;
 using System.Linq;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
-using dbosoft.IdentityServer.Endpoints;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Hosting;
-using dbosoft.IdentityServer.Hosting.FederatedSignOut;
-using dbosoft.IdentityServer.Infrastructure;
-using dbosoft.IdentityServer.Models.Contexts;
-using dbosoft.IdentityServer.Models.Messages;
-using dbosoft.IdentityServer.ResponseHandling;
-using dbosoft.IdentityServer.ResponseHandling.Default;
-using dbosoft.IdentityServer.Services;
-using dbosoft.IdentityServer.Services.Default;
-using dbosoft.IdentityServer.Storage.Services;
-using dbosoft.IdentityServer.Storage.Stores;
-using dbosoft.IdentityServer.Storage.Stores.Serialization;
-using dbosoft.IdentityServer.Stores;
-using dbosoft.IdentityServer.Stores.Default;
-using dbosoft.IdentityServer.Validation;
-using dbosoft.IdentityServer.Validation.Default;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.Endpoints;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Hosting;
+using Dbosoft.IdentityServer.Hosting.FederatedSignOut;
+using Dbosoft.IdentityServer.Infrastructure;
+using Dbosoft.IdentityServer.Models.Contexts;
+using Dbosoft.IdentityServer.Models.Messages;
+using Dbosoft.IdentityServer.ResponseHandling;
+using Dbosoft.IdentityServer.ResponseHandling.Default;
+using Dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Services.Default;
+using Dbosoft.IdentityServer.Storage.Services;
+using Dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.Storage.Stores.Serialization;
+using Dbosoft.IdentityServer.Stores;
+using Dbosoft.IdentityServer.Stores.Default;
+using Dbosoft.IdentityServer.Validation;
+using Dbosoft.IdentityServer.Validation.Default;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Cors.Infrastructure;
@@ -30,10 +30,10 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Options;
-using static dbosoft.IdentityServer.Constants;
-using Endpoint = dbosoft.IdentityServer.Hosting.Endpoint;
+using static Dbosoft.IdentityServer.Constants;
+using Endpoint = Dbosoft.IdentityServer.Hosting.Endpoint;
 
-namespace dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions
+namespace Dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions
 {
     /// <summary>
     /// Builder extension methods for registering core services

@@ -2,11 +2,11 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using dbosoft.IdentityServer.Events.Infrastructure;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Events.Infrastructure;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Validation.Models;
 
-namespace dbosoft.IdentityServer.Events
+namespace Dbosoft.IdentityServer.Events
 {
     /// <summary>
     /// Event for device authorization failure

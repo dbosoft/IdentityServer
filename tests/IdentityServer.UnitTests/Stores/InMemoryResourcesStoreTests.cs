@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Stores.InMemory;
-using Xunit;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Stores.InMemory;
 using FluentAssertions;
+using Xunit;
 
-namespace IdentityServer.UnitTests.Stores
+namespace Dbosoft.IdentityServer.UnitTests.Stores
 {
     public class InMemoryResourcesStoreTests
     {

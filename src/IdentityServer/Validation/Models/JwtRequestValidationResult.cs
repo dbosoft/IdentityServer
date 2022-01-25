@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using System.Security.Claims;
 
-namespace dbosoft.IdentityServer.Validation.Models
+namespace Dbosoft.IdentityServer.Validation.Models
 {
     /// <summary>
     /// Models the result of JWT request validation.

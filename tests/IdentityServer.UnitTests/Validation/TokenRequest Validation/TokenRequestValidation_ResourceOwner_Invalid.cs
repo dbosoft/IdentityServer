@@ -4,17 +4,17 @@
 
 using System.Collections.Specialized;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Models;
-using dbosoft.IdentityServer.Storage.Stores;
-using dbosoft.IdentityServer.Validation.Default;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.UnitTests.Common;
+using Dbosoft.IdentityServer.UnitTests.Validation.Setup;
+using Dbosoft.IdentityServer.Validation.Default;
 using FluentAssertions;
 using IdentityModel;
-using IdentityServer.UnitTests.Common;
-using IdentityServer.UnitTests.Validation.Setup;
 using Xunit;
 
-namespace IdentityServer.UnitTests.Validation.TokenRequest_Validation
+namespace Dbosoft.IdentityServer.UnitTests.Validation.TokenRequest_Validation
 {
     public class TokenRequestValidation_ResourceOwner_Invalid
     {

@@ -1,8 +1,8 @@
 ﻿using System;
-using dbosoft.IdentityServer.Validation.Default;
+using Dbosoft.IdentityServer.Validation.Default;
 using Microsoft.Extensions.Logging;
 
-namespace IdentityServer.TestHost.Extensions
+namespace Dbosoft.IdentityServer.TestHost.Extensions
 {
     public class ParameterizedScopeParser : DefaultScopeParser
     {

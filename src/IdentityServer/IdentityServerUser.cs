@@ -6,10 +6,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
-using dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Extensions;
 using IdentityModel;
 
-namespace dbosoft.IdentityServer
+namespace Dbosoft.IdentityServer
 {
     /// <summary>
     /// Model properties of an IdentityServer user

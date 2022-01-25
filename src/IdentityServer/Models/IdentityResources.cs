@@ -3,10 +3,10 @@
 
 
 using System.Linq;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Models;
 using IdentityModel;
 
-namespace dbosoft.IdentityServer.Models
+namespace Dbosoft.IdentityServer.Models
 {
     /// <summary>
     /// Convenience class that defines standard identity resources.

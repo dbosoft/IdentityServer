@@ -5,7 +5,7 @@
 using System;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace dbosoft.IdentityServer.Configuration.DependencyInjection
+namespace Dbosoft.IdentityServer.Configuration.DependencyInjection
 {
     /// <summary>
     /// IdentityServer helper class for DI configuration

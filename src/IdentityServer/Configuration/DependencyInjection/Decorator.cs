@@ -4,7 +4,7 @@
 
 using System;
 
-namespace dbosoft.IdentityServer.Configuration.DependencyInjection
+namespace Dbosoft.IdentityServer.Configuration.DependencyInjection
 {
     internal class Decorator<TService>
     {

@@ -8,7 +8,7 @@ using IdentityModel;
 using Microsoft.AspNetCore.Authentication;
 using Newtonsoft.Json;
 
-namespace IdentityServer.EfCore.TestHost.Quickstart.Diagnostics
+namespace Dbosoft.IdentityServer.EfCore.TestHost.Quickstart.Diagnostics
 {
     public class DiagnosticsViewModel
     {

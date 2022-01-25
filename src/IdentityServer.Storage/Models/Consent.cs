@@ -5,7 +5,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace dbosoft.IdentityServer.Storage.Models
+namespace Dbosoft.IdentityServer.Storage.Models
 {
     /// <summary>
     /// Represents the permissions (in terms of scopes) granted to a client by a subject

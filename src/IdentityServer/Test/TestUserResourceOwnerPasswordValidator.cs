@@ -4,13 +4,13 @@
 
 using System;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Validation;
-using dbosoft.IdentityServer.Validation.Contexts;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Validation;
+using Dbosoft.IdentityServer.Validation.Contexts;
+using Dbosoft.IdentityServer.Validation.Models;
 using IdentityModel;
 using Microsoft.AspNetCore.Authentication;
 
-namespace dbosoft.IdentityServer.Test
+namespace Dbosoft.IdentityServer.Test
 {
     /// <summary>
     /// Resource owner password validator for test users

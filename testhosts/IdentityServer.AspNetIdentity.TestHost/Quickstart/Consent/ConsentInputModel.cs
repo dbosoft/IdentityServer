@@ -4,7 +4,7 @@
 
 using System.Collections.Generic;
 
-namespace IdentityServer.AspNetIdentity.TestHost.Quickstart.Consent
+namespace Dbosoft.IdentityServer.AspNetIdentity.TestHost.Quickstart.Consent
 {
     public class ConsentInputModel
     {

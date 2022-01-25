@@ -5,9 +5,9 @@
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Security.Claims;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Models;
 
-namespace dbosoft.IdentityServer.Validation.Models
+namespace Dbosoft.IdentityServer.Validation.Models
 {
     /// <summary>
     /// Validation result for introspection request

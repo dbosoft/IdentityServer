@@ -3,13 +3,13 @@
 
 
 using System.Collections.Generic;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.Models;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Storage.Models;
 using IdentityModel;
-using static dbosoft.IdentityServer.IdentityServerConstants;
+using static Dbosoft.IdentityServer.IdentityServerConstants;
 
-namespace IdentityServer.AspNetIdentity.TestHost.Configuration
+namespace Dbosoft.IdentityServer.AspNetIdentity.TestHost.Configuration
 {
     public class Resources
     {

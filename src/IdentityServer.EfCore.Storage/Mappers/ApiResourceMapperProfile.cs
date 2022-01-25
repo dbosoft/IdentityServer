@@ -4,9 +4,9 @@
 
 using System.Collections.Generic;
 using AutoMapper;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Models;
 
-namespace dbosoft.IdentityServer.EfCore.Storage.Mappers
+namespace Dbosoft.IdentityServer.EfCore.Storage.Mappers
 {
     /// <summary>
     /// Defines entity/model mapping for API resources.

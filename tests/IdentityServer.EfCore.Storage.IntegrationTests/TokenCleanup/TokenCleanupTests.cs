@@ -2,25 +2,25 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Configuration.DependencyInjection;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
-using dbosoft.IdentityServer.EfCore.Storage.DbContexts;
-using dbosoft.IdentityServer.EfCore.Storage.Entities;
-using dbosoft.IdentityServer.EfCore.Storage.Interfaces;
-using dbosoft.IdentityServer.EfCore.Storage.Options;
-using dbosoft.IdentityServer.EfCore.Storage.Stores;
-using dbosoft.IdentityServer.EfCore.Storage.TokenCleanup;
-using dbosoft.IdentityServer.Storage.Stores;
-using dbosoft.IdentityServer.Test;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
+using Dbosoft.IdentityServer.EfCore.Storage.DbContexts;
+using Dbosoft.IdentityServer.EfCore.Storage.Entities;
+using Dbosoft.IdentityServer.EfCore.Storage.Interfaces;
+using Dbosoft.IdentityServer.EfCore.Storage.Options;
+using Dbosoft.IdentityServer.EfCore.Storage.Stores;
+using Dbosoft.IdentityServer.EfCore.Storage.TokenCleanup;
+using Dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.Test;
 using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
-using ApiResource = dbosoft.IdentityServer.Storage.Models.ApiResource;
-using Client = dbosoft.IdentityServer.Storage.Models.Client;
-using IdentityResource = dbosoft.IdentityServer.Storage.Models.IdentityResource;
+using ApiResource = Dbosoft.IdentityServer.Storage.Models.ApiResource;
+using Client = Dbosoft.IdentityServer.Storage.Models.Client;
+using IdentityResource = Dbosoft.IdentityServer.Storage.Models.IdentityResource;
 
-namespace IdentityServer.EfCore.Storage.IntegrationTests.TokenCleanup
+namespace Dbosoft.IdentityServer.EfCore.Storage.IntegrationTests.TokenCleanup
 {
     public class TokenCleanupTests : IntegrationTest<TokenCleanupTests, PersistedGrantDbContext, OperationalStoreOptions>
     {

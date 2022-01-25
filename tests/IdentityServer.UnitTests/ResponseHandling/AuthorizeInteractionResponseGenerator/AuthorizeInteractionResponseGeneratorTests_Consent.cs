@@ -7,21 +7,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
-using dbosoft.IdentityServer.Models;
-using dbosoft.IdentityServer.Models.Messages;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Models.Messages;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.UnitTests.Common;
+using Dbosoft.IdentityServer.Validation.Models;
 using FluentAssertions;
 using IdentityModel;
-using IdentityServer.UnitTests.Common;
 using Xunit;
 
-namespace IdentityServer.UnitTests.ResponseHandling.AuthorizeInteractionResponseGenerator
+namespace Dbosoft.IdentityServer.UnitTests.ResponseHandling.AuthorizeInteractionResponseGenerator
 {
     public class AuthorizeInteractionResponseGeneratorTests_Consent
     {
-        private dbosoft.IdentityServer.ResponseHandling.Default.AuthorizeInteractionResponseGenerator _subject;
+        private IdentityServer.ResponseHandling.Default.AuthorizeInteractionResponseGenerator _subject;
         private IdentityServerOptions _options = new IdentityServerOptions();
         private MockConsentService _mockConsent = new MockConsentService();
         private MockProfileService _fakeUserService = new MockProfileService();
@@ -94,9 +94,9 @@ namespace IdentityServer.UnitTests.ResponseHandling.AuthorizeInteractionResponse
 
         public AuthorizeInteractionResponseGeneratorTests_Consent()
         {
-            _subject = new dbosoft.IdentityServer.ResponseHandling.Default.AuthorizeInteractionResponseGenerator(
+            _subject = new IdentityServer.ResponseHandling.Default.AuthorizeInteractionResponseGenerator(
                 new StubClock(),
-                TestLogger.Create<dbosoft.IdentityServer.ResponseHandling.Default.AuthorizeInteractionResponseGenerator>(),
+                TestLogger.Create<IdentityServer.ResponseHandling.Default.AuthorizeInteractionResponseGenerator>(),
                 _mockConsent,
                 _fakeUserService);
         }

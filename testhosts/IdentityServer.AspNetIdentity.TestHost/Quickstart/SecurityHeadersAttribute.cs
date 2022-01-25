@@ -5,7 +5,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace IdentityServer.AspNetIdentity.TestHost.Quickstart
+namespace Dbosoft.IdentityServer.AspNetIdentity.TestHost.Quickstart
 {
     public class SecurityHeadersAttribute : ActionFilterAttribute
     {

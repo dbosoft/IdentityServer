@@ -3,10 +3,10 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Validation;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Validation;
 
-namespace IdentityServer.UnitTests.Validation.EndSessionRequestValidation
+namespace Dbosoft.IdentityServer.UnitTests.Validation.EndSessionRequestValidation
 {
     public class StubRedirectUriValidator : IRedirectUriValidator
     {

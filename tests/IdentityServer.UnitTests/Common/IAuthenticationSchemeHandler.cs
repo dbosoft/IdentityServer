@@ -1,4 +1,4 @@
-﻿namespace IdentityServer.UnitTests.Common
+﻿namespace Dbosoft.IdentityServer.UnitTests.Common
 {
     internal interface IAuthenticationSchemeHandler
     {

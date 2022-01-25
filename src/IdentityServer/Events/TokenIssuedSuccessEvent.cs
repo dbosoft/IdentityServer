@@ -3,14 +3,14 @@
 
 
 using System.Collections.Generic;
-using dbosoft.IdentityServer.Events.Infrastructure;
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.ResponseHandling.Models;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Events.Infrastructure;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.ResponseHandling.Models;
+using Dbosoft.IdentityServer.Validation.Models;
 using IdentityModel;
-using static dbosoft.IdentityServer.Constants;
+using static Dbosoft.IdentityServer.Constants;
 
-namespace dbosoft.IdentityServer.Events
+namespace Dbosoft.IdentityServer.Events
 {
     /// <summary>
     /// Event for successful token issuance

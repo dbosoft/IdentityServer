@@ -5,12 +5,12 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.EfCore.Storage.Interfaces;
-using dbosoft.IdentityServer.EfCore.Storage.Options;
+using Dbosoft.IdentityServer.EfCore.Storage.Interfaces;
+using Dbosoft.IdentityServer.EfCore.Storage.Options;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.EfCore.Storage.TokenCleanup
+namespace Dbosoft.IdentityServer.EfCore.Storage.TokenCleanup
 {
     /// <summary>
     /// Helper to cleanup stale persisted grants and device codes.

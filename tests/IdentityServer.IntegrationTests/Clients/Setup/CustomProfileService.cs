@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models.Contexts;
-using dbosoft.IdentityServer.Test;
+using Dbosoft.IdentityServer.Models.Contexts;
+using Dbosoft.IdentityServer.Test;
 using Microsoft.Extensions.Logging;
 
-namespace IdentityServer.IntegrationTests.Clients.Setup
+namespace Dbosoft.IdentityServer.IntegrationTests.Clients.Setup
 {
     class CustomProfileService : TestUserProfileService
     {

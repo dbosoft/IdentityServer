@@ -3,10 +3,10 @@
 
 
 using System.Collections.Generic;
-using dbosoft.IdentityServer.Events.Infrastructure;
-using dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.Events.Infrastructure;
+using Dbosoft.IdentityServer.Extensions;
 
-namespace dbosoft.IdentityServer.Events
+namespace Dbosoft.IdentityServer.Events
 {
     /// <summary>
     /// Event for failed token introspection

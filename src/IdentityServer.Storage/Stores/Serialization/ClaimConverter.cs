@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 
 #pragma warning disable 1591
 
-namespace dbosoft.IdentityServer.Storage.Stores.Serialization
+namespace Dbosoft.IdentityServer.Storage.Stores.Serialization
 {
     public class ClaimConverter : JsonConverter
     {

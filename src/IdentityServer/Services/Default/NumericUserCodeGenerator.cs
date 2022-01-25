@@ -6,7 +6,7 @@ using System;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
 
-namespace dbosoft.IdentityServer.Services.Default
+namespace Dbosoft.IdentityServer.Services.Default
 {
     /// <summary>
     /// User code generator using 9 digit number

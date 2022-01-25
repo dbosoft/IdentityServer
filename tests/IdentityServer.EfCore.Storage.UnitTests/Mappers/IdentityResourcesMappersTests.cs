@@ -2,11 +2,11 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using dbosoft.IdentityServer.EfCore.Storage.Mappers;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.EfCore.Storage.Mappers;
+using Dbosoft.IdentityServer.Storage.Models;
 using Xunit;
 
-namespace IdentityServer.EfCore.Storage.UnitTests.Mappers
+namespace Dbosoft.IdentityServer.EfCore.Storage.UnitTests.Mappers
 {
     public class IdentityResourcesMappersTests
     {

@@ -2,10 +2,10 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using dbosoft.IdentityServer.Extensions;
-using dbosoft.IdentityServer.ResponseHandling.Models;
+using Dbosoft.IdentityServer.Extensions;
+using Dbosoft.IdentityServer.ResponseHandling.Models;
 
-namespace dbosoft.IdentityServer.Logging.Models
+namespace Dbosoft.IdentityServer.Logging.Models
 {
     internal class AuthorizeResponseLog
     {

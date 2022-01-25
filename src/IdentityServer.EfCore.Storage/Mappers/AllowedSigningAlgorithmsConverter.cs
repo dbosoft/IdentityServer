@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using AutoMapper;
 
-namespace dbosoft.IdentityServer.EfCore.Storage.Mappers
+namespace Dbosoft.IdentityServer.EfCore.Storage.Mappers
 {
     class AllowedSigningAlgorithmsConverter : 
         IValueConverter<ICollection<string>, string>,

@@ -1,19 +1,18 @@
-using FluentAssertions;
-using IdentityServer.UnitTests.Common;
 using System;
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer;
-using dbosoft.IdentityServer.Services.Default;
-using dbosoft.IdentityServer.Storage.Models;
-using dbosoft.IdentityServer.Storage.Stores.Serialization;
-using dbosoft.IdentityServer.Stores.Default;
-using dbosoft.IdentityServer.Stores.InMemory;
-using IdentityServer.UnitTests.Validation.Setup;
+using Dbosoft.IdentityServer.Services.Default;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Stores.Serialization;
+using Dbosoft.IdentityServer.Stores.Default;
+using Dbosoft.IdentityServer.Stores.InMemory;
+using Dbosoft.IdentityServer.UnitTests.Common;
+using Dbosoft.IdentityServer.UnitTests.Validation.Setup;
+using FluentAssertions;
 using Xunit;
 
-namespace IdentityServer.UnitTests.Services.Default
+namespace Dbosoft.IdentityServer.UnitTests.Services.Default
 {
     public class DefaultRefreshTokenServiceTests
     {

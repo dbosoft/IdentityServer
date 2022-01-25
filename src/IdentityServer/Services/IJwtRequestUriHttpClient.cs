@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Models;
 
-namespace dbosoft.IdentityServer.Services
+namespace Dbosoft.IdentityServer.Services
 {
     /// <summary>
     /// Models making HTTP requests for JWTs from the authorize endpoint.

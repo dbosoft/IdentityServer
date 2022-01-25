@@ -4,9 +4,9 @@
 
 using System.Collections.Generic;
 using System.Security.Claims;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Models;
 
-namespace dbosoft.IdentityServer.Validation.Models
+namespace Dbosoft.IdentityServer.Validation.Models
 {
     /// <summary>
     /// Models the validation result of access tokens and id tokens.

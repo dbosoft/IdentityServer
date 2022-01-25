@@ -3,7 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 
-namespace dbosoft.IdentityServer.Hosting.LocalApiAuthentication
+namespace Dbosoft.IdentityServer.Hosting.LocalApiAuthentication
 {
     /// <summary>
     /// Events for local API authentication

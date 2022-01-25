@@ -2,12 +2,12 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 using System;
-using dbosoft.IdentityServer.Infrastructure;
-using dbosoft.IdentityServer.Models.Messages;
+using Dbosoft.IdentityServer.Infrastructure;
+using Dbosoft.IdentityServer.Models.Messages;
 using FluentAssertions;
 using Xunit;
 
-namespace IdentityServer.UnitTests.Infrastructure
+namespace Dbosoft.IdentityServer.UnitTests.Infrastructure
 {
     public class ObjectSerializerTests
     {

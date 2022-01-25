@@ -3,23 +3,22 @@
 
 
 using System.Collections.Generic;
-using FluentAssertions;
-using IdentityModel.Client;
-using IdentityServer.IntegrationTests.Common;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.IdentityModel.Tokens;
 using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
-using dbosoft.IdentityServer;
-using dbosoft.IdentityServer.Configuration;
-using dbosoft.IdentityServer.Configuration.DependencyInjection;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
-using dbosoft.IdentityServer.Models;
+using Dbosoft.IdentityServer.Configuration;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions;
+using Dbosoft.IdentityServer.IntegrationTests.Common;
+using Dbosoft.IdentityServer.Models;
+using FluentAssertions;
+using IdentityModel.Client;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 using Xunit;
 using JsonWebKey = Microsoft.IdentityModel.Tokens.JsonWebKey;
 
-namespace IdentityServer.IntegrationTests.Endpoints.Discovery
+namespace Dbosoft.IdentityServer.IntegrationTests.Endpoints.Discovery
 {
     public class DiscoveryEndpointTests
     {

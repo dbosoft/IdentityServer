@@ -6,11 +6,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
-using dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.Storage.Models;
+using Dbosoft.IdentityServer.UnitTests.Common;
 using IdentityModel;
-using IdentityServer.UnitTests.Common;
 
-namespace IdentityServer.UnitTests.Validation.Setup
+namespace Dbosoft.IdentityServer.UnitTests.Validation.Setup
 {
     internal static class TokenFactory
     {

@@ -3,12 +3,12 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Models.Messages;
-using dbosoft.IdentityServer.ResponseHandling;
-using dbosoft.IdentityServer.ResponseHandling.Models;
-using dbosoft.IdentityServer.Validation.Models;
+using Dbosoft.IdentityServer.Models.Messages;
+using Dbosoft.IdentityServer.ResponseHandling;
+using Dbosoft.IdentityServer.ResponseHandling.Models;
+using Dbosoft.IdentityServer.Validation.Models;
 
-namespace IdentityServer.UnitTests.Endpoints.Authorize
+namespace Dbosoft.IdentityServer.UnitTests.Endpoints.Authorize
 {
     internal class StubAuthorizeInteractionResponseGenerator : IAuthorizeInteractionResponseGenerator
     {

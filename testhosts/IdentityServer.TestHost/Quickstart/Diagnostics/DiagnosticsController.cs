@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace IdentityServer.TestHost.Quickstart.Diagnostics
+namespace Dbosoft.IdentityServer.TestHost.Quickstart.Diagnostics
 {
     [SecurityHeaders]
     [Authorize]

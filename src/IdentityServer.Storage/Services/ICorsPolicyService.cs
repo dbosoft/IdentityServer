@@ -4,7 +4,7 @@
 
 using System.Threading.Tasks;
 
-namespace dbosoft.IdentityServer.Storage.Services
+namespace Dbosoft.IdentityServer.Storage.Services
 {
     /// <summary>
     /// Service that determines if CORS is allowed.

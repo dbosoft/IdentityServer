@@ -6,7 +6,7 @@
 using System.Collections.Generic;
 using Microsoft.IdentityModel.Tokens;
 
-namespace dbosoft.IdentityServer
+namespace Dbosoft.IdentityServer
 {
     public static class IdentityServerConstants
     {

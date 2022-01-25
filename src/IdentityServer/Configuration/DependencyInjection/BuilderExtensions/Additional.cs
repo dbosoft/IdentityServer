@@ -4,21 +4,21 @@
 
 using System;
 using System.Net.Http;
-using dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
-using dbosoft.IdentityServer.ResponseHandling;
-using dbosoft.IdentityServer.Services;
-using dbosoft.IdentityServer.Services.Default;
-using dbosoft.IdentityServer.Storage.Services;
-using dbosoft.IdentityServer.Storage.Stores;
-using dbosoft.IdentityServer.Stores;
-using dbosoft.IdentityServer.Stores.Caching;
-using dbosoft.IdentityServer.Validation;
-using dbosoft.IdentityServer.Validation.Default;
+using Dbosoft.IdentityServer.Configuration.DependencyInjection.Options;
+using Dbosoft.IdentityServer.ResponseHandling;
+using Dbosoft.IdentityServer.Services;
+using Dbosoft.IdentityServer.Services.Default;
+using Dbosoft.IdentityServer.Storage.Services;
+using Dbosoft.IdentityServer.Storage.Stores;
+using Dbosoft.IdentityServer.Stores;
+using Dbosoft.IdentityServer.Stores.Caching;
+using Dbosoft.IdentityServer.Validation;
+using Dbosoft.IdentityServer.Validation.Default;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Logging;
 
-namespace dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions
+namespace Dbosoft.IdentityServer.Configuration.DependencyInjection.BuilderExtensions
 {
     /// <summary>
     /// Builder extension methods for registering additional services 

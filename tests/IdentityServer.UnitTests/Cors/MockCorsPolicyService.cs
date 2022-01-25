@@ -3,9 +3,9 @@
 
 
 using System.Threading.Tasks;
-using dbosoft.IdentityServer.Storage.Services;
+using Dbosoft.IdentityServer.Storage.Services;
 
-namespace IdentityServer.UnitTests.Cors
+namespace Dbosoft.IdentityServer.UnitTests.Cors
 {
     public class MockCorsPolicyService : ICorsPolicyService
     {
