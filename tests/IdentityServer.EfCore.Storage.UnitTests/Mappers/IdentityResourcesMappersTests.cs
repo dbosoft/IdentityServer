@@ -13,7 +13,7 @@ namespace Dbosoft.IdentityServer.EfCore.Storage.UnitTests.Mappers
         [Fact]
         public void IdentityResourceAutomapperConfigurationIsValid()
         {
-            IdentityResourceMappers.Mapper.ConfigurationProvider.AssertConfigurationIsValid<IdentityResourceMapperProfile>();
+            IdentityResourceMappers.Mapper.ConfigurationProvider.AssertConfigurationIsValid();
         }
 
         [Fact]
