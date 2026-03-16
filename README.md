@@ -1,5 +1,7 @@
 ## About IdentityServer
 
+==> do not use -> we have fully migrated to openiddct / our own IDP implementation so this is no longer maintained.
+
 This project is a fork of the deprecated [identityserver4](https://github.com/IdentityServer/IdentityServer4). 
 
 Currently the implementation is the same as in identityserver4, but it is planned to strip it down to the following core functions:
